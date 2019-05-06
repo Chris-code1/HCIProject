@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/nav_products"
+            android:icon="@mipmap/icon_image_crop_free_24_px"
+            android:title="Products">
+
+        </item>
+
+        <item
+            android:id="@+id/nav_recipes"
+            android:icon="@mipmap/icons_image_collections_bookmark"
+            android:title="Recipes">
+
+        </item>
+
+        <item
+            android:id="@+id/nav_list"
+            android:icon="@drawable/ic_list_black_24dp"
+            android:title="List">
+
+        </item>
+
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="Account">
+
+        </item>
+</menu>

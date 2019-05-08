@@ -6,14 +6,12 @@
  <item android:id="@+id/back"
      android:icon="@drawable/ic_arrow_back_black_24dp"
      app:showAsAction="always"
-     android:title="Back"
-     app:actionViewClass="android.support.v7.widget.SearchView" />
+     android:title="Back" />
 
  <item android:id="@+id/check"
      android:icon="@drawable/ic_check_black_24dp"
      app:showAsAction="always"
-     android:title="Check"
-     app:actionViewClass="android.support.v7.widget.SearchView" />
+     android:title="Check" />
 
 
  </menu>

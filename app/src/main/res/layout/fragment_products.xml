@@ -1,13 +1,345 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_orange_dark">
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="55dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Products"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"/>
-</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="211dp"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/text0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popular Products"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="15sp"
+            android:padding="5dp"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:orientation="horizontal"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/mask_group" />
+
+        <LinearLayout
+            android:layout_width="143dp"
+            android:layout_height="63dp"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="130dp"
+                android:layout_height="51dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:text="Nesquik Powder"
+                android:textSize="20dp"
+                android:paddingLeft="25dp"/>
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="19dp"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="TextView" />-->
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="141dp"
+            android:layout_height="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="$1.50"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:orientation="horizontal"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/mask_group" />
+
+        <LinearLayout
+            android:layout_width="143dp"
+            android:layout_height="63dp"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="130dp"
+                android:layout_height="51dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:text="Nesquik Powder"
+                android:textSize="20dp"
+                android:paddingLeft="25dp"/>
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="19dp"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="TextView" />-->
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="141dp"
+            android:layout_height="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="$1.50"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:orientation="horizontal"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/mask_group" />
+
+        <LinearLayout
+            android:layout_width="143dp"
+            android:layout_height="63dp"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="130dp"
+                android:layout_height="51dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:text="Nesquik Powder"
+                android:textSize="20dp"
+                android:paddingLeft="25dp"/>
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="19dp"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="TextView" />-->
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="141dp"
+            android:layout_height="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="$1.50"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="211dp"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/text0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offers"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="15sp"
+            android:padding="5dp"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:orientation="horizontal"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/mask_group" />
+
+        <LinearLayout
+            android:layout_width="143dp"
+            android:layout_height="63dp"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="130dp"
+                android:layout_height="51dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:text="Nesquik Powder"
+                android:textSize="20dp"
+                android:paddingLeft="25dp"/>
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="19dp"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="TextView" />-->
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="141dp"
+            android:layout_height="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="$1.50"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:orientation="horizontal"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/mask_group" />
+
+        <LinearLayout
+            android:layout_width="143dp"
+            android:layout_height="63dp"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="130dp"
+                android:layout_height="51dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:text="Nesquik Powder"
+                android:textSize="20dp"
+                android:paddingLeft="25dp"/>
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="19dp"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="TextView" />-->
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="141dp"
+            android:layout_height="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="$1.50"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:orientation="horizontal"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/mask_group" />
+
+        <LinearLayout
+            android:layout_width="143dp"
+            android:layout_height="63dp"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="130dp"
+                android:layout_height="51dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:text="Nesquik Powder"
+                android:textSize="20dp"
+                android:paddingLeft="25dp"/>
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="19dp"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="TextView" />-->
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="141dp"
+            android:layout_height="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="$1.50"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

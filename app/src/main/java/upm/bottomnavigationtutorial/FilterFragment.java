@@ -10,12 +10,14 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class AccountFragment extends Fragment {
+
+public class FilterFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        getActivity().setTitle("Account");
-        return inflater.inflate(R.layout.fragment_account, container, false);
+        getActivity().setTitle("Filter");
+        return inflater.inflate(R.layout.fragment_filter, container, false);
+
     }
 
     @Override
@@ -24,10 +26,9 @@ public class AccountFragment extends Fragment {
         setHasOptionsMenu(true);
     }
 
-
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.topbar_account, menu);
+        inflater.inflate(R.menu.topbar_filter, menu);
         return;
     }
 }

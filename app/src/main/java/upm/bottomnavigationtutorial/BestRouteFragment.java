@@ -10,16 +10,13 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class FilterFragment extends Fragment {
+public class BestRouteFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        getActivity().setTitle("Filter");
-
-        return inflater.inflate(R.layout.fragment_filter, container, false);
-
+        getActivity().setTitle("Follow the path");
+        return inflater.inflate(R.layout.fragment_bestroute, container, false);
     }
-
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -27,12 +24,10 @@ public class FilterFragment extends Fragment {
         setHasOptionsMenu(true);
     }
 
+
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.topbar_filter, menu);
+        inflater.inflate(R.menu.topbar_bestroute, menu);
         return;
     }
-
-
-
 }

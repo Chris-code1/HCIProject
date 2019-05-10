@@ -39,7 +39,7 @@
         android:paddingTop="15dp">
 
         <ImageView
-            android:id="@+id/imageView1"
+            android:id="@+id/imgNesquik"
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:contentDescription="TODO"
@@ -52,7 +52,7 @@
             android:paddingTop="5dp">
 
             <TextView
-                android:id="@+id/text1"
+                android:id="@+id/txtNesquik"
                 android:layout_width="130dp"
                 android:layout_height="51dp"
                 android:layout_alignParentTop="true"
@@ -71,7 +71,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/text2"
+            android:id="@+id/priceNesquik"
             android:layout_width="141dp"
             android:layout_height="64dp"
             android:layout_alignParentTop="true"

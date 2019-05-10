@@ -31,4 +31,5 @@ public class FilterFragment extends Fragment {
         inflater.inflate(R.menu.topbar_filter, menu);
         return;
     }
+
 }

@@ -18,6 +18,10 @@ public class RecipesFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         getActivity().setTitle("Recipes");
+
+        //Removes the back arrow
+        ((MainActivity) getActivity()).removeArrow();
+
         View view = inflater.inflate(R.layout.fragment_recipes, container, false);
 
         //find objects in xml file

@@ -15,6 +15,10 @@ public class RecipeDetailsFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         getActivity().setTitle("Recipe Details");
+
+        ((MainActivity) getActivity()).removeArrow();
+        ((MainActivity) getActivity()).addArrow();
+
         return inflater.inflate(R.layout.fragment_recipedetails, container, false);
     }
 

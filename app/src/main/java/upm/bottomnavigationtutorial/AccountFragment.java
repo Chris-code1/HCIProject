@@ -15,6 +15,10 @@ public class AccountFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         getActivity().setTitle("Account");
+
+        //Removes the back arrow
+        ((MainActivity) getActivity()).removeArrow();
+
         return inflater.inflate(R.layout.fragment_account, container, false);
     }
 

@@ -15,6 +15,12 @@ public class PayFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         getActivity().setTitle("Payment");
+
+        //Adds the back arrow
+
+        ((MainActivity) getActivity()).removeArrow();
+        ((MainActivity) getActivity()).addArrow();
+
         return inflater.inflate(R.layout.fragment_pay, container, false);
     }
 

@@ -52,10 +52,10 @@ public class MainActivity extends AppCompatActivity {
                 selectedFragment = new FilterFragment();
                 break;
 
-//            case R.id.filterprod:
-//                Toast.makeText(this, "Filter selected", Toast.LENGTH_SHORT).show();
-//                selectedFragment = new FilterProdFragment();
-//                break;
+            case R.id.filterprod:
+                Toast.makeText(this, "Filter selected", Toast.LENGTH_SHORT).show();
+                selectedFragment = new FilterFragment();
+                break;
             case R.id.search:
                 Toast.makeText(this, "Search selected", Toast.LENGTH_SHORT).show();
                 return true;

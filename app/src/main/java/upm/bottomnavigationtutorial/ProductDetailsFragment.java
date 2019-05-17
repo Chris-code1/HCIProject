@@ -10,16 +10,14 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class AccountFragment extends Fragment {
+public class ProductDetailsFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        getActivity().setTitle("Account");
-
-        //Removes the back arrow
+        getActivity().setTitle("Nesquik");
         ((MainActivity) getActivity()).removeArrow();
-
-        return inflater.inflate(R.layout.fragment_account, container, false);
+        ((MainActivity) getActivity()).addArrow();
+        return inflater.inflate(R.layout.fragment_productdetails, container, false);
     }
 
     @Override
@@ -31,7 +29,7 @@ public class AccountFragment extends Fragment {
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.topbar_account, menu);
+        inflater.inflate(R.menu.topbar_bestroute, menu);
         return;
     }
 }

@@ -62,6 +62,8 @@ public class RecipeDetailsFragment extends Fragment {
             }
         });
 
+
+
         final Button plusMenos = view.findViewById(R.id.less1);
         plusMenos.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -254,7 +256,7 @@ public class RecipeDetailsFragment extends Fragment {
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.topbar_bestroute, menu);
+        inflater.inflate(R.menu.topbar_recipedetails, menu);
         return;
     }
 }

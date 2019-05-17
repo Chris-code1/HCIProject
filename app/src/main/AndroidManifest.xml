@@ -3,7 +3,7 @@
     package="upm.bottomnavigationtutorial">
 
 
-    //give internet permission to fetch images
+    <!--give internet permission to fetch images-->
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application

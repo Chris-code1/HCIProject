@@ -210,7 +210,7 @@
                 android:paddingTop="5dp">
 
                 <TextView
-                    android:id="@+id/text1"
+                    android:id="@+id/priceThing"
                     android:layout_width="match_parent"
                     android:layout_height="25dp"
                     android:layout_alignParentTop="true"

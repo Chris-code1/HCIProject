@@ -1,61 +1,318 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@android:color/white"
         android:orientation="vertical"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="18dp"
-        >
+        android:paddingLeft="10dp"
+        android:paddingTop="50dp">
 
-        <TextView
-            android:id="@+id/textView3"
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Allergies"
-            android:textSize="16sp"/>
+            android:orientation="horizontal"
+            android:paddingTop="15dp">
 
-        <CheckBox
-            android:id="@+id/checkBox12"
-            android:layout_width="match_parent"
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="394dp"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
 
-        <CheckBox
-            android:id="@+id/checkBox9"
-            android:layout_width="match_parent"
+
+            <TextView
+                android:id="@+id/peopleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="People Served"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:paddingTop="15dp">
+
+
+            <Button
+                android:id="@+id/add1"
+                android:layout_width="90dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/chipbutton"
+                android:text="1"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+               />
+
+            <Button
+                android:id="@+id/add2"
+                android:layout_width="90dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/chipbutton"
+                android:text="2"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/add3"
+                android:layout_width="90dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/chipbutton"
+                android:text="3"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/button5dd4"
+                android:layout_width="90dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/chipbutton"
+                android:text="4"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            android:paddingTop="15dp">
+
+            <Button
+                android:id="@+id/button9dd5"
+                android:layout_width="90dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/chipbutton"
+                android:text="5"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/add6"
+                android:layout_width="90dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/chipbutton"
+                android:text="6"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/add7"
+                android:layout_width="90dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/chipbutton"
+                android:text="7"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/add8"
+                android:layout_width="90dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/chipbutton"
+                android:text="8"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="211dp"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
 
-        <CheckBox
-            android:id="@+id/checkBox10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            <TextView
+                android:id="@+id/text0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Allergies"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
-        <CheckBox
-            android:id="@+id/checkBox11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="CheckBox" />
 
-        <View
-            android:id="@+id/divider2"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="?android:attr/listDivider" />
+            android:layout_height="170dp"
+            android:orientation="horizontal"
+            android:paddingTop="15dp">
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Timing" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="139dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/veganBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vegetarian"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/sugBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sugar Free"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/glutenBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gluten Free"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/dfBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Diary-free"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="411dp"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/timingText"
+                android:layout_width="87dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:text="Timing"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="384dp"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            android:paddingTop="15dp">
+
+
+            <Button
+                android:id="@+id/quinze"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/chipbutton"
+                android:text="@string/quinzeButton"
+                android:textColor="#ffffff"
+                />
+
+            <Button
+                android:id="@+id/trintaTiming"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/chipbutton"
+                android:text="@string/trintaTiming"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/hora"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/chipbutton"
+                android:text="@string/hourTiming"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="411dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/priceThing"
+                android:layout_width="78dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:text="Price"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="388dp"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:paddingTop="15dp">
+
+            <Button
+                android:id="@+id/dez"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/chipbutton"
+                android:text="@string/tenEuros"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/twentyEuros"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/chipbutton"
+                android:text="@string/twentyEuros"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/trintaEuros"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/chipbutton"
+                android:text="@string/trintaEuros"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
 
     </LinearLayout>
-</android.support.constraint.ConstraintLayout>
+
+</ScrollView>

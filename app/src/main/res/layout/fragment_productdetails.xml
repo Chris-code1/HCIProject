@@ -1,13 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/white">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Product Details"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"/>
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="50dp">
+
+        <LinearLayout
+            android:layout_width="394dp"
+            android:layout_height="257dp"
+            android:orientation="horizontal"
+            android:paddingTop="7dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="500dp"
+                android:layout_height="245dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/nesquikthis" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nesquikText"
+                android:layout_width="328dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:text="Nesquik Powder"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sizeText"
+                android:layout_width="100dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="15dp"
+                android:text="Size"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/textViewButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="17dp">
+
+
+            <Button
+                android:id="@+id/gramas1"
+                android:layout_width="82dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/chipbutton"
+                android:text="250g"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/gramas2"
+                android:layout_width="82dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/chipbutton"
+                android:text="500g"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/gramas3"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/chipbutton"
+                android:text="650g"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/textViewButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/addtolist"
+                android:layout_width="119dp"
+                android:layout_height="45dp"
+                android:background="#FA8925"
+                android:text="ADD TO LIST"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -4,12 +4,14 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -42,6 +44,16 @@ public class RecipeDetailsFragment extends Fragment {
         final TextView displaySec = (TextView) view.findViewById(R.id.secondPrice);
         final TextView displayThird = (TextView) view.findViewById(R.id.thirdPrice);
         final TextView displaySix = (TextView) view.findViewById(R.id.sixPrice);
+
+        //button
+        Button btn_addtolist = view.findViewById(R.id.addlist);
+
+        btn_addtolist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                swap_fragment_pay();
+            }
+        });
 
         //first ingredient
         final Button plusButton = view.findViewById(R.id.plus1);
@@ -245,6 +257,15 @@ public class RecipeDetailsFragment extends Fragment {
 
         return view;
     }
+    //function to change fragment to payscreen
+    private void swap_fragment_pay() {
+        List2Fragment list2Fragment = new List2Fragment();
+        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.fragment_container, list2Fragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+    }
+
 
 
     @Override

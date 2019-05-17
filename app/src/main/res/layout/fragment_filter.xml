@@ -282,7 +282,7 @@
             android:paddingTop="15dp">
 
             <Button
-                android:id="@+id/dez"
+                android:id="@+id/gramas1"
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
                 android:layout_marginRight="10dp"
@@ -292,7 +292,7 @@
                 android:textColor="#ffffff" />
 
             <Button
-                android:id="@+id/twentyEuros"
+                android:id="@+id/gramas2"
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
                 android:layout_marginRight="10dp"
@@ -302,7 +302,7 @@
                 android:textColor="#ffffff" />
 
             <Button
-                android:id="@+id/trintaEuros"
+                android:id="@+id/gramas3"
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
                 android:layout_marginRight="10dp"

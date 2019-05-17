@@ -52,7 +52,7 @@
         android:id="@+id/linearlayout">
 
         <ImageView
-            android:id="@+id/imagefinger"
+            android:id="@+id/imageAlert"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginLeft="15dp"

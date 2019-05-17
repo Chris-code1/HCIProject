@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">BottomNavigationTutorial</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="quinzeButton"><![CDATA[<15 min]]></string>
+    <string name="trintaTiming">30 min</string>
+
+    <string name="trintaEuros"><![CDATA[<30€]]></string>
+    <string name="tenEuros"><![CDATA[<10€]]></string>
+    <string name="twentyEuros"><![CDATA[<20€]]></string>
+    <string name="hourTiming"><![CDATA[<1 Hour]]></string>
+
 </resources>

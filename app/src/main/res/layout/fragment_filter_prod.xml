@@ -48,7 +48,7 @@
             android:id="@+id/imageAlert"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginLeft="120dp"
+            android:layout_marginLeft="140dp"
             android:layout_marginTop="34.5dp"
             app:srcCompat="@drawable/alert" />
 

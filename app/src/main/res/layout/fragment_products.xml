@@ -20,7 +20,7 @@
         android:paddingTop="5dp">
 
         <TextView
-            android:id="@+id/text0"
+            android:id="@+id/textpopular"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Popular Products"
@@ -88,27 +88,28 @@
         android:paddingTop="15dp">
 
         <ImageView
-            android:id="@+id/imageView1"
+            android:id="@+id/imaga2"
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:contentDescription="TODO"
             app:srcCompat="@drawable/mask_group" />
 
         <LinearLayout
+            android:id="@+id/price2"
             android:layout_width="143dp"
             android:layout_height="63dp"
             android:orientation="vertical"
             android:paddingTop="5dp">
 
             <TextView
-                android:id="@+id/priceThing"
+                android:id="@+id/test22"
                 android:layout_width="130dp"
                 android:layout_height="51dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
+                android:paddingLeft="25dp"
                 android:text="Nesquik Powder"
-                android:textSize="20dp"
-                android:paddingLeft="25dp"/>
+                android:textSize="20dp" />
 
             <!--<TextView-->
             <!--android:layout_width="match_parent"-->
@@ -120,7 +121,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/text2"
+            android:id="@+id/text222"
             android:layout_width="141dp"
             android:layout_height="64dp"
             android:layout_alignParentTop="true"
@@ -137,7 +138,7 @@
         android:paddingTop="15dp">
 
         <ImageView
-            android:id="@+id/imageView1"
+            android:id="@+id/emptyList"
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:contentDescription="TODO"
@@ -150,7 +151,7 @@
             android:paddingTop="5dp">
 
             <TextView
-                android:id="@+id/priceThing"
+                android:id="@+id/test222"
                 android:layout_width="130dp"
                 android:layout_height="51dp"
                 android:layout_alignParentTop="true"
@@ -169,7 +170,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/text2"
+            android:id="@+id/text2222"
             android:layout_width="141dp"
             android:layout_height="64dp"
             android:layout_alignParentTop="true"
@@ -205,7 +206,7 @@
         android:paddingTop="15dp">
 
         <ImageView
-            android:id="@+id/imageView1"
+            android:id="@+id/imageView1222"
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:contentDescription="TODO"
@@ -218,7 +219,7 @@
             android:paddingTop="5dp">
 
             <TextView
-                android:id="@+id/priceThing"
+                android:id="@+id/test221"
                 android:layout_width="130dp"
                 android:layout_height="51dp"
                 android:layout_alignParentTop="true"
@@ -237,7 +238,56 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/text2"
+            android:id="@+id/text12"
+            android:layout_width="141dp"
+            android:layout_height="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="$1.50"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:orientation="horizontal"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/mask_group" />
+
+        <LinearLayout
+            android:layout_width="143dp"
+            android:layout_height="63dp"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/test112"
+                android:layout_width="130dp"
+                android:layout_height="51dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:text="Nesquik Powder"
+                android:textSize="20dp"
+                android:paddingLeft="25dp"/>
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="19dp"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="TextView" />-->
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text112"
             android:layout_width="141dp"
             android:layout_height="64dp"
             android:layout_alignParentTop="true"
@@ -267,56 +317,7 @@
             android:paddingTop="5dp">
 
             <TextView
-                android:id="@+id/priceThing"
-                android:layout_width="130dp"
-                android:layout_height="51dp"
-                android:layout_alignParentTop="true"
-                android:layout_centerInParent="true"
-                android:text="Nesquik Powder"
-                android:textSize="20dp"
-                android:paddingLeft="25dp"/>
-
-            <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="19dp"-->
-            <!--android:layout_alignParentTop="true"-->
-            <!--android:layout_centerInParent="true"-->
-            <!--android:text="TextView" />-->
-
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/text2"
-            android:layout_width="141dp"
-            android:layout_height="64dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerInParent="true"
-            android:padding="10dp"
-            android:text="$1.50"
-            android:textSize="25dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="87dp"
-        android:orientation="horizontal"
-        android:paddingTop="15dp">
-
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="120dp"
-            android:layout_height="60dp"
-            android:contentDescription="TODO"
-            app:srcCompat="@drawable/mask_group" />
-
-        <LinearLayout
-            android:layout_width="143dp"
-            android:layout_height="63dp"
-            android:orientation="vertical"
-            android:paddingTop="5dp">
-
-            <TextView
-                android:id="@+id/priceThing"
+                android:id="@+id/test2"
                 android:layout_width="130dp"
                 android:layout_height="51dp"
                 android:layout_alignParentTop="true"

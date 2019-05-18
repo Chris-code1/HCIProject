@@ -25,11 +25,13 @@
 
             <TextView
                 android:id="@+id/text0"
+                android:fontFamily="sans-serif"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:text="3 Items in your cart!"
-                android:textColor="@color/cardview_dark_background"
                 android:textSize="16dp"
                 android:textStyle="bold" />
 
@@ -53,6 +55,7 @@
                 android:layout_width="143dp"
                 android:layout_height="63dp"
                 android:orientation="vertical"
+                android:gravity="center"
                 android:paddingTop="5dp">
 
                 <TextView
@@ -61,6 +64,10 @@
                     android:layout_height="25dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
                     android:paddingLeft="25dp"
                     android:text="Chicken breast"
                     android:textSize="20dp" />
@@ -70,6 +77,10 @@
                     android:layout_height="19dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
                     android:paddingLeft="25dp"
                     android:text="400g"
                     android:textSize="14dp" />
@@ -82,8 +93,13 @@
                 android:layout_height="64dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
+                android:gravity="center"
                 android:padding="10dp"
-                android:text="$7.80"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
+                android:text="7.80€"
                 android:textSize="25dp" />
         </LinearLayout>
 
@@ -104,6 +120,7 @@
                 android:layout_width="143dp"
                 android:layout_height="63dp"
                 android:orientation="vertical"
+                android:gravity="center"
                 android:paddingTop="5dp">
 
                 <TextView
@@ -113,6 +130,10 @@
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
                     android:paddingLeft="25dp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
                     android:text="Long Grain rice"
                     android:textSize="15dp" />
 
@@ -122,6 +143,10 @@
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
                     android:paddingLeft="25dp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
                     android:text="12 Units"
                     android:textSize="14dp" />
 
@@ -133,8 +158,13 @@
                 android:layout_height="64dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
+                android:gravity="center"
                 android:padding="10dp"
-                android:text="$5.90"
+                android:text="5.90€"
                 android:textSize="25dp" />
         </LinearLayout>
 
@@ -156,7 +186,8 @@
                 android:layout_width="143dp"
                 android:layout_height="63dp"
                 android:orientation="vertical"
-                android:paddingTop="5dp">
+                android:paddingTop="5dp"
+                android:gravity="center">
 
                 <TextView
                     android:id="@+id/text19"
@@ -165,6 +196,10 @@
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
                     android:paddingLeft="25dp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
                     android:text="Ecco egs"
                     android:textSize="20dp" />
 
@@ -174,6 +209,10 @@
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
                     android:paddingLeft="25dp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
                     android:text="12 Units"
                     android:textSize="14dp" />
 
@@ -186,7 +225,12 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:padding="10dp"
-                android:text="$1.00"
+                android:text="1.00€"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
+                android:gravity="center"
                 android:textSize="25dp" />
         </LinearLayout>
 
@@ -217,7 +261,11 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:paddingLeft="20dp"
-                android:text="TOTAL:                                       $14.70"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
+                android:text="TOTAL:                                       14.70€"
                 android:textSize="22dp" />
 
         </LinearLayout>
@@ -229,6 +277,10 @@
             android:paddingTop="15dp">
 
             <Button
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:id="@+id/btn_pay"
                 android:layout_width="391dp"
                 android:layout_height="48dp"
@@ -248,6 +300,10 @@
             android:paddingTop="15dp">
 
             <Button
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:id="@+id/btn_best_route"
                 android:layout_width="391dp"
                 android:layout_height="48dp"

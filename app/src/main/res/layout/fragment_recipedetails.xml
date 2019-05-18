@@ -105,6 +105,9 @@
                 android:layout_height="33dp"
                 android:layout_marginTop="15dp"
                 android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:lineSpacingExtra="8sp"
                 android:text="Ingredients per portion"
                 android:textColor="#000000"
                 android:textSize="20sp" />
@@ -162,7 +165,10 @@
                 android:layout_height="30dp"
                 android:layout_marginLeft="15dp"
                 android:text="Oil (1 tbsp)"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
                 android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:textSize="20sp" />
 
             <TextView
@@ -229,7 +235,10 @@
                 android:layout_height="30dp"
                 android:layout_marginLeft="15dp"
                 android:text="Garlic (2 cloves)"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
                 android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:textSize="20sp" />
 
             <TextView
@@ -297,7 +306,10 @@
                 android:layout_height="30dp"
                 android:layout_marginLeft="15dp"
                 android:text="Chicken (100g)"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
                 android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:textSize="20sp" />
 
             <TextView
@@ -374,7 +386,10 @@
                 android:layout_height="30dp"
                 android:layout_marginLeft="59dp"
                 android:text="1,50 €"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
                 android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:textSize="20sp" />
 
         </LinearLayout>
@@ -510,7 +525,10 @@
                 android:layout_height="30dp"
                 android:layout_marginLeft="59dp"
                 android:text="2,30 €"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
                 android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:textSize="20sp" />
 
         </LinearLayout>

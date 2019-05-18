@@ -51,12 +51,13 @@
             android:layout_width="143dp"
             android:layout_height="63dp"
             android:orientation="vertical"
+            android:gravity="center"
             android:paddingTop="5dp">
 
             <TextView
                 android:id="@+id/txtThaiChicken"
                 android:layout_width="match_parent"
-                android:layout_height="42dp"
+                android:layout_height="33dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:paddingLeft="25dp"
@@ -64,10 +65,11 @@
                 android:textSize="15dp" />
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="15dp"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
+                android:layout_marginLeft="12dp"
                 app:srcCompat="@drawable/four_fivestars" />
             />
 
@@ -78,6 +80,7 @@
             android:layout_width="141dp"
             android:layout_height="64dp"
             android:layout_alignParentTop="true"
+            android:gravity="center"
             android:layout_centerInParent="true"
             android:padding="10dp"
             android:text="$17.50"
@@ -103,12 +106,13 @@
             android:layout_width="143dp"
             android:layout_height="63dp"
             android:orientation="vertical"
+            android:gravity="center"
             android:paddingTop="5dp">
 
             <TextView
                 android:id="@+id/priceThing"
                 android:layout_width="match_parent"
-                android:layout_height="42dp"
+                android:layout_height="33dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:paddingLeft="25dp"
@@ -116,10 +120,11 @@
                 android:textSize="15dp" />
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="15dp"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
+                android:layout_marginLeft="12dp"
                 app:srcCompat="@drawable/four_threestars" />
             />
 
@@ -131,6 +136,7 @@
             android:layout_height="64dp"
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
+            android:gravity="center"
             android:padding="10dp"
             android:text="$22.50"
             android:textSize="25dp" />
@@ -154,12 +160,13 @@
             android:layout_width="143dp"
             android:layout_height="63dp"
             android:orientation="vertical"
+            android:gravity="center"
             android:paddingTop="5dp">
 
             <TextView
                 android:id="@+id/priceThing"
                 android:layout_width="match_parent"
-                android:layout_height="42dp"
+                android:layout_height="40dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:paddingLeft="25dp"
@@ -167,10 +174,11 @@
                 android:textSize="15dp" />
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="15dp"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
+                android:layout_marginLeft="12dp"
                 app:srcCompat="@drawable/four_eightstars" />
             />
 
@@ -183,7 +191,9 @@
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
             android:padding="10dp"
+
             android:text="$19.80"
+            android:gravity="center"
             android:textSize="25dp" />
     </LinearLayout>
 
@@ -224,12 +234,13 @@
             android:layout_width="143dp"
             android:layout_height="63dp"
             android:orientation="vertical"
+            android:gravity="center"
             android:paddingTop="5dp">
 
             <TextView
                 android:id="@+id/priceThing"
                 android:layout_width="match_parent"
-                android:layout_height="42dp"
+                android:layout_height="33dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:paddingLeft="25dp"
@@ -237,10 +248,11 @@
                 android:textSize="15dp" />
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="15dp"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
+                android:layout_marginLeft="12dp"
                 app:srcCompat="@drawable/four_threestars" />
             />
         </LinearLayout>
@@ -251,6 +263,7 @@
             android:layout_height="64dp"
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
+            android:gravity="center"
             android:padding="10dp"
             android:text="$19.60"
             android:textSize="25dp" />
@@ -275,12 +288,13 @@
             android:layout_width="143dp"
             android:layout_height="63dp"
             android:orientation="vertical"
+            android:gravity="center"
             android:paddingTop="5dp">
 
             <TextView
                 android:id="@+id/priceThing"
                 android:layout_width="match_parent"
-                android:layout_height="42dp"
+                android:layout_height="33dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:paddingLeft="25dp"
@@ -288,10 +302,11 @@
                 android:textSize="15dp" />
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="15dp"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
+                android:layout_marginLeft="12dp"
                 app:srcCompat="@drawable/four_fivestars" />
             />
 
@@ -303,6 +318,7 @@
             android:layout_height="64dp"
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
+            android:gravity="center"
             android:padding="10dp"
             android:text="$16.00"
             android:textSize="25dp" />
@@ -326,6 +342,7 @@
             android:layout_width="143dp"
             android:layout_height="63dp"
             android:orientation="vertical"
+            android:gravity="center"
             android:paddingTop="5dp">
 
             <TextView
@@ -339,21 +356,24 @@
                 android:textSize="15dp" />
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="15dp"
+
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
+                android:layout_marginLeft="12dp"
                 app:srcCompat="@drawable/four_eightstars" />
             />
 
         </LinearLayout>
 
         <TextView
-            android:id="@+id/text2"
+            android:id="@+id/text33"
             android:layout_width="141dp"
             android:layout_height="64dp"
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
+            android:gravity="center"
             android:padding="10dp"
             android:text="$9.30"
             android:textSize="25dp" />

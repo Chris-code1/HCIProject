@@ -34,8 +34,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="People Served"
-                android:textColor="@color/cardview_dark_background"
-                android:textSize="18sp"
+               android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -149,7 +151,9 @@
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:text="Allergies"
-                android:textColor="@color/cardview_dark_background"
+                android:fontFamily="sans-serif"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -172,6 +176,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Vegetarian"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
                     android:textSize="18sp" />
 
                 <CheckBox
@@ -179,6 +187,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Sugar Free"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
                     android:textSize="18sp" />
 
                 <CheckBox
@@ -186,6 +198,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Gluten Free"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
                     android:textSize="18sp" />
 
                 <CheckBox
@@ -193,6 +209,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Diary-free"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -211,7 +231,9 @@
                 android:layout_height="50dp"
                 android:padding="5dp"
                 android:text="Timing"
-                android:textColor="@color/cardview_dark_background"
+                android:fontFamily="sans-serif"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -269,7 +291,9 @@
                 android:layout_marginTop="5dp"
                 android:padding="5dp"
                 android:text="Price"
-                android:textColor="@color/cardview_dark_background"
+                android:fontFamily="sans-serif"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 

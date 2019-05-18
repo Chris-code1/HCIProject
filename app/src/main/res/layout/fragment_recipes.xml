@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -44,7 +45,7 @@
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:contentDescription="TODO"
-            app:srcCompat="@drawable/johns_thai_green_curry" />
+            app:srcCompat="@drawable/recipe1" />
 
         <LinearLayout
             android:layout_width="143dp"
@@ -59,15 +60,15 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:paddingLeft="25dp"
-                android:text="Johns Thai Chicken Curry"
+                android:text="Quck Fish Curry"
                 android:textSize="15dp" />
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="19dp"
+                android:layout_height="15dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
-                app:srcCompat="@drawable/recipestars" />
+                app:srcCompat="@drawable/four_fivestars" />
             />
 
         </LinearLayout>
@@ -79,7 +80,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
             android:padding="10dp"
-            android:text="$10.50"
+            android:text="$17.50"
             android:textSize="25dp" />
     </LinearLayout>
 
@@ -96,7 +97,7 @@
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:contentDescription="TODO"
-            app:srcCompat="@drawable/johns_thai_green_curry" />
+            app:srcCompat="@drawable/recipe2" />
 
         <LinearLayout
             android:layout_width="143dp"
@@ -111,15 +112,15 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:paddingLeft="25dp"
-                android:text="Johns Thai Chicken Curry"
+                android:text="Creamy Chicken"
                 android:textSize="15dp" />
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="19dp"
+                android:layout_height="15dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
-                app:srcCompat="@drawable/recipestars" />
+                app:srcCompat="@drawable/four_threestars" />
             />
 
         </LinearLayout>
@@ -131,7 +132,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
             android:padding="10dp"
-            android:text="$10.50"
+            android:text="$22.50"
             android:textSize="25dp" />
     </LinearLayout>
 
@@ -147,7 +148,7 @@
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:contentDescription="TODO"
-            app:srcCompat="@drawable/johns_thai_green_curry" />
+            app:srcCompat="@drawable/recipe3" />
 
         <LinearLayout
             android:layout_width="143dp"
@@ -162,15 +163,15 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:paddingLeft="25dp"
-                android:text="Johns Thai Chicken Curry"
+                android:text="Spaghetti Bolognese"
                 android:textSize="15dp" />
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="19dp"
+                android:layout_height="15dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
-                app:srcCompat="@drawable/recipestars" />
+                app:srcCompat="@drawable/four_eightstars" />
             />
 
         </LinearLayout>
@@ -182,7 +183,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
             android:padding="10dp"
-            android:text="$10.50"
+            android:text="$19.80"
             android:textSize="25dp" />
     </LinearLayout>
 
@@ -217,7 +218,7 @@
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:contentDescription="TODO"
-            app:srcCompat="@drawable/johns_thai_green_curry" />
+            app:srcCompat="@drawable/recipe4" />
 
         <LinearLayout
             android:layout_width="143dp"
@@ -232,15 +233,15 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:paddingLeft="25dp"
-                android:text="Johns Thai Chicken Curry"
+                android:text="Chicken Paella"
                 android:textSize="15dp" />
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="19dp"
+                android:layout_height="15dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
-                app:srcCompat="@drawable/recipestars" />
+                app:srcCompat="@drawable/four_threestars" />
             />
         </LinearLayout>
 
@@ -251,7 +252,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
             android:padding="10dp"
-            android:text="$10.50"
+            android:text="$19.60"
             android:textSize="25dp" />
     </LinearLayout>
 
@@ -268,7 +269,7 @@
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:contentDescription="TODO"
-            app:srcCompat="@drawable/johns_thai_green_curry" />
+            app:srcCompat="@drawable/recipe5" />
 
         <LinearLayout
             android:layout_width="143dp"
@@ -283,15 +284,15 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:paddingLeft="25dp"
-                android:text="Johns Thai Chicken Curry"
+                android:text="Baked Meatballs"
                 android:textSize="15dp" />
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="19dp"
+                android:layout_height="15dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
-                app:srcCompat="@drawable/recipestars" />
+                app:srcCompat="@drawable/four_fivestars" />
             />
 
         </LinearLayout>
@@ -303,7 +304,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
             android:padding="10dp"
-            android:text="$10.50"
+            android:text="$16.00"
             android:textSize="25dp" />
     </LinearLayout>
 
@@ -319,7 +320,7 @@
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:contentDescription="TODO"
-            app:srcCompat="@drawable/johns_thai_green_curry" />
+            app:srcCompat="@drawable/recipe6" />
 
         <LinearLayout
             android:layout_width="143dp"
@@ -334,15 +335,15 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:paddingLeft="25dp"
-                android:text="Johns Thai Chicken Curry"
+                android:text="Blueberry Pancakes"
                 android:textSize="15dp" />
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="19dp"
+                android:layout_height="15dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
-                app:srcCompat="@drawable/recipestars" />
+                app:srcCompat="@drawable/four_eightstars" />
             />
 
         </LinearLayout>
@@ -354,7 +355,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
             android:padding="10dp"
-            android:text="$10.50"
+            android:text="$9.30"
             android:textSize="25dp" />
     </LinearLayout>
 

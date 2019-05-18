@@ -4,12 +4,14 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -47,6 +49,16 @@ public class RecipeDetailsFragment extends Fragment {
         final TextView displaySix = (TextView) view.findViewById(R.id.sixPrice);
         final TextView displayTotal = (TextView) view.findViewById(R.id.totalprecio);
 
+        //button
+        Button btn_addtolist = view.findViewById(R.id.addlist);
+
+        btn_addtolist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                swap_fragment_pay();
+            }
+        });
+
         //first ingredient
         final Button plusButton = view.findViewById(R.id.plus1);
         plusButton.setOnClickListener(new View.OnClickListener() {
@@ -67,6 +79,8 @@ public class RecipeDetailsFragment extends Fragment {
                 }
             }
         });
+
+
 
         final Button plusMenos = view.findViewById(R.id.less1);
         plusMenos.setOnClickListener(new View.OnClickListener() {
@@ -317,6 +331,15 @@ public class RecipeDetailsFragment extends Fragment {
 
         return view;
     }
+    //function to change fragment to payscreen
+    private void swap_fragment_pay() {
+        List2Fragment list2Fragment = new List2Fragment();
+        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.fragment_container, list2Fragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+    }
+
 
 
     @Override
@@ -328,7 +351,7 @@ public class RecipeDetailsFragment extends Fragment {
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.topbar_bestroute, menu);
+        inflater.inflate(R.menu.topbar_recipedetails, menu);
         return;
     }
 }

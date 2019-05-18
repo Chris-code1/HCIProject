@@ -28,9 +28,13 @@ public class ProductsFragment extends Fragment {
 
         //find objects in xml file
         ImageView imgnesquik = view.findViewById(R.id.imgNesquik);
+
         ImageView eggs = view.findViewById(R.id.imaga2);
         ImageView emptyList = view.findViewById(R.id.emptyList);//Extra to test
         TextView txtnesquik = view.findViewById(R.id.txtNesquik);
+
+        TextView txtnesquik = view.findViewById(R.id.text13);
+
         TextView pricenesquik = view.findViewById(R.id.priceNesquik);
 
         //set listeners on objects and initiate function when called

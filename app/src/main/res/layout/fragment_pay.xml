@@ -48,7 +48,8 @@
         android:layout_marginTop="280dp"
         android:layout_marginLeft="70dp"
         android:background="@drawable/borders_pay"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:id="@+id/linearlayout">
 
         <ImageView
             android:id="@+id/imageAlert"

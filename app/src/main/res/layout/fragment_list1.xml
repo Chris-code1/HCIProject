@@ -70,7 +70,7 @@
                     android:lineSpacingExtra="8sp"
                     android:paddingLeft="25dp"
                     android:text="Chicken breast"
-                    android:textSize="20dp" />
+                    android:textSize="15dp" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -100,7 +100,7 @@
                 android:textColor="#000000"
                 android:lineSpacingExtra="8sp"
                 android:text="7.80€"
-                android:textSize="25dp" />
+                android:textSize="20dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -165,7 +165,7 @@
                 android:gravity="center"
                 android:padding="10dp"
                 android:text="5.90€"
-                android:textSize="25dp" />
+                android:textSize="20dp" />
         </LinearLayout>
 
 
@@ -201,7 +201,7 @@
                     android:textColor="#000000"
                     android:lineSpacingExtra="8sp"
                     android:text="Ecco egs"
-                    android:textSize="20dp" />
+                    android:textSize="15dp" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -231,7 +231,7 @@
                 android:textColor="#000000"
                 android:lineSpacingExtra="8sp"
                 android:gravity="center"
-                android:textSize="25dp" />
+                android:textSize="20dp" />
         </LinearLayout>
 
 

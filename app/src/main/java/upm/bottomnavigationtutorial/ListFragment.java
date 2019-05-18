@@ -53,9 +53,9 @@ public class ListFragment extends Fragment {
 
     //function to change fragment to bestroute screen
     private void swap_fragment_bestroute() {
-        BestRouteFragment BestRouteFragment = new BestRouteFragment();
+        PayFragment payFragment = new PayFragment();
         FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container, BestRouteFragment);
+        fragmentTransaction.replace(R.id.fragment_container, payFragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
@@ -63,9 +63,9 @@ public class ListFragment extends Fragment {
 
     //function to change fragment to payscreen
     private void swap_fragment_pay() {
-        PayFragment payFragment = new PayFragment();
+        ProductsFragment productsFragment = new ProductsFragment();
         FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container, payFragment);
+        fragmentTransaction.replace(R.id.fragment_container, productsFragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }

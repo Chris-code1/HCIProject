@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="50dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:orientation="horizontal"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:id="@+id/imgNesquik"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/eggs1" />
+
+            <LinearLayout
+                android:layout_width="143dp"
+                android:layout_height="63dp"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+                <TextView
+
+                    android:layout_width="121dp"
+                    android:layout_height="52dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:paddingLeft="25dp"
+                    android:text="Happy Egg"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/priceNesquik"
+                android:layout_width="141dp"
+                android:layout_height="64dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
+                android:text="0.50€ - 1.50€"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:orientation="horizontal"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:id="@+id/imgNesquik"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/eggs2" />
+
+            <LinearLayout
+                android:layout_width="143dp"
+                android:layout_height="63dp"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
+                    android:layout_width="121dp"
+                    android:layout_height="52dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:paddingLeft="25dp"
+                    android:text="Ecoeggs"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/priceNesquik"
+                android:layout_width="141dp"
+                android:layout_height="64dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="0.80€ - 2.30€"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:orientation="horizontal"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:id="@+id/imgNesquik"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/eggs3" />
+
+            <LinearLayout
+                android:layout_width="143dp"
+                android:layout_height="63dp"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/text13"
+                    android:layout_width="121dp"
+                    android:layout_height="52dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+
+                    android:paddingLeft="25dp"
+                    android:text="All grain eggs"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
+                android:layout_width="141dp"
+                android:layout_height="64dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="1.10€ - 3.50€"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:orientation="horizontal"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:id="@+id/imgNesquik"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/eggs4" />
+
+            <LinearLayout
+                android:layout_width="143dp"
+                android:layout_height="63dp"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/text13"
+                    android:layout_width="121dp"
+                    android:layout_height="52dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:paddingLeft="25dp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+
+                    android:text="Chocolate eggs"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="141dp"
+                android:layout_height="64dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="2.99€ - 4.50€"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:orientation="horizontal"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:id="@+id/imgNesquik"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/eggs5" />
+
+            <LinearLayout
+                android:layout_width="143dp"
+                android:layout_height="63dp"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="121dp"
+                    android:layout_height="52dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:paddingLeft="25dp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
+                    android:text="O'eggs"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="141dp"
+                android:layout_height="64dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
+                android:text="0.99€ - 1.80€"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

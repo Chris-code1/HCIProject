@@ -34,8 +34,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="People Served"
-                android:textColor="@color/cardview_dark_background"
                 android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -52,8 +54,8 @@
                 android:layout_height="45dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
-                android:background="@drawable/chipbutton"
                 android:text="1"
+                android:background="@drawable/second"
                 android:textColor="#ffffff"
                 android:textSize="18sp"
                />
@@ -64,7 +66,8 @@
                 android:layout_height="45dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
-                android:background="@drawable/chipbutton"
+                android:background="@drawable/second"
+
                 android:text="2"
                 android:textColor="#ffffff" />
 
@@ -149,7 +152,9 @@
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:text="Allergies"
-                android:textColor="@color/cardview_dark_background"
+                android:fontFamily="sans-serif"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -172,6 +177,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Vegetarian"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
                     android:textSize="18sp" />
 
                 <CheckBox
@@ -179,6 +188,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Sugar Free"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
                     android:textSize="18sp" />
 
                 <CheckBox
@@ -186,6 +199,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Gluten Free"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
                     android:textSize="18sp" />
 
                 <CheckBox
@@ -193,6 +210,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Diary-free"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -211,7 +232,9 @@
                 android:layout_height="50dp"
                 android:padding="5dp"
                 android:text="Timing"
-                android:textColor="@color/cardview_dark_background"
+                android:fontFamily="sans-serif"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -263,13 +286,15 @@
             android:paddingTop="5dp">
 
             <TextView
-                android:id="@+id/priceThing"
+                android:id="@+id/test2"
                 android:layout_width="78dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="5dp"
                 android:padding="5dp"
                 android:text="Price"
-                android:textColor="@color/cardview_dark_background"
+                android:fontFamily="sans-serif"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -282,7 +307,7 @@
             android:paddingTop="15dp">
 
             <Button
-                android:id="@+id/dez"
+                android:id="@+id/gramas1"
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
                 android:layout_marginRight="10dp"
@@ -292,7 +317,7 @@
                 android:textColor="#ffffff" />
 
             <Button
-                android:id="@+id/twentyEuros"
+                android:id="@+id/gramas2"
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
                 android:layout_marginRight="10dp"
@@ -302,7 +327,7 @@
                 android:textColor="#ffffff" />
 
             <Button
-                android:id="@+id/trintaEuros"
+                android:id="@+id/gramas3"
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
                 android:layout_marginRight="10dp"

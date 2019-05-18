@@ -54,18 +54,20 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.filterprod:
                 Toast.makeText(this, "Filter selected", Toast.LENGTH_SHORT).show();
-                selectedFragment = new FilterProdFragment();
+                selectedFragment = new FilterFragment();
                 break;
             case R.id.search:
                 Toast.makeText(this, "Search selected", Toast.LENGTH_SHORT).show();
                 return true;
+            case R.id.favorite:
+                Toast.makeText(this, "This function is currently not available", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.share:
+                Toast.makeText(this, "This function is currently not available", Toast.LENGTH_SHORT).show();
+                return true;
             case R.id.sort:
                 Toast.makeText(this, "Sort selected", Toast.LENGTH_SHORT).show();
                 return true;
-            case R.id.back:
-                Toast.makeText(this, "Back selected", Toast.LENGTH_SHORT).show();
-                selectedFragment = new ProductsFragment();
-                break;
             case R.id.check:
                 Toast.makeText(this, "Check selected", Toast.LENGTH_SHORT).show();
                 selectedFragment = new ProductsFragment();

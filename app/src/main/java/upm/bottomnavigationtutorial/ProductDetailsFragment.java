@@ -9,15 +9,53 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class ProductDetailsFragment extends Fragment {
+
+
+    double integerNesquik = 2.5;
+
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         getActivity().setTitle("Nesquik");
+
+        View view = inflater.inflate(R.layout.fragment_productdetails, container, false);
         ((MainActivity) getActivity()).removeArrow();
         ((MainActivity) getActivity()).addArrow();
-        return inflater.inflate(R.layout.fragment_productdetails, container, false);
+
+
+        final TextView displayInteger = (TextView) view.findViewById(R.id.priceNesquik);
+
+        final Button gramas1 = view.findViewById(R.id.gramas1);
+        final Button gramas2 = view.findViewById(R.id.gramas2);
+        final Button gramas3 = view.findViewById(R.id.gramas3);
+
+        gramas2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                displayInteger.setText("3,5 € ");
+            }
+        });
+
+        gramas1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                displayInteger.setText("2,9 € ");
+            }
+        });
+
+        gramas3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                displayInteger.setText("3,99 € ");
+            }
+        });
+
+    return view;
     }
 
     @Override

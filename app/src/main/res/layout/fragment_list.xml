@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -27,8 +28,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="4 Items in your cart!"
-                android:textColor="@color/cardview_dark_background"
-                android:textSize="16dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:padding="5dp"
                 android:textStyle="bold"/>
 
@@ -46,22 +48,28 @@
                 android:layout_width="120dp"
                 android:layout_height="60dp"
                 android:contentDescription="TODO"
-                app:srcCompat="@drawable/mask_group" />
+                app:srcCompat="@drawable/chicken_boneless_500x500" />
 
             <LinearLayout
                 android:layout_width="143dp"
                 android:layout_height="63dp"
+                android:gravity="center"
                 android:orientation="vertical"
                 android:paddingTop="5dp">
 
+
                 <TextView
                     android:id="@+id/text13"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
                     android:layout_width="match_parent"
                     android:layout_height="25dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
                     android:paddingLeft="25dp"
-                    android:text="Ecco egs"
+                    android:text="Chicken breast"
                     android:textSize="20dp" />
 
                 <TextView
@@ -70,7 +78,11 @@
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
                     android:paddingLeft="25dp"
-                    android:text="12 Units"
+                    android:text="400g"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
                     android:textSize="14dp" />
 
             </LinearLayout>
@@ -82,7 +94,12 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:padding="10dp"
-                android:text="$1.50"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
+                android:gravity="center"
+                android:text="7.80€"
                 android:textSize="25dp" />
         </LinearLayout>
 
@@ -97,12 +114,13 @@
                 android:layout_width="120dp"
                 android:layout_height="60dp"
                 android:contentDescription="TODO"
-                app:srcCompat="@drawable/mask_group" />
+                app:srcCompat="@drawable/rice" />
 
             <LinearLayout
                 android:layout_width="143dp"
                 android:layout_height="63dp"
                 android:orientation="vertical"
+                android:gravity="center"
                 android:paddingTop="5dp">
 
                 <TextView
@@ -110,19 +128,26 @@
                     android:layout_width="match_parent"
                     android:layout_height="25dp"
                     android:layout_alignParentTop="true"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
                     android:layout_centerInParent="true"
                     android:paddingLeft="25dp"
-                    android:text="Ecco egs"
-                    android:textSize="20dp" />
+                    android:text="Long Grain rice"
+                    android:textSize="15dp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="19dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
                     android:paddingLeft="25dp"
-                    android:text="12 Units"
-                    android:textSize="14dp" />
+                    android:text="600g" />
 
             </LinearLayout>
 
@@ -133,7 +158,12 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:padding="10dp"
-                android:text="$1.50"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
+                android:gravity="center"
+                android:text="5.90€"
                 android:textSize="25dp" />
         </LinearLayout>
 
@@ -155,11 +185,16 @@
                 android:layout_width="143dp"
                 android:layout_height="63dp"
                 android:orientation="vertical"
+                android:gravity="center"
                 android:paddingTop="5dp">
 
                 <TextView
                     android:id="@+id/text19"
                     android:layout_width="match_parent"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
                     android:layout_height="25dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
@@ -172,6 +207,10 @@
                     android:layout_height="19dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
                     android:paddingLeft="25dp"
                     android:text="12 Units"
                     android:textSize="14dp" />
@@ -185,8 +224,14 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:padding="10dp"
-                android:text="$1.50"
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
+                android:text="1.00€"
                 android:textSize="25dp" />
+
         </LinearLayout>
 
 
@@ -201,31 +246,40 @@
                 android:layout_width="120dp"
                 android:layout_height="60dp"
                 android:contentDescription="TODO"
-                app:srcCompat="@drawable/mask_group" />
+                app:srcCompat="@drawable/nasquickpowder" />
 
             <LinearLayout
                 android:layout_width="143dp"
                 android:layout_height="63dp"
                 android:orientation="vertical"
+                android:gravity="center"
                 android:paddingTop="5dp">
 
                 <TextView
                     android:id="@+id/priceThing"
-                    android:layout_width="match_parent"
+                    android:layout_width="143dp"
                     android:layout_height="25dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
                     android:paddingLeft="25dp"
-                    android:text="Ecco egs"
-                    android:textSize="20dp" />
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
+                    android:text="Nesquik powder"
+                    android:textSize="15dp" />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="132dp"
                     android:layout_height="19dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
                     android:paddingLeft="25dp"
-                    android:text="12 Units"
+                    android:text="600g"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
                     android:textSize="14dp" />
 
             </LinearLayout>
@@ -237,31 +291,21 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:padding="10dp"
-                android:text="$1.50"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
+                android:gravity="center"
+                android:text="3.50€"
                 android:textSize="25dp" />
         </LinearLayout>
 
 
-
-
-
         <LinearLayout
             android:layout_width="411dp"
-            android:layout_height="67dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingTop="15dp">
-
-            <TextView
-
-                android:layout_width="381dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerInParent="true"
-
-                android:paddingLeft="25dp"
-                android:paddingTop="0dp"
-                android:text="+ ADD MORE PRODUCTS"
-                android:textSize="22dp" />
 
             <View
                 android:layout_width="392dp"
@@ -272,18 +316,20 @@
 
         <LinearLayout
             android:layout_width="411dp"
-            android:layout_height="67dp"
+            android:layout_height="44dp"
             android:orientation="horizontal"
             android:paddingTop="15dp">
 
             <TextView
-
-                android:layout_width="394dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:layout_width="392dp"
                 android:layout_height="48dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:paddingLeft="20dp"
-                android:text="TOTAL:                                       $21.50"
+                android:text="TOTAL:                                       18.20€"
                 android:textSize="22dp" />
 
         </LinearLayout>
@@ -302,7 +348,11 @@
                 android:layout_centerInParent="true"
                 android:background="@android:color/holo_orange_light"
                 android:paddingLeft="25dp"
-                android:text="Pay"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
+                android:text="Add more products"
                 android:textSize="22dp" />
 
         </LinearLayout>
@@ -321,7 +371,11 @@
                 android:layout_centerInParent="true"
                 android:background="@android:color/holo_orange_light"
                 android:paddingLeft="25dp"
-                android:text="Find The best route"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
+                android:text="PAY"
                 android:textSize="22dp" />
         </LinearLayout>
     </LinearLayout>

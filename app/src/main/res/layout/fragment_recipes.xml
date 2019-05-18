@@ -236,7 +236,8 @@
             android:layout_height="63dp"
             android:orientation="vertical"
             android:gravity="center"
-            android:paddingTop="5dp">
+            android:paddingTop="5dp"
+            android:id="@+id/layoutJohnsThaiChicken">
 
             <TextView
                 android:layout_width="match_parent"

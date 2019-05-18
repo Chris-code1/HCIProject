@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 selectedFragment = new FilterFragment();
                 break;
             case R.id.search:
-                Toast.makeText(this, "Search selected", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "This function is currently not available", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.favorite:
                 Toast.makeText(this, "This function is currently not available", Toast.LENGTH_SHORT).show();
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "This function is currently not available", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.sort:
-                Toast.makeText(this, "Sort selected", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "This function is currently not available", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.check:
                 Toast.makeText(this, "Check selected", Toast.LENGTH_SHORT).show();

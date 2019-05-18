@@ -11,9 +11,8 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 
-public class PayFragment extends Fragment {
+public class Pay2Fragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -24,14 +23,14 @@ public class PayFragment extends Fragment {
         ((MainActivity) getActivity()).removeArrow();
         ((MainActivity) getActivity()).addArrow();
 
-        View view = inflater.inflate(R.layout.fragment_pay, container, false);
+        View view = inflater.inflate(R.layout.fragment_pay2, container, false);
 
-        LinearLayout linearLayout = view.findViewById(R.id.linearlayout);
+        ImageView imgfinger = view.findViewById(R.id.imagefinger);
 
-        linearLayout.setOnClickListener(new View.OnClickListener() {
+        imgfinger.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                swap_fragment_pay2fragment();
+                swap_fragment_pay3fragment();
             }
         });
 
@@ -51,10 +50,10 @@ public class PayFragment extends Fragment {
         return;
     }
 
-    private void swap_fragment_pay2fragment() {
-        Pay2Fragment pay2Fragment = new Pay2Fragment();
+    private void swap_fragment_pay3fragment() {
+        Pay3Fragment pay3Fragment = new Pay3Fragment();
         FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container, pay2Fragment);
+        fragmentTransaction.replace(R.id.fragment_container, pay3Fragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
 

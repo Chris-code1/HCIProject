@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="People Served"
-               android:textSize="18sp"
+                android:textSize="18sp"
                 android:fontFamily="sans-serif"
                 android:textColor="#000000"
                 android:lineSpacingExtra="8sp"
@@ -54,8 +54,8 @@
                 android:layout_height="45dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
-                android:background="@drawable/chipbutton"
                 android:text="1"
+                android:background="@drawable/second"
                 android:textColor="#ffffff"
                 android:textSize="18sp"
                />
@@ -66,7 +66,8 @@
                 android:layout_height="45dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
-                android:background="@drawable/chipbutton"
+                android:background="@drawable/second"
+
                 android:text="2"
                 android:textColor="#ffffff" />
 
@@ -285,7 +286,7 @@
             android:paddingTop="5dp">
 
             <TextView
-                android:id="@+id/priceThing"
+                android:id="@+id/test2"
                 android:layout_width="78dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="5dp"
@@ -306,7 +307,7 @@
             android:paddingTop="15dp">
 
             <Button
-                android:id="@+id/dez"
+                android:id="@+id/gramas1"
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
                 android:layout_marginRight="10dp"
@@ -316,7 +317,7 @@
                 android:textColor="#ffffff" />
 
             <Button
-                android:id="@+id/twentyEuros"
+                android:id="@+id/gramas2"
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
                 android:layout_marginRight="10dp"
@@ -326,7 +327,7 @@
                 android:textColor="#ffffff" />
 
             <Button
-                android:id="@+id/trintaEuros"
+                android:id="@+id/gramas3"
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
                 android:layout_marginRight="10dp"

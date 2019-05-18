@@ -4,12 +4,14 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,14 +21,16 @@ public class RecipeDetailsFragment extends Fragment {
     int minteger2 = 1;
     int minteger3 = 4;
     int minteger4 = 1;
+    int minteger5 = 6;
     int minteger6 = 1;
 
     double firstPrice = 2.5;
     double secPrice = 1.55;
-    double thirdPrice = 1.95;
-    double sixPrice = 2.3;
+    double treePrice = 1.95;
+    double forPrice = 1.5;
+    double sixPrice = 2.2;
 
-
+    double finalTotal=18.55;
 
 
     @Nullable
@@ -41,7 +45,19 @@ public class RecipeDetailsFragment extends Fragment {
         final TextView displayFirst = (TextView) view.findViewById(R.id.priceIngredient);
         final TextView displaySec = (TextView) view.findViewById(R.id.secondPrice);
         final TextView displayThird = (TextView) view.findViewById(R.id.thirdPrice);
+        final TextView displayFor = (TextView) view.findViewById(R.id.forPrice);
         final TextView displaySix = (TextView) view.findViewById(R.id.sixPrice);
+        final TextView displayTotal = (TextView) view.findViewById(R.id.totalprecio);
+
+        //button
+        Button btn_addtolist = view.findViewById(R.id.addlist);
+
+        btn_addtolist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                swap_fragment_pay();
+            }
+        });
 
         //first ingredient
         final Button plusButton = view.findViewById(R.id.plus1);
@@ -58,19 +74,30 @@ public class RecipeDetailsFragment extends Fragment {
                     Double Total= firstPrice*minteger;
                     displayInteger.setText(Integer.toString(minteger));
                     displayFirst.setText(Total + "€");
+                    finalTotal=finalTotal+Total;
+                    displayTotal.setText(finalTotal+"€");
                 }
             }
         });
+
+
 
         final Button plusMenos = view.findViewById(R.id.less1);
         plusMenos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Double Total;
                 if (minteger > 0) {
                     minteger = minteger - 1;
-                    Double Total = firstPrice*minteger;
+                    Total= firstPrice*minteger;
                     displayInteger.setText(Integer.toString(minteger));
                     displayFirst.setText(Total+ "€");
+
+                    finalTotal=finalTotal-firstPrice;
+                    displayTotal.setText(finalTotal+"€");
+                }else if(minteger<0){
+                    Toast.makeText(getActivity(), "This funcionality is not working at the moment",
+                     Toast.LENGTH_LONG).show();
                 }
 
             }
@@ -96,6 +123,8 @@ public class RecipeDetailsFragment extends Fragment {
                     Double Total = secPrice*minteger2;
                     displayInteger2.setText(Integer.toString(minteger2));
                     displaySec.setText(Total+ "€");
+                    finalTotal=finalTotal+Total;
+                    displayTotal.setText(finalTotal+"€");
 
 
                 }
@@ -112,6 +141,14 @@ public class RecipeDetailsFragment extends Fragment {
                     Double Total = secPrice*minteger2;
                     displayInteger2.setText(Integer.toString(minteger2));
                     displaySec.setText(Total+ "€");
+
+                    finalTotal=finalTotal-secPrice;
+                    displayTotal.setText(finalTotal+"€");
+
+
+                }else if(minteger2<0){
+                    Toast.makeText(getActivity(), "This funcionality is not working at the moment",
+                            Toast.LENGTH_LONG).show();
                 }
 
 
@@ -130,8 +167,12 @@ public class RecipeDetailsFragment extends Fragment {
                 if (minteger3 >= 4 && minteger3 < 6) {
                     minteger3 = minteger3 + 1;
                     displayInteger3.setText(Integer.toString(minteger3));
-                    Double Total= thirdPrice*minteger3;
+                    Double Total= treePrice*minteger3;
                     displayThird.setText(Total + "€");
+
+                    finalTotal=finalTotal+treePrice;
+                    displayTotal.setText(finalTotal+"€");
+
 
                 }
 
@@ -150,15 +191,18 @@ public class RecipeDetailsFragment extends Fragment {
         plusMenos3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (minteger3 <= 4) {
+                if (minteger3 <=4) {
                     Toast.makeText(getActivity(), "This funcionality is not working at the moment",
                             Toast.LENGTH_LONG).show();
                 }
                 else{
                     minteger3 = minteger3 - 1 ;
                     displayInteger3.setText(Integer.toString(minteger3));
-                    Double Total= thirdPrice*minteger3;
+                    Double Total= treePrice*minteger3;
                     displayThird.setText(Total + "€");
+
+                    finalTotal=finalTotal-treePrice;
+                    displayTotal.setText(finalTotal+"€");
                 }
 
 
@@ -175,14 +219,21 @@ public class RecipeDetailsFragment extends Fragment {
         plusButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "This funcionality is not working at the moment",
-                        Toast.LENGTH_LONG).show();
+                if (minteger4 == 1) {
+                    Toast.makeText(getActivity(), "This funcionality is not working at the moment",
+                            Toast.LENGTH_LONG).show();
+                } else {
 
-                //minteger = minteger +1 ;
-
-                //displayInteger.setText(Integer.toString(minteger));
+                    minteger4 = minteger4 + 1;
+                    Double Total = forPrice * minteger4;
+                    displayInteger4.setText(Integer.toString(minteger4));
+                    displayFor.setText(Total + "€");
+                    finalTotal=finalTotal+Total;
+                    displayTotal.setText(finalTotal+"€");
+                }
             }
         });
+
 
         final Button plusMenos4 = view.findViewById(R.id.less4);
         plusMenos4.setOnClickListener(new View.OnClickListener() {
@@ -190,8 +241,18 @@ public class RecipeDetailsFragment extends Fragment {
             public void onClick(View view) {
                 if (minteger4 > 0) {
                     minteger4 = minteger4 - 1;
+                    Double Total = forPrice * minteger4;
                     displayInteger4.setText(Integer.toString(minteger4));
+                    displayFor.setText(Total + "€");
+                    finalTotal=finalTotal-forPrice;
+                    displayTotal.setText(finalTotal+"€");
+                }else if(minteger4<0){
+                    Toast.makeText(getActivity(), "This funcionality is not working at the moment",
+                            Toast.LENGTH_LONG).show();
                 }
+
+
+
 
 
 
@@ -199,9 +260,27 @@ public class RecipeDetailsFragment extends Fragment {
         });
 
 
+        //fifth ingredient
+        final TextView displayInteger5 = (TextView) view.findViewById(R.id.integer_number5);
+        final Button plusButton5 = view.findViewById(R.id.plus5);
+        plusButton5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getActivity(), "This funcionality is not working at the moment",
+                        Toast.LENGTH_LONG).show();
+            }
+        });
+
+        final Button plusMenos5 = view.findViewById(R.id.less5);
+        plusMenos5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getActivity(), "This funcionality is not working at the moment",
+                        Toast.LENGTH_LONG).show();
+            }
+        });
 
         //six ingredient
-
 
         final TextView displayInteger6 = (TextView) view.findViewById(R.id.integer_number6);
         final Button plusButton6 = view.findViewById(R.id.plus6);
@@ -218,6 +297,8 @@ public class RecipeDetailsFragment extends Fragment {
                     Double Total= sixPrice*minteger6;
                     displayInteger6.setText(Integer.toString(minteger6));
                     displaySix.setText(Total + "€");
+                    finalTotal=finalTotal+Total;
+                    displayTotal.setText(finalTotal+"€");
                 }
             }
         });
@@ -231,7 +312,14 @@ public class RecipeDetailsFragment extends Fragment {
                     Double Total = sixPrice*minteger6;
                     displayInteger6.setText(Integer.toString(minteger6));
                     displaySix.setText(Total+ "€");
+                    finalTotal=finalTotal-sixPrice;
+                    displayTotal.setText(finalTotal+"€");
+                }else if(minteger6<0){
+                    Toast.makeText(getActivity(), "This funcionality is not working at the moment",
+                            Toast.LENGTH_LONG).show();
                 }
+
+
 
             }
         });
@@ -243,6 +331,15 @@ public class RecipeDetailsFragment extends Fragment {
 
         return view;
     }
+    //function to change fragment to payscreen
+    private void swap_fragment_pay() {
+        List2Fragment list2Fragment = new List2Fragment();
+        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.fragment_container, list2Fragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+    }
+
 
 
     @Override
@@ -254,7 +351,7 @@ public class RecipeDetailsFragment extends Fragment {
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.topbar_bestroute, menu);
+        inflater.inflate(R.menu.topbar_recipedetails, menu);
         return;
     }
 }

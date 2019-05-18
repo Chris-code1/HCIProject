@@ -36,7 +36,7 @@ public class RecipesFragment extends Fragment {
                 swap_fragment_recipe_details();
             }
         });
-        
+
         return view;
     }
 

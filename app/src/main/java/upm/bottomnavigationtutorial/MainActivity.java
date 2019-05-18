@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
                             break;
 
                         case R.id.nav_list:
-                            selectedFragment = new upm.bottomnavigationtutorial.ListFragment();
+                            selectedFragment = new EmptyListFragment();
                             break;
 
                         case R.id.nav_account:

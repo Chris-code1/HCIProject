@@ -23,6 +23,11 @@ public class FilterFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         getActivity().setTitle("Filter");
         View view = inflater.inflate(R.layout.fragment_filter, container, false);
+
+        //add Arrow
+        ((MainActivity) getActivity()).removeArrow();
+        ((MainActivity) getActivity()).addArrow();
+
         final Button buttonColor= view.findViewById(R.id.add1);
 
         buttonColor.setOnClickListener(new View.OnClickListener() {

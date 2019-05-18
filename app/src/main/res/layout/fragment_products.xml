@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -20,13 +21,13 @@
         android:paddingTop="5dp">
 
         <TextView
-            android:id="@+id/textpopular"
+            android:id="@+id/text0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Popular Products"
+            android:padding="5dp"
+            android:text="Discounts"
             android:textColor="@color/cardview_dark_background"
-            android:textSize="15sp"
-            android:padding="5dp"/>
+            android:textSize="15sp" />
 
 
     </LinearLayout>
@@ -43,7 +44,7 @@
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:contentDescription="TODO"
-            app:srcCompat="@drawable/mask_group" />
+            app:srcCompat="@drawable/product1" />
 
         <LinearLayout
             android:layout_width="143dp"
@@ -52,21 +53,23 @@
             android:paddingTop="5dp">
 
             <TextView
-                android:id="@+id/txtNesquik"
-                android:layout_width="130dp"
-                android:layout_height="51dp"
+                android:id="@+id/text13"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
-                android:text="Nesquik Powder"
-                android:textSize="20dp"
-                android:paddingLeft="25dp"/>
+                android:paddingLeft="25dp"
+                android:text="Avocado"
+                android:textSize="20dp" />
 
-            <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="19dp"-->
-            <!--android:layout_alignParentTop="true"-->
-            <!--android:layout_centerInParent="true"-->
-            <!--android:text="TextView" />-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:paddingLeft="25dp"
+                android:text="1Kg"
+                android:textSize="14dp" />
 
         </LinearLayout>
 
@@ -92,42 +95,43 @@
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:contentDescription="TODO"
-            app:srcCompat="@drawable/mask_group" />
+            app:srcCompat="@drawable/product2" />
 
         <LinearLayout
-            android:id="@+id/price2"
             android:layout_width="143dp"
             android:layout_height="63dp"
             android:orientation="vertical"
             android:paddingTop="5dp">
 
             <TextView
-                android:id="@+id/test22"
-                android:layout_width="130dp"
-                android:layout_height="51dp"
+                android:id="@+id/whateveer"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:paddingLeft="25dp"
-                android:text="Nesquik Powder"
+                android:text="Tea Twinings"
                 android:textSize="20dp" />
 
-            <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="19dp"-->
-            <!--android:layout_alignParentTop="true"-->
-            <!--android:layout_centerInParent="true"-->
-            <!--android:text="TextView" />-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:paddingLeft="25dp"
+                android:text="400g"
+                android:textSize="14dp" />
 
         </LinearLayout>
 
         <TextView
-            android:id="@+id/text222"
+            android:id="@+id/xxx"
             android:layout_width="141dp"
             android:layout_height="64dp"
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
             android:padding="10dp"
-            android:text="$1.50"
+            android:text="$2.60"
             android:textSize="25dp" />
     </LinearLayout>
 
@@ -142,7 +146,7 @@
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:contentDescription="TODO"
-            app:srcCompat="@drawable/mask_group" />
+            app:srcCompat="@drawable/product3" />
 
         <LinearLayout
             android:layout_width="143dp"
@@ -151,32 +155,34 @@
             android:paddingTop="5dp">
 
             <TextView
-                android:id="@+id/test222"
-                android:layout_width="130dp"
-                android:layout_height="51dp"
+                android:id="@+id/text1134"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
-                android:text="Nesquik Powder"
-                android:textSize="20dp"
-                android:paddingLeft="25dp"/>
+                android:paddingLeft="25dp"
+                android:text="Orange"
+                android:textSize="20dp" />
 
-            <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="19dp"-->
-            <!--android:layout_alignParentTop="true"-->
-            <!--android:layout_centerInParent="true"-->
-            <!--android:text="TextView" />-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:paddingLeft="25dp"
+                android:text="400g"
+                android:textSize="14dp" />
 
         </LinearLayout>
 
         <TextView
-            android:id="@+id/text2222"
+            android:id="@+id/text12"
             android:layout_width="141dp"
             android:layout_height="64dp"
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
             android:padding="10dp"
-            android:text="$1.50"
+            android:text="$1.30"
             android:textSize="25dp" />
     </LinearLayout>
 
@@ -187,13 +193,13 @@
         android:paddingTop="8dp">
 
         <TextView
-            android:id="@+id/text0"
+            android:id="@+id/te1xt0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Offers"
+            android:padding="5dp"
+            android:text="Latest Products"
             android:textColor="@color/cardview_dark_background"
-            android:textSize="15sp"
-            android:padding="5dp"/>
+            android:textSize="15sp" />
 
 
     </LinearLayout>
@@ -206,11 +212,11 @@
         android:paddingTop="15dp">
 
         <ImageView
-            android:id="@+id/imageView1222"
+            android:id="@+id/imageVie1w1"
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:contentDescription="TODO"
-            app:srcCompat="@drawable/mask_group" />
+            app:srcCompat="@drawable/product4" />
 
         <LinearLayout
             android:layout_width="143dp"
@@ -219,21 +225,23 @@
             android:paddingTop="5dp">
 
             <TextView
-                android:id="@+id/test221"
-                android:layout_width="130dp"
-                android:layout_height="51dp"
+                android:id="@+id/tex1t13"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
-                android:text="Nesquik Powder"
-                android:textSize="20dp"
-                android:paddingLeft="25dp"/>
+                android:paddingLeft="25dp"
+                android:text="Pineapple"
+                android:textSize="20dp" />
 
-            <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="19dp"-->
-            <!--android:layout_alignParentTop="true"-->
-            <!--android:layout_centerInParent="true"-->
-            <!--android:text="TextView" />-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:paddingLeft="25dp"
+                android:text="1Kg"
+                android:textSize="14dp" />
 
         </LinearLayout>
 
@@ -244,7 +252,58 @@
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
             android:padding="10dp"
-            android:text="$1.50"
+            android:text="$2.10"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:orientation="horizontal"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/imageVi1ew1"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/product5" />
+
+        <LinearLayout
+            android:layout_width="143dp"
+            android:layout_height="63dp"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/text113"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:paddingLeft="25dp"
+                android:text="Bread"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:paddingLeft="25dp"
+                android:text="300g"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tex1t2"
+            android:layout_width="141dp"
+            android:layout_height="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="$1.00"
             android:textSize="25dp" />
     </LinearLayout>
 
@@ -259,7 +318,7 @@
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:contentDescription="TODO"
-            app:srcCompat="@drawable/mask_group" />
+            app:srcCompat="@drawable/product6" />
 
         <LinearLayout
             android:layout_width="143dp"
@@ -268,70 +327,23 @@
             android:paddingTop="5dp">
 
             <TextView
-                android:id="@+id/test112"
-                android:layout_width="130dp"
-                android:layout_height="51dp"
+                android:id="@+id/text113"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
-                android:text="Nesquik Powder"
-                android:textSize="20dp"
-                android:paddingLeft="25dp"/>
-
-            <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="19dp"-->
-            <!--android:layout_alignParentTop="true"-->
-            <!--android:layout_centerInParent="true"-->
-            <!--android:text="TextView" />-->
-
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/text112"
-            android:layout_width="141dp"
-            android:layout_height="64dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerInParent="true"
-            android:padding="10dp"
-            android:text="$1.50"
-            android:textSize="25dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="87dp"
-        android:orientation="horizontal"
-        android:paddingTop="15dp">
-
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="120dp"
-            android:layout_height="60dp"
-            android:contentDescription="TODO"
-            app:srcCompat="@drawable/mask_group" />
-
-        <LinearLayout
-            android:layout_width="143dp"
-            android:layout_height="63dp"
-            android:orientation="vertical"
-            android:paddingTop="5dp">
+                android:paddingLeft="25dp"
+                android:text="Almond Milk"
+                android:textSize="20dp" />
 
             <TextView
-                android:id="@+id/test2"
-                android:layout_width="130dp"
-                android:layout_height="51dp"
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
-                android:text="Nesquik Powder"
-                android:textSize="20dp"
-                android:paddingLeft="25dp"/>
-
-            <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="19dp"-->
-            <!--android:layout_alignParentTop="true"-->
-            <!--android:layout_centerInParent="true"-->
-            <!--android:text="TextView" />-->
+                android:paddingLeft="25dp"
+                android:text="1.5L"
+                android:textSize="14dp" />
 
         </LinearLayout>
 
@@ -342,7 +354,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
             android:padding="10dp"
-            android:text="$1.50"
+            android:text="$1.90"
             android:textSize="25dp" />
     </LinearLayout>
 

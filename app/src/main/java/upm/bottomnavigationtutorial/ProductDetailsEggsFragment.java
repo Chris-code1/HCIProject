@@ -3,6 +3,7 @@ package upm.bottomnavigationtutorial;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,7 +42,15 @@ public class ProductDetailsEggsFragment extends Fragment {
         final Button pack2 = view.findViewById(R.id.pack2);
         final Button pack3 = view.findViewById(R.id.pack3);
         final Button pack4 = view.findViewById(R.id.pack4);
+        final Button btn_addtolist = view.findViewById(R.id.addtolist);
 
+
+        btn_addtolist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                swap_fragment_list1();
+            }
+        });
 
         small.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -163,4 +172,14 @@ public class ProductDetailsEggsFragment extends Fragment {
         }
         return text;
     }
+
+    //function to change fragment to payscreen
+    private void swap_fragment_list1() {
+        List1Fragment list1Fragment = new List1Fragment();
+        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.fragment_container, list1Fragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+    }
+
 }

@@ -47,6 +47,7 @@
                 android:layout_width="120dp"
                 android:layout_height="60dp"
                 android:contentDescription="TODO"
+                android:gravity="center"
                 app:srcCompat="@drawable/chicken_boneless_500x500" />
 
             <LinearLayout
@@ -63,6 +64,10 @@
                     android:layout_centerInParent="true"
                     android:paddingLeft="25dp"
                     android:text="Chicken breast"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
                     android:textSize="20dp" />
 
                 <TextView
@@ -70,6 +75,10 @@
                     android:layout_height="19dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
                     android:paddingLeft="25dp"
                     android:text="400g"
                     android:textSize="14dp" />
@@ -82,8 +91,13 @@
                 android:layout_height="64dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:padding="10dp"
-                android:text="$7.80"
+                android:text="7.80€"
+                android:gravity="center"
                 android:textSize="25dp" />
         </LinearLayout>
 
@@ -104,6 +118,7 @@
                 android:layout_width="143dp"
                 android:layout_height="63dp"
                 android:orientation="vertical"
+                android:gravity="center"
                 android:paddingTop="5dp">
 
                 <TextView
@@ -112,6 +127,10 @@
                     android:layout_height="25dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
                     android:paddingLeft="25dp"
                     android:text="Long Grain rice"
                     android:textSize="15dp" />
@@ -121,6 +140,10 @@
                     android:layout_height="19dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8sp"
                     android:paddingLeft="25dp"
                     android:text="12 Units"
                     android:textSize="14dp" />
@@ -133,8 +156,13 @@
                 android:layout_height="64dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:padding="10dp"
-                android:text="$5.90"
+                android:text="5.90€"
+                android:gravity="center"
                 android:textSize="25dp" />
         </LinearLayout>
 
@@ -165,7 +193,11 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:paddingLeft="20dp"
-                android:text="TOTAL:                                       $13.70"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
+                android:text="TOTAL:                                       13.70€"
                 android:textSize="22dp" />
 
         </LinearLayout>
@@ -185,6 +217,10 @@
                 android:background="@android:color/holo_orange_light"
                 android:paddingLeft="25dp"
                 android:text="Add more products"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:textSize="22dp" />
 
         </LinearLayout>
@@ -203,6 +239,10 @@
                 android:layout_centerInParent="true"
                 android:background="@android:color/holo_orange_light"
                 android:paddingLeft="25dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:text="PAY"
                 android:textSize="22dp" />
         </LinearLayout>

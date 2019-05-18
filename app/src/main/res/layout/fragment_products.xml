@@ -21,13 +21,15 @@
         android:paddingTop="5dp">
 
         <TextView
-            android:id="@+id/textpopular"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="108dp"
+            android:layout_height="35dp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="18sp"
             android:padding="5dp"
             android:text="Discounts"
-            android:textColor="@color/cardview_dark_background"
-            android:textSize="15sp" />
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="normal" />
 
 
     </LinearLayout>
@@ -48,6 +50,7 @@
 
         <LinearLayout
             android:layout_width="143dp"
+            android:gravity="center"
             android:layout_height="63dp"
             android:orientation="vertical"
             android:paddingTop="5dp">
@@ -60,7 +63,11 @@
                 android:layout_centerInParent="true"
                 android:paddingLeft="25dp"
                 android:text="Avocado"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -68,6 +75,10 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:paddingLeft="25dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:text="1Kg"
                 android:textSize="14dp" />
 
@@ -77,10 +88,15 @@
             android:id="@+id/priceNesquik"
             android:layout_width="141dp"
             android:layout_height="64dp"
+            android:gravity="center"
             android:layout_alignParentTop="true"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            android:lineSpacingExtra="8sp"
             android:layout_centerInParent="true"
             android:padding="10dp"
-            android:text="$1.50"
+            android:text="1.50€"
             android:textSize="25dp" />
     </LinearLayout>
 
@@ -91,37 +107,29 @@
         android:paddingTop="15dp">
 
         <ImageView
-            android:id="@+id/imaga2"
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:contentDescription="TODO"
             app:srcCompat="@drawable/product2" />
 
         <LinearLayout
-            android:id="@+id/price2"
             android:layout_width="143dp"
             android:layout_height="63dp"
             android:orientation="vertical"
+            android:gravity="center"
             android:paddingTop="5dp">
 
             <TextView
-<<<<<<< HEAD
-                android:id="@+id/test22"
-                android:layout_width="130dp"
-                android:layout_height="51dp"
-                android:layout_alignParentTop="true"
-                android:layout_centerInParent="true"
-                android:paddingLeft="25dp"
-                android:text="Nesquik Powder"
-=======
-                android:id="@+id/text13"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:layout_width="match_parent"
                 android:layout_height="25dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:paddingLeft="25dp"
                 android:text="Tea Twinings"
->>>>>>> 29c2eca4fac24fa1b08454917c72e7c28fb84e9d
                 android:textSize="20dp" />
 
             <TextView
@@ -130,19 +138,28 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:paddingLeft="25dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:text="400g"
                 android:textSize="14dp" />
 
         </LinearLayout>
 
         <TextView
-            android:id="@+id/text222"
+            android:id="@+id/text2"
             android:layout_width="141dp"
             android:layout_height="64dp"
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            android:lineSpacingExtra="8sp"
             android:padding="10dp"
-            android:text="$2.60"
+            android:gravity="center"
+            android:text="2.60€"
             android:textSize="25dp" />
     </LinearLayout>
 
@@ -153,7 +170,6 @@
         android:paddingTop="15dp">
 
         <ImageView
-            android:id="@+id/emptyList"
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:contentDescription="TODO"
@@ -163,20 +179,18 @@
             android:layout_width="143dp"
             android:layout_height="63dp"
             android:orientation="vertical"
+            android:gravity="center"
             android:paddingTop="5dp">
 
             <TextView
-<<<<<<< HEAD
-                android:id="@+id/test222"
-                android:layout_width="130dp"
-                android:layout_height="51dp"
-=======
-                android:id="@+id/text13"
                 android:layout_width="match_parent"
                 android:layout_height="25dp"
->>>>>>> 29c2eca4fac24fa1b08454917c72e7c28fb84e9d
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:paddingLeft="25dp"
                 android:text="Orange"
                 android:textSize="20dp" />
@@ -187,19 +201,27 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:paddingLeft="25dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:text="400g"
                 android:textSize="14dp" />
 
         </LinearLayout>
 
         <TextView
-            android:id="@+id/text2222"
             android:layout_width="141dp"
             android:layout_height="64dp"
             android:layout_alignParentTop="true"
+            android:gravity="center"
             android:layout_centerInParent="true"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            android:lineSpacingExtra="8sp"
             android:padding="10dp"
-            android:text="$1.30"
+            android:text="1.30€"
             android:textSize="25dp" />
     </LinearLayout>
 
@@ -215,126 +237,16 @@
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:text="Latest Products"
-            android:textColor="@color/cardview_dark_background"
-            android:textSize="15sp" />
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:lineSpacingExtra="8sp" />
+
 
 
     </LinearLayout>
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="87dp"
-        android:orientation="horizontal"
-        android:paddingTop="15dp">
-
-        <ImageView
-            android:id="@+id/imageView1222"
-            android:layout_width="120dp"
-            android:layout_height="60dp"
-            android:contentDescription="TODO"
-            app:srcCompat="@drawable/product4" />
-
-        <LinearLayout
-            android:layout_width="143dp"
-            android:layout_height="63dp"
-            android:orientation="vertical"
-            android:paddingTop="5dp">
-
-            <TextView
-<<<<<<< HEAD
-                android:id="@+id/test221"
-                android:layout_width="130dp"
-                android:layout_height="51dp"
-=======
-                android:id="@+id/text13"
-                android:layout_width="match_parent"
-                android:layout_height="25dp"
->>>>>>> 29c2eca4fac24fa1b08454917c72e7c28fb84e9d
-                android:layout_alignParentTop="true"
-                android:layout_centerInParent="true"
-                android:paddingLeft="25dp"
-                android:text="Pineapple"
-                android:textSize="20dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="19dp"
-                android:layout_alignParentTop="true"
-                android:layout_centerInParent="true"
-                android:paddingLeft="25dp"
-                android:text="1Kg"
-                android:textSize="14dp" />
-
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/text12"
-            android:layout_width="141dp"
-            android:layout_height="64dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerInParent="true"
-            android:padding="10dp"
-            android:text="$2.10"
-            android:textSize="25dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="87dp"
-        android:orientation="horizontal"
-        android:paddingTop="15dp">
-
-        <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="120dp"
-            android:layout_height="60dp"
-            android:contentDescription="TODO"
-            app:srcCompat="@drawable/product5" />
-
-        <LinearLayout
-            android:layout_width="143dp"
-            android:layout_height="63dp"
-            android:orientation="vertical"
-            android:paddingTop="5dp">
-
-            <TextView
-<<<<<<< HEAD
-                android:id="@+id/test112"
-                android:layout_width="130dp"
-                android:layout_height="51dp"
-=======
-                android:id="@+id/text13"
-                android:layout_width="match_parent"
-                android:layout_height="25dp"
->>>>>>> 29c2eca4fac24fa1b08454917c72e7c28fb84e9d
-                android:layout_alignParentTop="true"
-                android:layout_centerInParent="true"
-                android:paddingLeft="25dp"
-                android:text="Bread"
-                android:textSize="20dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="19dp"
-                android:layout_alignParentTop="true"
-                android:layout_centerInParent="true"
-                android:paddingLeft="25dp"
-                android:text="300g"
-                android:textSize="14dp" />
-
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/text112"
-            android:layout_width="141dp"
-            android:layout_height="64dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerInParent="true"
-            android:padding="10dp"
-            android:text="$1.00"
-            android:textSize="25dp" />
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -347,27 +259,153 @@
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:contentDescription="TODO"
+            app:srcCompat="@drawable/product4" />
+
+        <LinearLayout
+            android:layout_width="143dp"
+            android:layout_height="63dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+
+                android:layout_centerInParent="true"
+                android:paddingLeft="25dp"
+                android:text="Pineapple"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:paddingLeft="25dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
+                android:text="1Kg"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_width="141dp"
+            android:layout_height="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            android:lineSpacingExtra="8sp"
+            android:text="2.10€"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:orientation="horizontal"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/product5" />
+
+        <LinearLayout
+            android:layout_width="143dp"
+            android:layout_height="63dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:paddingLeft="25dp"
+                android:text="Bread"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
+                android:paddingLeft="25dp"
+                android:text="300g"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_width="141dp"
+            android:layout_height="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            android:lineSpacingExtra="8sp"
+            android:gravity="center"
+            android:text="1.00€"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:orientation="horizontal"
+        android:paddingTop="15dp">
+
+        <ImageView
+         
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:contentDescription="TODO"
             app:srcCompat="@drawable/product6" />
 
         <LinearLayout
             android:layout_width="143dp"
             android:layout_height="63dp"
             android:orientation="vertical"
+            android:gravity="center"
             android:paddingTop="5dp">
 
             <TextView
-<<<<<<< HEAD
-                android:id="@+id/test2"
-                android:layout_width="130dp"
-                android:layout_height="51dp"
-=======
-                android:id="@+id/text13"
                 android:layout_width="match_parent"
                 android:layout_height="25dp"
->>>>>>> 29c2eca4fac24fa1b08454917c72e7c28fb84e9d
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:paddingLeft="25dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:text="Almond Milk"
                 android:textSize="20dp" />
 
@@ -377,19 +415,27 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:paddingLeft="25dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:lineSpacingExtra="8sp"
                 android:text="1.5L"
                 android:textSize="14dp" />
 
         </LinearLayout>
 
         <TextView
-            android:id="@+id/text2"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            android:lineSpacingExtra="8sp"
             android:layout_width="141dp"
             android:layout_height="64dp"
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
             android:padding="10dp"
-            android:text="$1.90"
+            android:gravity="center"
+            android:text="1.90€"
             android:textSize="25dp" />
     </LinearLayout>
 

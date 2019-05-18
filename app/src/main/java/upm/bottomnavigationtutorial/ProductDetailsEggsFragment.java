@@ -42,6 +42,9 @@ public class ProductDetailsEggsFragment extends Fragment {
         final Button pack2 = view.findViewById(R.id.pack2);
         final Button pack3 = view.findViewById(R.id.pack3);
         final Button pack4 = view.findViewById(R.id.pack4);
+
+        //button to change screen
+
         final Button btn_addtolist = view.findViewById(R.id.addtolist);
 
 

@@ -107,7 +107,6 @@
         android:paddingTop="15dp">
 
         <ImageView
-            android:id="@+id/imageView1"
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:contentDescription="TODO"
@@ -171,7 +170,6 @@
         android:paddingTop="15dp">
 
         <ImageView
-            android:id="@+id/imageView1"
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:contentDescription="TODO"
@@ -322,7 +320,6 @@
         android:paddingTop="15dp">
 
         <ImageView
-            android:id="@+id/imageView1"
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:contentDescription="TODO"
@@ -386,7 +383,7 @@
         android:paddingTop="15dp">
 
         <ImageView
-            android:id="@+id/imageView1"
+         
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:contentDescription="TODO"
@@ -400,7 +397,6 @@
             android:paddingTop="5dp">
 
             <TextView
-                android:id="@+id/text13"
                 android:layout_width="match_parent"
                 android:layout_height="25dp"
                 android:layout_alignParentTop="true"

@@ -327,7 +327,7 @@
             android:paddingTop="5dp">
 
             <TextView
-                android:id="@+id/priceThing"
+                android:id="@+id/test2"
                 android:layout_width="match_parent"
                 android:layout_height="33dp"
                 android:layout_alignParentTop="true"
@@ -389,6 +389,7 @@
             android:paddingTop="5dp">
 
             <TextView
+
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
                 android:layout_alignParentTop="true"

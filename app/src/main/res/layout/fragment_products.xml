@@ -120,7 +120,7 @@
             android:paddingTop="5dp">
 
             <TextView
-                android:fontFamily="sans-serif"
+         android:fontFamily="sans-serif"
                 android:textStyle="normal"
                 android:textColor="#000000"
                 android:lineSpacingExtra="8sp"
@@ -148,7 +148,9 @@
         </LinearLayout>
 
         <TextView
+
             android:id="@+id/text2"
+
             android:layout_width="141dp"
             android:layout_height="64dp"
             android:layout_alignParentTop="true"
@@ -232,7 +234,7 @@
         android:paddingTop="8dp">
 
         <TextView
-            android:id="@+id/text0"
+            android:id="@+id/te1xt0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
@@ -298,7 +300,6 @@
         </LinearLayout>
 
         <TextView
-
             android:layout_width="141dp"
             android:layout_height="64dp"
             android:layout_alignParentTop="true"
@@ -361,7 +362,6 @@
         </LinearLayout>
 
         <TextView
-
             android:layout_width="141dp"
             android:layout_height="64dp"
             android:layout_alignParentTop="true"
@@ -383,7 +383,6 @@
         android:paddingTop="15dp">
 
         <ImageView
-         
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:contentDescription="TODO"

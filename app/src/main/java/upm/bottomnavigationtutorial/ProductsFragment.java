@@ -9,6 +9,7 @@ import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -32,6 +33,7 @@ public class ProductsFragment extends Fragment {
 
         LinearLayout layoutNesquick = view.findViewById(R.id.layoutNesquick);
         LinearLayout layoutEggs = view.findViewById(R.id.layoutEggs);
+
 
 
         //set listeners on objects and initiate function when called
@@ -61,9 +63,11 @@ public class ProductsFragment extends Fragment {
         return view;
     }
 
+
 //    When clicking on the nesquick layout, change view to product details nesquick
 
     private void swap_fragment_nesquick() {
+
         ProductDetailsFragment productDetailsFragment = new ProductDetailsFragment();
         FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.fragment_container, productDetailsFragment);
@@ -100,6 +104,9 @@ public class ProductsFragment extends Fragment {
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.topbar_products, menu);
+        super.onCreateOptionsMenu(menu, inflater);
+        MenuItem searchProduct = menu.findItem(R.id.search);
+
         return;
     }
 }

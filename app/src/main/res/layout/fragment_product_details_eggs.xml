@@ -23,7 +23,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="194dp"
                 android:layout_marginTop="6dp"
-                app:srcCompat="@drawable/nesquikthis" />
+
+                app:srcCompat="@drawable/eggsthis" />
         </LinearLayout>
 
         <LinearLayout
@@ -37,13 +38,12 @@
                 android:layout_height="33dp"
                 android:layout_marginTop="30dp"
                 android:layout_weight="1"
-                android:text="Nesquik Powder"
+                android:text="EcoEggs"
                 android:textColor="#000000"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textSize="24sp" />
 
             <TextView
-                android:id="@+id/priceNesquik"
+                android:id="@+id/priceEggs"
                 android:layout_width="88dp"
                 android:layout_height="33dp"
                 android:layout_marginTop="30dp"
@@ -57,21 +57,19 @@
         </LinearLayout>
 
 
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/sizeText"
-                android:layout_width="100dp"
-                android:layout_height="33dp"
-                android:layout_marginTop="15dp"
-
+                android:layout_width="39dp"
+                android:layout_height="16dp"
                 android:text="Size"
+                android:layout_marginTop="10dp"
                 android:textColor="#000000"
-                android:textSize="20sp" />
+                android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -80,41 +78,103 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="17dp">
+            android:layout_marginTop="5dp">
 
 
             <Button
-                android:id="@+id/gramas1"
+                android:id="@+id/small"
                 android:layout_width="82dp"
                 android:layout_height="32dp"
                 android:layout_marginRight="10dp"
                 android:background="@drawable/chipbutton"
-                android:text="250 g"
                 android:textAllCaps="false"
+                android:text="small"
                 android:textColor="#ffffff" />
 
             <Button
-                android:id="@+id/gramas2"
+                android:id="@+id/medium"
                 android:layout_width="82dp"
                 android:layout_height="32dp"
                 android:layout_marginRight="10dp"
                 android:background="@drawable/chipbutton"
-                android:text="500 g"
+                android:text="medium"
                 android:textAllCaps="false"
                 android:textColor="#ffffff" />
 
             <Button
-                android:id="@+id/gramas3"
+                android:id="@+id/large"
                 android:layout_width="wrap_content"
                 android:layout_height="32dp"
                 android:layout_marginRight="10dp"
                 android:background="@drawable/chipbutton"
-                android:text="650 g"
                 android:textAllCaps="false"
+                android:text="large"
                 android:textColor="#ffffff" />
 
 
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/packssText"
+                android:layout_width="39dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Packs"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/buttonsPack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="13dp">
+
+        <Button
+            android:id="@+id/pack1"
+            android:layout_width="82dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/chipbutton"
+            android:text="6"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/pack2"
+            android:layout_width="82dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/chipbutton"
+            android:text="12"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/pack3"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/chipbutton"
+            android:text="24"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/pack4"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/chipbutton"
+            android:text="36"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
 
 
         <LinearLayout
@@ -129,7 +189,7 @@
                 android:id="@+id/addtolist"
                 android:layout_width="119dp"
                 android:layout_height="45dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="2dp"
                 android:background="#FA8925"
                 android:text="ADD TO LIST"
                 android:textColor="#FFFFFF" />

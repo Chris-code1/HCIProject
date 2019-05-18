@@ -28,7 +28,13 @@ public class ProductsFragment extends Fragment {
 
         //find objects in xml file
         ImageView imgnesquik = view.findViewById(R.id.imgNesquik);
+
+        ImageView eggs = view.findViewById(R.id.imaga2);
+        ImageView emptyList = view.findViewById(R.id.emptyList);//Extra to test
+        TextView txtnesquik = view.findViewById(R.id.txtNesquik);
+
         TextView txtnesquik = view.findViewById(R.id.text13);
+
         TextView pricenesquik = view.findViewById(R.id.priceNesquik);
 
         //set listeners on objects and initiate function when called
@@ -54,6 +60,18 @@ public class ProductsFragment extends Fragment {
             }
         });
 
+        eggs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                swap_fragment_eggs();
+            }
+        });
+        emptyList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                swap_fragment_empty();
+            }
+        });
 
         return view;
     }
@@ -66,7 +84,23 @@ public class ProductsFragment extends Fragment {
         fragmentTransaction.commit();
 
     }
+    private void swap_fragment_eggs() {
+        ProductDetailsEggsFragment eggs = new ProductDetailsEggsFragment();
+        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.fragment_container, eggs);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
 
+    }
+
+    private void swap_fragment_empty() {
+        EmptyListFragment empty = new EmptyListFragment();
+        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.fragment_container, empty);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+
+    }
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);

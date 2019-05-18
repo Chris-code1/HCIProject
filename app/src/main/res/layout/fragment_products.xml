@@ -246,7 +246,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/text12"
+            android:id="@+id/text127"
             android:layout_width="141dp"
             android:layout_height="64dp"
             android:layout_alignParentTop="true"
@@ -276,7 +276,7 @@
             android:paddingTop="5dp">
 
             <TextView
-                android:id="@+id/text113"
+                android:id="@+id/text1136"
                 android:layout_width="match_parent"
                 android:layout_height="25dp"
                 android:layout_alignParentTop="true"

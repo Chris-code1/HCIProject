@@ -68,10 +68,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.sort:
                 Toast.makeText(this, "Sort selected", Toast.LENGTH_SHORT).show();
                 return true;
-            case R.id.back:
-                Toast.makeText(this, "Back selected", Toast.LENGTH_SHORT).show();
-                selectedFragment = new ProductsFragment();
-                break;
             case R.id.check:
                 Toast.makeText(this, "Check selected", Toast.LENGTH_SHORT).show();
                 selectedFragment = new ProductsFragment();

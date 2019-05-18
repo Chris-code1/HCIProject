@@ -1,10 +1,12 @@
 package upm.bottomnavigationtutorial;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -18,6 +20,9 @@ public class ListFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         getActivity().setTitle("List");
 
+        //Removes the back arrow
+        ((MainActivity) getActivity()).removeArrow();
+
         View view = inflater.inflate(R.layout.fragment_list, container, false);
 
 
@@ -26,7 +31,7 @@ public class ListFragment extends Fragment {
         Button btn_pay = view.findViewById(R.id.btn_pay);
         Button btn_findbestroute = view.findViewById(R.id.btn_best_route);
 
-
+       // final Button buttonColor = view.findViewById(R.id.add1);
         // set listeners on buttons and initiate function when clicked
         btn_pay.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,7 +46,6 @@ public class ListFragment extends Fragment {
                 swap_fragment_bestroute();
             }
         });
-
 
         return view;
 

@@ -1,5 +1,6 @@
 package upm.bottomnavigationtutorial;
 
+import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
@@ -11,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -48,6 +50,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.filter:
                 Toast.makeText(this, "Filter selected", Toast.LENGTH_SHORT).show();
                 selectedFragment = new FilterFragment();
+                break;
+
+            case R.id.filterprod:
+                Toast.makeText(this, "Filter selected", Toast.LENGTH_SHORT).show();
+                selectedFragment = new FilterProdFragment();
                 break;
             case R.id.search:
                 Toast.makeText(this, "Search selected", Toast.LENGTH_SHORT).show();
@@ -106,4 +113,21 @@ public class MainActivity extends AppCompatActivity {
                     return  true;
                 }
             };
+
+    public void addArrow(){
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp);
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+    }
+
+    public void removeArrow(){
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setNavigationIcon(null);
+    }
 }

@@ -37,6 +37,13 @@ public class RecipesFragment extends Fragment {
             }
         });
 
+        linearLayoutChicken.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                swap_fragment_recipe_details();
+            }
+        });
+
 
         return view;
     }

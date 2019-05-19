@@ -123,18 +123,19 @@
                 app:srcCompat="@drawable/fish" />
 
             <ImageView
-                android:id="@+id/imageView7"
+                android:id="@+id/nesquikmenu"
                 android:layout_width="120dp"
                 android:layout_height="64dp"
                 android:layout_marginLeft="7dp"
-                app:srcCompat="@drawable/quiza2" />
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/nesquikmenu" />
 
             <Button
                 android:id="@+id/seemore"
                 android:layout_width="109dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="10dp"
-                android:background="#5E9C40"
+                android:background="#fa8925"
                 android:text="See More >>"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"

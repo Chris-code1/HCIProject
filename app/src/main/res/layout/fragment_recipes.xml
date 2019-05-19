@@ -16,15 +16,186 @@
 
 
     <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="42dp"
+        android:layout_width="211dp"
+        android:layout_height="35dp"
         android:orientation="horizontal"
         android:paddingTop="5dp">
 
         <TextView
+            android:layout_width="108dp"
+            android:layout_height="35dp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="18sp"
+            android:padding="5dp"
+            android:text="Categories"
+            android:layout_marginTop="5dp"
+            android:textColor="#8a000000"
+            android:textSize="16sp"
+            android:textStyle="normal|bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:orientation="horizontal"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/imgNesquik"
+            android:layout_width="120dp"
+            android:layout_height="66dp"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/salaasrecipes" />
+
+        <ImageView
+            android:id="@+id/eggstry"
+            android:layout_width="120dp"
+            android:layout_height="63dp"
+            android:layout_marginLeft="7dp"
+            app:srcCompat="@drawable/chickenrecipe" />
+
+        <ImageView
+            android:id="@+id/eggstry1"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="7dp"
+            app:srcCompat="@drawable/seafoodrecipe" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="138dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="18sp"
+            android:padding="5dp"
+            android:text="Salads"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:layout_width="117sp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="18sp"
+            android:padding="5dp"
+            android:text="Chicken"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="18sp"
+            android:padding="5dp"
+            android:text="Seafood "
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:orientation="horizontal"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="69dp"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/pastarecipes" />
+
+        <ImageView
+            android:id="@+id/nesquikmenu"
+            android:layout_width="120dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="7dp"
+            app:srcCompat="@drawable/smoothierecipes" />
+
+        <Button
+            android:id="@+id/seemore"
+            android:layout_width="109dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:background="#fa8925"
+            android:text="See More >>"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="138dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="18sp"
+            android:padding="5dp"
+            android:text="Pasta"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:layout_width="117sp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="18sp"
+            android:padding="5dp"
+            android:text="Nesquik Drinks"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="18sp"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="211dp"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/text0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:fontFamily="sans-serif"
             android:gravity="center"
             android:lineSpacingExtra="8sp"
@@ -32,161 +203,11 @@
             android:text="Popular Recipes"
             android:textColor="#8a000000"
             android:textSize="16sp"
-            android:textStyle="normal|bold"
-
-            />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="150dp"
-            android:layout_height="40dp"
-            android:text="temporary!" />
-
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="87dp"
-        android:orientation="horizontal"
-        android:paddingTop="15dp">
-
-        <ImageView
-            android:id="@+id/imgThaiChicken"
-            android:layout_width="120dp"
-            android:layout_height="60dp"
-            android:contentDescription="TODO"
-            app:srcCompat="@drawable/recipe1" />
-
-        <LinearLayout
-            android:layout_width="185dp"
-            android:layout_height="63dp"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:paddingTop="5dp">
-
-            <TextView
-                android:id="@+id/txtThaiChicken"
-                android:layout_width="match_parent"
-                android:layout_height="33dp"
-                android:layout_alignParentTop="true"
-                android:layout_centerInParent="true"
-                android:fontFamily="sans-serif"
-                android:gravity="center"
-                android:lineSpacingExtra="8sp"
-                android:paddingLeft="25dp"
-                android:text="Quick Fish Curry"
-                android:textAlignment="viewStart"
-                android:textColor="#000000"
-                android:textSize="16dp"
-                android:textStyle="normal" />
-
-            <ImageView
-                android:id="@+id/stars1"
-                android:layout_width="121dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerInParent="true"
-                android:layout_marginRight="12dp"
-                app:srcCompat="@drawable/four_fivestars" />
-            />
-
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/priceThaiChicken"
-            android:layout_width="81dp"
-            android:layout_height="64dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerInParent="true"
-            android:fontFamily="sans-serif"
-            android:gravity="center"
-            android:lineSpacingExtra="8sp"
-            android:padding="10dp"
-            android:text="17,50€"
-            android:textColor="#5f6368"
-            android:textSize="18dp"
             android:textStyle="normal|bold" />
+
+
     </LinearLayout>
 
-    <View
-        android:id="@+id/divider2"
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:layout_marginLeft="120dp"
-        android:background="?android:attr/listDivider" />
-
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="87dp"
-        android:orientation="horizontal"
-        android:paddingTop="15dp">
-
-        <ImageView
-
-            android:layout_width="120dp"
-            android:layout_height="60dp"
-            android:contentDescription="TODO"
-            app:srcCompat="@drawable/recipe2" />
-
-        <LinearLayout
-            android:layout_width="185dp"
-            android:layout_height="63dp"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:paddingTop="5dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="33dp"
-                android:layout_alignParentTop="true"
-                android:layout_centerInParent="true"
-                android:fontFamily="sans-serif"
-                android:gravity="center"
-                android:lineSpacingExtra="8sp"
-                android:paddingLeft="25dp"
-                android:text="Creamy Chicken"
-                android:textAlignment="viewStart"
-                android:textColor="#000000"
-                android:textSize="16dp"
-                android:textStyle="normal" />
-
-            <ImageView
-                android:id="@+id/stars2"
-                android:layout_width="121dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerInParent="true"
-                android:layout_marginRight="12dp"
-                app:srcCompat="@drawable/four_threestars" />
-            />
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="81dp"
-            android:layout_height="64dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerInParent="true"
-            android:fontFamily="sans-serif"
-            android:gravity="center"
-            android:lineSpacingExtra="8sp"
-            android:padding="10dp"
-            android:text="22,50€"
-            android:textColor="#5f6368"
-            android:textSize="18dp"
-            android:textStyle="normal|bold" />
-    </LinearLayout>
-
-    <View
-        android:id="@+id/divider12"
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:layout_marginLeft="120dp"
-        android:background="?android:attr/listDivider" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -243,233 +264,6 @@
             android:lineSpacingExtra="8sp"
             android:padding="10dp"
             android:text="19.80€"
-            android:textColor="#5f6368"
-            android:textSize="18dp"
-            android:textStyle="normal|bold" />
-    </LinearLayout>
-
-    <View
-        android:id="@+id/divider5552"
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:layout_marginLeft="120dp"
-        android:background="?android:attr/listDivider" />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="87dp"
-        android:orientation="horizontal"
-        android:paddingTop="15dp">
-
-        <ImageView
-            android:layout_width="120dp"
-            android:layout_height="60dp"
-            android:contentDescription="TODO"
-            app:srcCompat="@drawable/chicken1" />
-
-        <LinearLayout
-            android:id="@+id/layoutJohnsThaiChicken"
-            android:layout_width="185dp"
-            android:layout_height="63dp"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:paddingTop="5dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_alignParentTop="true"
-                android:layout_centerInParent="true"
-                android:fontFamily="sans-serif"
-                android:gravity="center"
-                android:paddingLeft="25dp"
-                android:text="Johns Thai Chicken Curry"
-                android:textAlignment="viewStart"
-                android:textColor="#000000"
-                android:textSize="16dp"
-                android:textStyle="normal" />
-
-            <ImageView
-                android:id="@+id/stars4"
-                android:layout_width="121dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerInParent="true"
-                android:layout_marginRight="12dp"
-                app:srcCompat="@drawable/fivestars" />
-            />
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="81dp"
-            android:layout_height="64dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerInParent="true"
-            android:fontFamily="sans-serif"
-            android:gravity="center"
-            android:lineSpacingExtra="8sp"
-            android:padding="10dp"
-            android:text="18,65€"
-            android:textColor="#5f6368"
-            android:textSize="18dp"
-            android:textStyle="normal|bold" />
-    </LinearLayout>
-
-    <View
-        android:id="@+id/divider8882"
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:layout_marginLeft="120dp"
-        android:background="?android:attr/listDivider" />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="87dp"
-        android:orientation="horizontal"
-        android:paddingTop="15dp">
-
-        <ImageView
-            android:layout_width="120dp"
-            android:layout_height="60dp"
-            android:contentDescription="TODO"
-            app:srcCompat="@drawable/chicken2" />
-
-        <LinearLayout
-            android:layout_width="185dp"
-            android:layout_height="63dp"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:paddingTop="5dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_alignParentTop="true"
-                android:layout_centerInParent="true"
-                android:fontFamily="sans-serif"
-                android:gravity="center"
-                android:paddingLeft="25dp"
-                android:text="Chicken parmo"
-                android:textAlignment="viewStart"
-                android:textColor="#000000"
-                android:textSize="16dp"
-                android:textStyle="normal" />
-
-            <ImageView
-                android:id="@+id/stars54"
-                android:layout_width="121dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerInParent="true"
-                android:layout_marginRight="12dp"
-                app:srcCompat="@drawable/four_eightstars" />
-            />
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="81dp"
-            android:layout_height="64dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerInParent="true"
-            android:fontFamily="sans-serif"
-            android:gravity="center"
-            android:lineSpacingExtra="8sp"
-            android:padding="10dp"
-            android:text="19,80€"
-            android:textColor="#5f6368"
-            android:textSize="18dp"
-            android:textStyle="normal|bold" />
-    </LinearLayout>
-
-    <View
-        android:id="@+id/divider552"
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:layout_marginLeft="120dp"
-        android:background="?android:attr/listDivider" />
-
-
-    <LinearLayout
-        android:layout_width="211dp"
-        android:layout_height="35dp"
-        android:orientation="horizontal"
-        android:paddingTop="5dp">
-
-        <TextView
-            android:id="@+id/text0"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:gravity="center"
-            android:lineSpacingExtra="8sp"
-            android:padding="5dp"
-            android:text="Latest Recipes"
-            android:textColor="#8a000000"
-            android:textSize="16sp"
-            android:textStyle="normal|bold" />
-
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="87dp"
-        android:orientation="horizontal"
-        android:paddingTop="15dp">
-
-        <ImageView
-            android:layout_width="120dp"
-            android:layout_height="60dp"
-            android:contentDescription="TODO"
-            app:srcCompat="@drawable/recipe4" />
-
-        <LinearLayout
-            android:layout_width="185dp"
-            android:layout_height="63dp"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:paddingTop="5dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="33dp"
-                android:layout_alignParentTop="true"
-                android:layout_centerInParent="true"
-                android:fontFamily="sans-serif"
-                android:gravity="center"
-                android:lineSpacingExtra="8sp"
-                android:paddingLeft="25dp"
-                android:text="Chicken Paella"
-                android:textAlignment="viewStart"
-                android:textColor="#000000"
-                android:textSize="16dp"
-                android:textStyle="normal" />
-
-            <ImageView
-                android:id="@+id/stars5"
-                android:layout_width="121dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerInParent="true"
-                android:layout_marginRight="12dp"
-                app:srcCompat="@drawable/four_threestars" />
-            />
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/text2"
-            android:layout_width="81dp"
-            android:layout_height="64dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerInParent="true"
-            android:fontFamily="sans-serif"
-            android:gravity="center"
-            android:lineSpacingExtra="8sp"
-            android:padding="10dp"
-            android:text="19,60€"
             android:textColor="#5f6368"
             android:textSize="18dp"
             android:textStyle="normal|bold" />

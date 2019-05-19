@@ -26,23 +26,23 @@ public class RecipesFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_recipes, container, false);
 
         //find objects in xml file
-        LinearLayout linearLayoutChicken = view.findViewById(R.id.layoutJohnsThaiChicken);
+       // LinearLayout linearLayoutChicken = view.findViewById(R.id.layoutJohnsThaiChicken);
 
         //set listeners on objects and initiate function when called
 
-        linearLayoutChicken.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                swap_fragment_recipe_details();
-            }
-        });
+       // linearLayoutChicken.setOnClickListener(new View.OnClickListener() {
+        //    @Override
+         //   public void onClick(View v) {
+        //        swap_fragment_recipe_details();
+          //  }
+       // });
 
-        linearLayoutChicken.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                swap_fragment_recipe_details();
-            }
-        });
+       // linearLayoutChicken.setOnClickListener(new View.OnClickListener() {
+       //     @Override
+        //    public void onClick(View v) {
+        //        swap_fragment_recipe_details();
+        //    }
+       // });
 
 
         return view;

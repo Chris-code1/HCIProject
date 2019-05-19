@@ -2,9 +2,11 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -386,7 +388,7 @@
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:contentDescription="TODO"
-            app:srcCompat="@drawable/product6" />
+            app:srcCompat="@drawable/ns3" />
 
         <LinearLayout
             android:layout_width="143dp"
@@ -404,9 +406,8 @@
                 android:fontFamily="sans-serif"
                 android:textStyle="normal"
                 android:textColor="#000000"
-                android:lineSpacingExtra="8sp"
-                android:text="Almond Milk"
-                android:textSize="20dp" />
+                android:text="Nesquik bar"
+                android:textSize="19dp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -418,7 +419,7 @@
                 android:textStyle="normal"
                 android:textColor="#000000"
                 android:lineSpacingExtra="8sp"
-                android:text="1.5L"
+                android:text="1 bar"
                 android:textSize="14dp" />
 
         </LinearLayout>
@@ -434,7 +435,7 @@
             android:layout_centerInParent="true"
             android:padding="10dp"
             android:gravity="center"
-            android:text="1.90€"
+            android:text="1.50€"
             android:textSize="25dp" />
     </LinearLayout>
 
@@ -584,7 +585,7 @@
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:contentDescription="TODO"
-            app:srcCompat="@drawable/nesquikthis" />
+            app:srcCompat="@drawable/nasquickpowder" />
 
         <LinearLayout
             android:layout_width="143dp"

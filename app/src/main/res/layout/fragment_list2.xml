@@ -13,7 +13,8 @@
 
         android:background="@android:color/white"
         android:orientation="vertical"
-        android:paddingLeft="10dp">
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
 
 
 
@@ -68,7 +69,7 @@
                     android:textStyle="normal"
                     android:textColor="#000000"
                     android:lineSpacingExtra="8sp"
-                    android:textSize="20dp" />
+                    android:textSize="15dp" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -98,7 +99,7 @@
                 android:padding="10dp"
                 android:text="7.80€"
                 android:gravity="center"
-                android:textSize="25dp" />
+                android:textSize="20dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -163,7 +164,7 @@
                 android:padding="10dp"
                 android:text="5.90€"
                 android:gravity="center"
-                android:textSize="25dp" />
+                android:textSize="20dp" />
         </LinearLayout>
 
 
@@ -214,14 +215,15 @@
                 android:layout_height="48dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
-                android:background="@android:color/holo_orange_light"
+                android:background="@color/colorAccent"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="8sp"
                 android:paddingLeft="25dp"
                 android:text="Add more products"
-                android:fontFamily="sans-serif"
-                android:textStyle="normal"
-                android:textColor="#000000"
-                android:lineSpacingExtra="8sp"
-                android:textSize="22dp" />
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22dp"
+                android:textStyle="normal" />
 
         </LinearLayout>
 
@@ -237,14 +239,15 @@
                 android:layout_height="48dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
-                android:background="@android:color/holo_orange_light"
-                android:paddingLeft="25dp"
+                android:background="@color/colorAccent"
                 android:fontFamily="sans-serif"
-                android:textStyle="normal"
-                android:textColor="#000000"
                 android:lineSpacingExtra="8sp"
+                android:paddingLeft="25dp"
                 android:text="PAY"
-                android:textSize="22dp" />
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22dp"
+                android:textStyle="normal" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

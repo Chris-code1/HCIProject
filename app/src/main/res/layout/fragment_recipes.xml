@@ -65,14 +65,14 @@
                 android:layout_height="33dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
-                android:paddingLeft="25dp"
-                android:text="Quck Fish Curry"
-                android:textSize="15dp"
-                android:gravity="center"
                 android:fontFamily="sans-serif"
-                android:textStyle="normal"
+                android:gravity="center"
+                android:lineSpacingExtra="8sp"
+                android:paddingLeft="25dp"
+                android:text="Quick Fish Curry"
                 android:textColor="#000000"
-                android:lineSpacingExtra="8sp"/>
+                android:textSize="15dp"
+                android:textStyle="normal" />
 
             <ImageView
                 android:layout_width="121dp"
@@ -162,8 +162,6 @@
             android:textColor="#000000"
             android:lineSpacingExtra="8sp"/>
     </LinearLayout>
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="87dp"
@@ -195,6 +193,123 @@
                 android:fontFamily="sans-serif"
                 android:textStyle="normal"
                 android:textColor="#000000"/>
+
+            <ImageView
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="12dp"
+                app:srcCompat="@drawable/four_eightstars" />
+            />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="141dp"
+            android:layout_height="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="19.80€"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            android:lineSpacingExtra="8sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:orientation="horizontal"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/chicken1" />
+
+        <LinearLayout
+            android:layout_width="143dp"
+            android:layout_height="63dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:id="@+id/layoutJohnsThaiChicken">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:paddingLeft="25dp"
+                android:text="Johns Thai Chicken Curry"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="12dp"
+                app:srcCompat="@drawable/fivestars" />
+            />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="141dp"
+            android:layout_height="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:lineSpacingExtra="8sp"
+            android:padding="10dp"
+            android:text="18.65€"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:orientation="horizontal"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/chicken2" />
+
+        <LinearLayout
+            android:layout_width="143dp"
+            android:layout_height="63dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:paddingLeft="25dp"
+                android:text="Chicken parmo"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="normal" />
 
             <ImageView
                 android:layout_width="121dp"

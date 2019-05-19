@@ -11,10 +11,11 @@
         android:orientation="vertical"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
+
         android:paddingTop="50dp">
 
         <LinearLayout
-            android:layout_width="394dp"
+            android:layout_width="match_parent"
             android:layout_height="213dp"
             android:orientation="horizontal"
             android:paddingTop="1dp">
@@ -48,7 +49,7 @@
                 android:id="@+id/favoritebutton"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:layout_marginLeft="45dp"
+                android:layout_marginLeft="35dp"
                 android:layout_marginTop="9dp"
                 android:background="@drawable/notsave"
                 android:textColor="#FFFFFF" />
@@ -124,6 +125,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:paddingRight="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -174,7 +176,7 @@
                 android:layout_width="120dp"
                 android:layout_height="30dp"
                 android:layout_marginLeft="15dp"
-                android:text="Oil (1 tbsp)"
+                android:text="Oil (1 tsp)"
                 android:fontFamily="sans-serif"
                 android:textStyle="normal"
                 android:textColor="#000000"
@@ -187,6 +189,7 @@
                 android:layout_height="30dp"
                 android:layout_marginLeft="89dp"
                 android:text="2,60 €"
+
                 android:textColor="#000000"
                 android:textSize="20sp" />
 
@@ -196,6 +199,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:paddingRight="10dp"
             android:orientation="horizontal">
 
 
@@ -255,7 +259,7 @@
                 android:id="@+id/secondPrice"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:layout_marginLeft="59dp"
+                android:layout_marginLeft="40dp"
                 android:text="1,55 €"
                 android:textColor="#000000"
                 android:textSize="20sp" />
@@ -267,7 +271,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
 
 
             <Button
@@ -326,7 +331,7 @@
                 android:id="@+id/thirdPrice"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:layout_marginLeft="59dp"
+                android:layout_marginLeft="40dp"
                 android:text="7,80 €"
                 android:textColor="#000000"
                 android:textSize="20sp" />
@@ -338,7 +343,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
 
 
             <Button
@@ -394,10 +400,11 @@
                 android:id="@+id/forPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="39dp"
-                android:layout_marginLeft="59dp"
+                android:layout_marginLeft="40dp"
                 android:fontFamily="sans-serif"
                 android:lineSpacingExtra="8sp"
                 android:text="1,50 €"
+                android:textAlignment="viewStart"
                 android:textColor="#000000"
                 android:textSize="20sp"
                 android:textStyle="normal" />
@@ -409,7 +416,8 @@
             android:layout_width="400dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
 
 
             <Button
@@ -465,8 +473,9 @@
                 android:id="@+id/fifPrice"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:layout_marginLeft="59dp"
+                android:layout_marginLeft="40dp"
                 android:text="5,90 €"
+                android:textAlignment="viewStart"
                 android:textColor="#000000"
                 android:textSize="20sp" />
 
@@ -477,7 +486,8 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginTop="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
 
 
             <Button
@@ -533,7 +543,7 @@
                 android:id="@+id/sixPrice"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:layout_marginLeft="59dp"
+                android:layout_marginLeft="40dp"
                 android:fontFamily="sans-serif"
                 android:lineSpacingExtra="8sp"
                 android:text="2,30 €"
@@ -568,7 +578,7 @@
                 android:id="@+id/totalprecio"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
-                android:layout_marginLeft="110dp"
+                android:layout_marginLeft="90dp"
                 android:text="18,65 €"
                 android:textColor="#000000"
                 android:textSize="24sp"

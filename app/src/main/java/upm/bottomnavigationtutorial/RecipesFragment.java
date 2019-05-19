@@ -26,32 +26,26 @@ public class RecipesFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_recipes, container, false);
 
         //find objects in xml file
-       // LinearLayout linearLayoutChicken = view.findViewById(R.id.layoutJohnsThaiChicken);
+       ImageView img_Chicken = view.findViewById(R.id.img_chicken);
 
-        //set listeners on objects and initiate function when called
+//        set listeners on objects and initiate function when called
 
-       // linearLayoutChicken.setOnClickListener(new View.OnClickListener() {
-        //    @Override
-         //   public void onClick(View v) {
-        //        swap_fragment_recipe_details();
-          //  }
-       // });
+        img_Chicken.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                swap_fragment_recipe_list();
+            }
+        });
 
-       // linearLayoutChicken.setOnClickListener(new View.OnClickListener() {
-       //     @Override
-        //    public void onClick(View v) {
-        //        swap_fragment_recipe_details();
-        //    }
-       // });
 
 
         return view;
     }
 
-    private void swap_fragment_recipe_details() {
-        RecipeDetailsFragment recipeDetailsFragment = new RecipeDetailsFragment();
+    private void swap_fragment_recipe_list() {
+        ChickenRecipesFragment chickenRecipesFragment = new ChickenRecipesFragment();
         FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container, recipeDetailsFragment);
+        fragmentTransaction.replace(R.id.fragment_container, chickenRecipesFragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }

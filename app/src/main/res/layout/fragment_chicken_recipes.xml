@@ -221,7 +221,8 @@
             android:layout_width="match_parent"
             android:layout_height="87dp"
             android:orientation="horizontal"
-            android:paddingTop="15dp">
+            android:paddingTop="15dp"
+            android:id="@+id/linearlayoutJohnChicken">
 
             <ImageView
                 android:layout_width="120dp"

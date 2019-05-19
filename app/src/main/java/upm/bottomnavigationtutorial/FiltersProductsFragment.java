@@ -39,7 +39,7 @@ public class FiltersProductsFragment extends Fragment {
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.topbar_filter, menu);
+        inflater.inflate(R.menu.topbar_list, menu);
         return;
     }
 

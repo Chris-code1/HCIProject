@@ -50,7 +50,7 @@
             app:srcCompat="@drawable/salaasrecipes" />
 
         <ImageView
-            android:id="@+id/eggstry"
+            android:id="@+id/img_chicken"
             android:layout_width="120dp"
             android:layout_height="63dp"
             android:layout_marginLeft="7dp"

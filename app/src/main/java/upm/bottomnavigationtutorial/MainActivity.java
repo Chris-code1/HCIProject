@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.check:
                 Toast.makeText(this, "Check selected", Toast.LENGTH_SHORT).show();
-                selectedFragment = new ProductsFragment();
+                selectedFragment = new FilteredChickenFragment();
                 break;
         }
 

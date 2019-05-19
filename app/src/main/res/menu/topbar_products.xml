@@ -4,9 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item android:id="@+id/search"
+        android:icon="@drawable/ic_search_black_24dp"
         app:showAsAction="always"
-        android:title="Search"
-        app:actionViewClass="android.support.v7.widget.SearchView" />
+        android:title="Search" />
 
 
     <item android:id="@+id/filterprod"

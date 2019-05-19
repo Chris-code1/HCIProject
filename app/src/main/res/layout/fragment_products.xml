@@ -57,7 +57,7 @@
                 app:srcCompat="@drawable/fruit" />
 
             <ImageView
-                android:id="@+id/eggstry1"
+                android:id="@+id/img_eggs"
                 android:layout_width="120dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="7dp"
@@ -123,7 +123,9 @@
                 app:srcCompat="@drawable/fish" />
 
             <ImageView
-                android:id="@+id/nesquikmenu"
+
+
+                android:id="@+id/img_Nesquick"
                 android:layout_width="120dp"
                 android:layout_height="64dp"
                 android:layout_marginLeft="7dp"
@@ -131,7 +133,7 @@
                 app:srcCompat="@drawable/nesquikmenu" />
 
             <Button
-                android:id="@+id/seemore"
+                android:id="@+id/btn_seemore"
                 android:layout_width="109dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="10dp"
@@ -139,7 +141,8 @@
                 android:text="See More >>"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick = "displayToastMsg"/>
 
         </LinearLayout>
 

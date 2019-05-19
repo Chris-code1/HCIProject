@@ -18,6 +18,11 @@ public class List1Fragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         getActivity().setTitle("List");
 
+        //add Arrow
+        ((MainActivity) getActivity()).removeArrow();
+        ((MainActivity) getActivity()).addArrow();
+
+
         //Removes the back arrow
         ((MainActivity) getActivity()).removeArrow();
 

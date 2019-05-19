@@ -5,28 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-    <LinearLayout
-        android:layout_width="211dp"
-        android:layout_height="35dp"
-        android:orientation="horizontal"
-        android:paddingTop="5dp">
-
-        <TextView
-            android:layout_width="108dp"
-            android:layout_height="35dp"
-            android:fontFamily="sans-serif"
-            android:lineSpacingExtra="18sp"
-            android:padding="5dp"
-            android:text="Filtered Chicken Recipes"
-            android:layout_marginTop="5dp"
-            android:textColor="#8a000000"
-            android:textSize="16sp"
-            android:textStyle="normal|bold" />
-
-
-    </LinearLayout>
-
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
@@ -38,13 +16,6 @@
 
 
 
-
-        <View
-            android:id="@+id/divider2"
-            android:layout_width="wrap_content"
-            android:layout_height="1dp"
-            android:layout_marginLeft="120dp"
-            android:background="?android:attr/listDivider" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -184,7 +155,8 @@
             android:layout_width="match_parent"
             android:layout_height="87dp"
             android:orientation="horizontal"
-            android:paddingTop="15dp">
+            android:paddingTop="15dp"
+            android:id="@+id/layoutJohnsThaiChickenFiltered">
 
             <ImageView
                 android:layout_width="120dp"
@@ -239,12 +211,6 @@
                 android:textSize="18dp"
                 android:textStyle="normal|bold" />
         </LinearLayout>
-
-
-
-
-
-
 
     </LinearLayout>
 

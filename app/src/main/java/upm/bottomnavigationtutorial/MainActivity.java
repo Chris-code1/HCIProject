@@ -16,12 +16,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import br.com.mauker.materialsearchview.MaterialSearchView;
+//import br.com.mauker.materialsearchview.MaterialSearchView;
 
 
 public class MainActivity extends AppCompatActivity {
 
-    MaterialSearchView msv;
+//    MaterialSearchView msv;
     // On create function calls everything when application opens
     //test
 
@@ -60,9 +60,6 @@ public class MainActivity extends AppCompatActivity {
                 selectedFragment = new FiltersProductsFragment();
                 break;
             case R.id.search:
-                Toast.makeText(this, "This function is currently not available", Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.favorite:
                 Toast.makeText(this, "This function is currently not available", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.share:
@@ -105,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
                             break;
 
                         case R.id.nav_list:
-                            selectedFragment = new EmptyListFragment();
+                            selectedFragment = new List3Fragment();
                             break;
 
                         case R.id.nav_account:

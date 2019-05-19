@@ -35,6 +35,9 @@ public class FilteredChickenFragment extends Fragment {
         LinearLayout layout_john = view.findViewById(R.id.layoutJohnsThaiChickenFiltered);
 
 
+
+
+
         layout_john.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -43,6 +46,8 @@ public class FilteredChickenFragment extends Fragment {
         });
 
         return view;
+
+
     }
 
 

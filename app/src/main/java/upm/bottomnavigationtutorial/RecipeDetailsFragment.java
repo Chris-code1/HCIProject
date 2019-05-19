@@ -24,6 +24,9 @@ public class RecipeDetailsFragment extends Fragment {
     int minteger5 = 6;
     int minteger6 = 1;
 
+
+    boolean isClicked = true;
+
     double firstPrice = 2.5;
     double secPrice = 1.55;
     double treePrice = 1.95;
@@ -48,6 +51,29 @@ public class RecipeDetailsFragment extends Fragment {
         final TextView displayFor = (TextView) view.findViewById(R.id.forPrice);
         final TextView displaySix = (TextView) view.findViewById(R.id.sixPrice);
         final TextView displayTotal = (TextView) view.findViewById(R.id.totalprecio);
+
+        final Button ButtonFavorite = (Button) view.findViewById(R.id.favoritebutton);
+
+
+        ButtonFavorite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (isClicked) {
+                    //buttonColor.setBackgroundColor(0xFFA9A9A9);
+                    ButtonFavorite.setBackgroundResource(R.drawable.save);
+                    isClicked = false;
+
+
+                } else {
+                    //  buttonColor.setBackgroundColor(0xFFFFA500);
+                    ButtonFavorite.setBackgroundResource(R.drawable.notsave);
+                    isClicked = true;
+
+
+                }
+            }
+        });
+
 
         //button
         Button btn_addtolist = view.findViewById(R.id.addlist);
@@ -352,6 +378,7 @@ public class RecipeDetailsFragment extends Fragment {
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.topbar_recipedetails, menu);
+
         return;
     }
 }

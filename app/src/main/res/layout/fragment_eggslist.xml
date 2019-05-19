@@ -35,35 +35,37 @@
 
                 <TextView
 
-                    android:layout_width="121dp"
+                    android:layout_width="170sp"
                     android:layout_height="52dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
-                    android:gravity="center"
                     android:fontFamily="sans-serif"
-                    android:textStyle="normal"
-                    android:textColor="#000000"
+                    android:gravity="center"
                     android:paddingLeft="25dp"
                     android:text="Happy Egg"
-                    android:textSize="20dp" />
+                    android:textAlignment="viewStart"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
 
 
             </LinearLayout>
 
             <TextView
                 android:id="@+id/priceNesquik"
-                android:layout_width="141dp"
+                android:layout_width="match_parent"
                 android:layout_height="64dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
-                android:padding="10dp"
-                android:gravity="center"
                 android:fontFamily="sans-serif"
-                android:textStyle="normal"
-                android:textColor="#000000"
+                android:gravity="center"
                 android:lineSpacingExtra="8sp"
-                android:text="0.50€ - 1.50€"
-                android:textSize="20dp" />
+                android:padding="10dp"
+                android:text="from 0,50 €"
+                android:textAlignment="center"
+                android:textColor="#5f6368"
+                android:textSize="14sp"
+                android:textStyle="normal|bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -86,36 +88,37 @@
                 android:paddingTop="5dp">
 
                 <TextView
-                    android:fontFamily="sans-serif"
-                    android:textStyle="normal"
-                    android:textColor="#000000"
-                    android:lineSpacingExtra="8sp"
-                    android:layout_width="121dp"
+                    android:layout_width="170sp"
                     android:layout_height="52dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
+                    android:fontFamily="sans-serif"
                     android:gravity="center"
+                    android:lineSpacingExtra="8sp"
                     android:paddingLeft="25dp"
                     android:text="Ecoeggs"
-                    android:textSize="20dp" />
+                    android:textAlignment="viewStart"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
 
 
             </LinearLayout>
 
             <TextView
                 android:id="@+id/priceNesquik"
-                android:layout_width="141dp"
+                android:layout_width="match_parent"
                 android:layout_height="64dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="0.80€ - 2.30€"
                 android:fontFamily="sans-serif"
-                android:textStyle="normal"
-                android:textColor="#000000"
+                android:gravity="center"
                 android:lineSpacingExtra="8sp"
-                android:textSize="20dp" />
+                android:padding="10dp"
+                android:text="from 0,80 €"
+                android:textColor="#5f6368"
+                android:textSize="14sp"
+                android:textStyle="normal|bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -139,35 +142,36 @@
 
                 <TextView
                     android:id="@+id/text13"
-                    android:layout_width="121dp"
+                    android:layout_width="170sp"
                     android:layout_height="52dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
-                    android:gravity="center"
                     android:fontFamily="sans-serif"
-                    android:textStyle="normal"
-                    android:textColor="#000000"
-
+                    android:gravity="center"
                     android:paddingLeft="25dp"
                     android:text="All grain eggs"
-                    android:textSize="20dp" />
+
+                    android:textAlignment="viewStart"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
 
 
             </LinearLayout>
 
             <TextView
-                android:fontFamily="sans-serif"
-                android:textStyle="normal"
-                android:textColor="#000000"
-                android:lineSpacingExtra="8sp"
-                android:layout_width="141dp"
+                android:layout_width="match_parent"
                 android:layout_height="64dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
+                android:fontFamily="sans-serif"
                 android:gravity="center"
+                android:lineSpacingExtra="8sp"
                 android:padding="10dp"
-                android:text="1.10€ - 3.50€"
-                android:textSize="20dp" />
+                android:text="from 1,10 €"
+                android:textColor="#5f6368"
+                android:textSize="14sp"
+                android:textStyle="normal|bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -191,35 +195,36 @@
 
                 <TextView
                     android:id="@+id/text13"
-                    android:layout_width="121dp"
+                    android:layout_width="170sp"
                     android:layout_height="52dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
+                    android:fontFamily="sans-serif"
                     android:gravity="center"
                     android:paddingLeft="25dp"
-                    android:fontFamily="sans-serif"
-                    android:textStyle="normal"
-                    android:textColor="#000000"
-
                     android:text="Chocolate eggs"
-                    android:textSize="20dp" />
+                    android:textAlignment="viewStart"
+
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
 
 
             </LinearLayout>
 
             <TextView
-                android:layout_width="141dp"
+                android:layout_width="match_parent"
                 android:layout_height="64dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="2.99€ - 4.50€"
                 android:fontFamily="sans-serif"
-                android:textStyle="normal"
-                android:textColor="#000000"
+                android:gravity="center"
                 android:lineSpacingExtra="8sp"
-                android:textSize="20dp" />
+                android:padding="10dp"
+                android:text="from 2,99 €"
+                android:textColor="#5f6368"
+                android:textSize="14sp"
+                android:textStyle="normal|bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -242,35 +247,36 @@
                 android:paddingTop="5dp">
 
                 <TextView
-                    android:layout_width="121dp"
+                    android:layout_width="170sp"
                     android:layout_height="52dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
-                    android:gravity="center"
-                    android:paddingLeft="25dp"
                     android:fontFamily="sans-serif"
-                    android:textStyle="normal"
-                    android:textColor="#000000"
+                    android:gravity="center"
                     android:lineSpacingExtra="8sp"
+                    android:paddingLeft="25dp"
                     android:text="O'eggs"
-                    android:textSize="20dp" />
+                    android:textAlignment="viewStart"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
 
 
             </LinearLayout>
 
             <TextView
-                android:layout_width="141dp"
+                android:layout_width="match_parent"
                 android:layout_height="64dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
-                android:gravity="center"
-                android:padding="10dp"
                 android:fontFamily="sans-serif"
-                android:textStyle="normal"
-                android:textColor="#000000"
+                android:gravity="center"
                 android:lineSpacingExtra="8sp"
-                android:text="0.99€ - 1.80€"
-                android:textSize="20dp" />
+                android:padding="10dp"
+                android:text="from 0,99 €"
+                android:textColor="#5f6368"
+                android:textSize="14sp"
+                android:textStyle="normal|bold" />
         </LinearLayout>
 
 

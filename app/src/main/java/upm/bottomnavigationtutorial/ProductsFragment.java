@@ -53,12 +53,6 @@ public class ProductsFragment extends Fragment {
             }
         });
 
-//        emptyList.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                swap_fragment_empty();
-//            }
-//        });
 
         return view;
     }
@@ -86,14 +80,6 @@ public class ProductsFragment extends Fragment {
 
     }
 
-    private void swap_fragment_empty() {
-        EmptyListFragment empty = new EmptyListFragment();
-        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container, empty);
-        fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.commit();
-
-    }
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);

@@ -11,6 +11,7 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class RecipesFragment extends Fragment {
@@ -25,33 +26,16 @@ public class RecipesFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_recipes, container, false);
 
         //find objects in xml file
-        ImageView imgthaichicken = view.findViewById(R.id.imgThaiChicken);
-        TextView txtthaichicken = view.findViewById(R.id.txtThaiChicken);
-        TextView pricethaichicken = view.findViewById(R.id.priceThaiChicken);
+        LinearLayout linearLayoutChicken = view.findViewById(R.id.layoutJohnsThaiChicken);
 
         //set listeners on objects and initiate function when called
 
-        imgthaichicken.setOnClickListener(new View.OnClickListener() {
+        linearLayoutChicken.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 swap_fragment_recipe_details();
             }
         });
-
-        txtthaichicken.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                swap_fragment_recipe_details();
-            }
-        });
-
-        pricethaichicken.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                swap_fragment_recipe_details();
-            }
-        });
-
 
 
         return view;

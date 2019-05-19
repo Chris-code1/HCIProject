@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 /**
@@ -16,7 +17,7 @@ import android.widget.TextView;
  */
 public class ProductDetailsEggsFragment extends Fragment {
 
-    boolean isClickedPack1 = false;
+    boolean isClicked = false;
     String tag=null;
     public ProductDetailsEggsFragment() {
         // Required empty public constructor
@@ -59,6 +60,18 @@ public class ProductDetailsEggsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 tag="small";
+             //   if (isClicked) {
+                //buttonColor.setBackgroundColor(0xFFA9A9A9);
+                Toast.makeText(getActivity(), "This funcionality is not working at the moment",
+                        Toast.LENGTH_LONG).show();
+              //      isClicked = false;
+
+
+               // } else {
+                    //  buttonColor.setBackgroundColor(0xFFFFA500);
+                    //small.setBackgroundResource(R.drawable.eggscolor);
+                //    isClicked = true;
+              //  }
 
             }
         });
@@ -68,6 +81,22 @@ public class ProductDetailsEggsFragment extends Fragment {
             public void onClick(View view) {
                 //displayIntegerEggs.setText("1 € ");
                 tag="medium";
+               // if (isClicked) {
+                    //buttonColor.setBackgroundColor(0xFFA9A9A9);
+                  //  medium.setBackgroundResource(R.drawable.chipbutton);
+                 //   isClicked = false;
+                medium.setBackgroundResource(R.drawable.eggscolor);
+
+
+
+                // } else {
+                    //  buttonColor.setBackgroundColor(0xFFFFA500);
+                //    medium.setBackgroundResource(R.drawable.eggscolor);
+               //     isClicked = true;
+
+
+               // }
+
             }
         });
 
@@ -76,6 +105,21 @@ public class ProductDetailsEggsFragment extends Fragment {
             public void onClick(View view) {
                 //displayIntegerEggs.setText("1,28 € ");
                 tag="large";
+                //if (isClicked) {
+                    //buttonColor.setBackgroundColor(0xFFA9A9A9);
+                //    large.setBackgroundResource(R.drawable.chipbutton);
+                 //   isClicked = false;
+                Toast.makeText(getActivity(), "This funcionality is not working at the moment",
+                        Toast.LENGTH_LONG).show();
+
+
+               // } else {
+                    //  buttonColor.setBackgroundColor(0xFFFFA500);
+                   // large.setBackgroundResource(R.drawable.eggscolor);
+                 //   isClicked = true;
+
+
+             //   }
             }
         });
 
@@ -83,7 +127,9 @@ public class ProductDetailsEggsFragment extends Fragment {
         pack1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                displayIntegerEggs.setText(checkPacksSix());
+                //displayIntegerEggs.setText(checkPacksSix());
+
+
 
             }
         });
@@ -115,13 +161,13 @@ public class ProductDetailsEggsFragment extends Fragment {
         String text="";
         switch (tag){
             case "small":
-                text="0,8 € ";
+                text="0,80 € ";
                 break;
             case "medium" :
-                text="0,9 € ";
+                text="0,90 € ";
                 break;
             case "large":
-                text="1 € ";
+                text="1,00 € ";
                 break;
         }
         return text;
@@ -132,13 +178,13 @@ public class ProductDetailsEggsFragment extends Fragment {
         String text="";
         switch (tag){
             case "small":
-                text=" 1 € ";
+                text=" 1,00 € ";
                 break;
             case "medium" :
-                text="1,2 € ";
+                text="1,20 € ";
                 break;
             case "large":
-                text="1,3 € ";
+                text="1,30 € ";
                 break;
         }
         return text;
@@ -148,13 +194,13 @@ public class ProductDetailsEggsFragment extends Fragment {
         String text="";
         switch (tag){
             case "small":
-                text=" 1,2 € ";
+                text=" 1,20 € ";
                 break;
             case "medium" :
-                text="1,5 € ";
+                text="1,50 € ";
                 break;
             case "large":
-                text="1,8 € ";
+                text="1,80 € ";
                 break;
         }
         return text;
@@ -164,13 +210,13 @@ public class ProductDetailsEggsFragment extends Fragment {
         String text="";
         switch (tag){
             case "small":
-                text=" 1,4 € ";
+                text=" 1,40 € ";
                 break;
             case "medium" :
-                text="1,7 € ";
+                text="1,70 € ";
                 break;
             case "large":
-                text="2,1 € ";
+                text="2,10 € ";
                 break;
         }
         return text;

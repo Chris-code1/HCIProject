@@ -56,8 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.filterprod:
-                Toast.makeText(this, "Filter selected", Toast.LENGTH_SHORT).show();
-                selectedFragment = new FilterFragment();
+                selectedFragment = new FiltersProductsFragment();
                 break;
             case R.id.search:
                 Toast.makeText(this, "This function is currently not available", Toast.LENGTH_SHORT).show();

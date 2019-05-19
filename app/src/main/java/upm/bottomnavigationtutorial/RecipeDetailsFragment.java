@@ -1,5 +1,6 @@
 package upm.bottomnavigationtutorial;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -27,11 +28,11 @@ public class RecipeDetailsFragment extends Fragment {
 
     boolean isClicked = true;
 
-    double firstPrice = 2.5;
+    double firstPrice = 2.50;
     double secPrice = 1.55;
     double treePrice = 1.95;
-    double forPrice = 1.5;
-    double sixPrice = 2.2;
+    double forPrice = 1.50;
+    double sixPrice = 2.20;
 
     double finalTotal=18.55;
 
@@ -61,12 +62,16 @@ public class RecipeDetailsFragment extends Fragment {
                 if (isClicked) {
                     //buttonColor.setBackgroundColor(0xFFA9A9A9);
                     ButtonFavorite.setBackgroundResource(R.drawable.save);
+                    Toast.makeText(getActivity(), "Recipe Saved",
+                            Toast.LENGTH_LONG).show();
                     isClicked = false;
 
 
                 } else {
                     //  buttonColor.setBackgroundColor(0xFFFFA500);
                     ButtonFavorite.setBackgroundResource(R.drawable.notsave);
+                    Toast.makeText(getActivity(), "Recipe Unsaved",
+                            Toast.LENGTH_LONG).show();
                     isClicked = true;
 
 

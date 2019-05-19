@@ -14,17 +14,16 @@
 
         <LinearLayout
             android:layout_width="394dp"
-            android:layout_height="208dp"
+            android:layout_height="215dp"
             android:orientation="horizontal"
             android:paddingTop="7dp">
 
             <ImageView
                 android:id="@+id/eggsImage"
                 android:layout_width="match_parent"
-                android:layout_height="194dp"
-                android:layout_marginTop="6dp"
-
-                app:srcCompat="@drawable/eggsthis" />
+                android:layout_height="215dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/eggsecco" />
         </LinearLayout>
 
         <LinearLayout

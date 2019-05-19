@@ -94,14 +94,14 @@
                 android:layout_height="64dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
-                android:gravity="center"
-                android:padding="10dp"
                 android:fontFamily="sans-serif"
-                android:textStyle="normal"
-                android:textColor="#000000"
+                android:gravity="center"
                 android:lineSpacingExtra="8sp"
-                android:text="7.80€"
-                android:textSize="20dp" />
+                android:padding="10dp"
+                android:text="5,20 €"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="normal" />
         </LinearLayout>
 
         <LinearLayout
@@ -160,13 +160,13 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:fontFamily="sans-serif"
-                android:textStyle="normal"
-                android:textColor="#000000"
-                android:lineSpacingExtra="8sp"
                 android:gravity="center"
+                android:lineSpacingExtra="8sp"
                 android:padding="10dp"
-                android:text="5.90€"
-                android:textSize="20dp" />
+                android:text="5,90 €"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="normal" />
         </LinearLayout>
 
 
@@ -225,14 +225,14 @@
                 android:layout_height="64dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
-                android:padding="10dp"
-                android:text="1.00€"
                 android:fontFamily="sans-serif"
-                android:textStyle="normal"
-                android:textColor="#000000"
-                android:lineSpacingExtra="8sp"
                 android:gravity="center"
-                android:textSize="20dp" />
+                android:lineSpacingExtra="8sp"
+                android:padding="10dp"
+                android:text="1,00 €"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="normal" />
         </LinearLayout>
 
 
@@ -257,17 +257,17 @@
 
             <TextView
 
-                android:layout_width="394dp"
+                android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
-                android:paddingLeft="20dp"
                 android:fontFamily="sans-serif"
-                android:textStyle="normal"
-                android:textColor="#000000"
                 android:lineSpacingExtra="8sp"
-                android:text="TOTAL:                                       14.70€"
-                android:textSize="22dp" />
+                android:paddingLeft="20dp"
+                android:text="TOTAL:                                      9,10 €"
+                android:textColor="#000000"
+                android:textSize="22dp"
+                android:textStyle="normal" />
 
         </LinearLayout>
 

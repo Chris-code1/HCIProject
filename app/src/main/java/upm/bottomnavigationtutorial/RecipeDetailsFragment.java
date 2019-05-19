@@ -20,7 +20,7 @@ public class RecipeDetailsFragment extends Fragment {
 
     int minteger = 1;
     int minteger2 = 1;
-    int minteger3 = 4;
+    int minteger3 = 6;
     int minteger4 = 1;
     int minteger5 = 6;
     int minteger6 = 1;
@@ -28,9 +28,9 @@ public class RecipeDetailsFragment extends Fragment {
 
     boolean isClicked = true;
 
-    double firstPrice = 2.50;
+    double firstPrice = 2.60;
     double secPrice = 1.55;
-    double treePrice = 1.95;
+    double treePrice = 1.30;
     double forPrice = 1.50;
     double sixPrice = 2.20;
 
@@ -104,9 +104,10 @@ public class RecipeDetailsFragment extends Fragment {
                     minteger = minteger + 1;
                     Double Total= firstPrice*minteger;
                     displayInteger.setText(Integer.toString(minteger));
-                    displayFirst.setText(Total + "€");
+                    displayFirst.setText(Total+ "€");
                     finalTotal=finalTotal+Total;
                     displayTotal.setText(finalTotal+"€");
+
                 }
             }
         });
@@ -196,7 +197,13 @@ public class RecipeDetailsFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 //if (minteger3 >4 && minteger3 <= 6) {
-                if (minteger3< 6) {
+                if (minteger3==6) {
+                    Toast.makeText(getActivity(), "This funcionality is not working at the moment",
+                            Toast.LENGTH_LONG).show();
+
+                }
+
+                else{
                     minteger3 = minteger3 + 1;
                     displayInteger3.setText(Integer.toString(minteger3));
                     Double Total= treePrice*minteger3;
@@ -204,13 +211,6 @@ public class RecipeDetailsFragment extends Fragment {
 
                     finalTotal=finalTotal+treePrice;
                     displayTotal.setText(finalTotal+"€");
-
-
-                }
-
-                else{
-                    Toast.makeText(getActivity(), "This funcionality is not working at the moment",
-                            Toast.LENGTH_LONG).show();
                 }
 
                 //minteger = minteger +1 ;
@@ -223,7 +223,7 @@ public class RecipeDetailsFragment extends Fragment {
         plusMenos3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (minteger3 >=4 && minteger3 < 6) {
+                if (minteger3>4) {
                     minteger3 = minteger3 - 1 ;
                     displayInteger3.setText(Integer.toString(minteger3));
                     Double Total= treePrice*minteger3;
@@ -235,7 +235,7 @@ public class RecipeDetailsFragment extends Fragment {
 
 
                 }
-                else{
+                else if (minteger3<4){
                     Toast.makeText(getActivity(), "This funcionality is not working at the moment",
                             Toast.LENGTH_LONG).show();
                 }

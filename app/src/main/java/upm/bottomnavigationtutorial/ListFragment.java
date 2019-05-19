@@ -27,6 +27,7 @@ public class ListFragment extends Fragment {
 
         //Removes the back arrow
         ((MainActivity) getActivity()).removeArrow();
+        ((MainActivity) getActivity()).addArrow();
 
         View view = inflater.inflate(R.layout.fragment_list, container, false);
 

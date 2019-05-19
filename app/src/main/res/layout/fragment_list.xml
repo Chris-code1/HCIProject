@@ -330,7 +330,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:paddingLeft="20dp"
-                android:text="TOTAL:                                       18.20€"
+                android:text="TOTAL:                                       17.20€"
                 android:textSize="22dp" />
 
         </LinearLayout>

@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="194dp"
                 android:layout_marginTop="6dp"
-                app:srcCompat="@drawable/nesquikthis" />
+                app:srcCompat="@drawable/nesquipo" />
         </LinearLayout>
 
         <LinearLayout

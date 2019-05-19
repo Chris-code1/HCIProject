@@ -109,7 +109,7 @@
                 android:layout_height="32dp"
                 android:layout_marginRight="10dp"
                 android:background="@drawable/chipbutton"
-                android:text="650 g"
+                android:text="600 g"
                 android:textAllCaps="false"
                 android:textColor="#ffffff" />
 

@@ -130,7 +130,7 @@
             app:srcCompat="@drawable/smoothierecipes" />
 
         <Button
-            android:id="@+id/seemore"
+            android:id="@+id/btn_seemore2"
             android:layout_width="100dp"
             android:layout_height="60dp"
             android:layout_marginLeft="10dp"

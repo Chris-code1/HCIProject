@@ -10,9 +10,11 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class RecipesFragment extends Fragment {
     @Nullable
@@ -37,7 +39,15 @@ public class RecipesFragment extends Fragment {
             }
         });
 
+        Button btn_seemore  = view.findViewById(R.id.btn_seemore2);
 
+        btn_seemore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Toast.makeText(getContext(), "Nothing to see more at the moment :( " , Toast.LENGTH_SHORT ).show();
+            }
+        });
 
         return view;
     }

@@ -36,13 +36,13 @@ public class ProductsFragment extends Fragment {
         ImageView imgNesquick = view.findViewById(R.id.img_Nesquick);
         ImageView imgEggs = view.findViewById(R.id.img_eggs);
 
-        Button btn_seemore  = view.findViewById(R.id.btn_seemore);
+        Button btn_seemore = view.findViewById(R.id.btn_seemore);
 
         btn_seemore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(getContext(), "Unfortunately there is nothing to see more at the moment :( " , Toast.LENGTH_SHORT ).show();
+                Toast.makeText(getContext(), "Nothing to see more at the moment :( " , Toast.LENGTH_SHORT ).show();
             }
         });
 

@@ -27,6 +27,8 @@ public class ChickenRecipesFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_chicken_recipes, container, false);
 
+        getActivity().setTitle("Category Chicken");
+
         //Removes the back arrow
         ((MainActivity) getActivity()).removeArrow();
         ((MainActivity) getActivity()).addArrow();

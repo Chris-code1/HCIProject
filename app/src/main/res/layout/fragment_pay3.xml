@@ -16,10 +16,10 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/imagefinger"
-        android:text="Please place your finger on the Home button to verify your identity"
+        android:text="Payment Successful"
         android:textAlignment="center"
         android:textSize="20dp"
         android:padding="30dp"

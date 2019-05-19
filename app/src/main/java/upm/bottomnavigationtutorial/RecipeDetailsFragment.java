@@ -1,5 +1,6 @@
 package upm.bottomnavigationtutorial;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -24,11 +25,14 @@ public class RecipeDetailsFragment extends Fragment {
     int minteger5 = 6;
     int minteger6 = 1;
 
-    double firstPrice = 2.5;
+
+    boolean isClicked = true;
+
+    double firstPrice = 2.50;
     double secPrice = 1.55;
     double treePrice = 1.95;
-    double forPrice = 1.5;
-    double sixPrice = 2.2;
+    double forPrice = 1.50;
+    double sixPrice = 2.20;
 
     double finalTotal=18.55;
 
@@ -48,6 +52,33 @@ public class RecipeDetailsFragment extends Fragment {
         final TextView displayFor = (TextView) view.findViewById(R.id.forPrice);
         final TextView displaySix = (TextView) view.findViewById(R.id.sixPrice);
         final TextView displayTotal = (TextView) view.findViewById(R.id.totalprecio);
+
+        final Button ButtonFavorite = (Button) view.findViewById(R.id.favoritebutton);
+
+
+        ButtonFavorite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (isClicked) {
+                    //buttonColor.setBackgroundColor(0xFFA9A9A9);
+                    ButtonFavorite.setBackgroundResource(R.drawable.save);
+                    Toast.makeText(getActivity(), "Recipe Saved",
+                            Toast.LENGTH_LONG).show();
+                    isClicked = false;
+
+
+                } else {
+                    //  buttonColor.setBackgroundColor(0xFFFFA500);
+                    ButtonFavorite.setBackgroundResource(R.drawable.notsave);
+                    Toast.makeText(getActivity(), "Recipe Unsaved",
+                            Toast.LENGTH_LONG).show();
+                    isClicked = true;
+
+
+                }
+            }
+        });
+
 
         //button
         Button btn_addtolist = view.findViewById(R.id.addlist);
@@ -352,6 +383,7 @@ public class RecipeDetailsFragment extends Fragment {
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.topbar_recipedetails, menu);
+
         return;
     }
 }

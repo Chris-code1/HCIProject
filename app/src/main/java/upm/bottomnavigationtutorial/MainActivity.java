@@ -3,6 +3,7 @@ package upm.bottomnavigationtutorial;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.ListFragment;
 import android.support.v7.app.AppCompatActivity;
@@ -15,9 +16,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import br.com.mauker.materialsearchview.MaterialSearchView;
+
+
 public class MainActivity extends AppCompatActivity {
 
-
+    MaterialSearchView msv;
     // On create function calls everything when application opens
     //test
 
@@ -53,8 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.filterprod:
-                Toast.makeText(this, "Filter selected", Toast.LENGTH_SHORT).show();
-                selectedFragment = new FilterFragment();
+                selectedFragment = new FiltersProductsFragment();
                 break;
             case R.id.search:
                 Toast.makeText(this, "This function is currently not available", Toast.LENGTH_SHORT).show();
@@ -76,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                 selectedFragment).commit();
+
 
         return  true;
 
@@ -132,4 +136,9 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setNavigationIcon(null);
     }
+
+
+
+
+
 }

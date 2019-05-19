@@ -62,7 +62,7 @@ public class ProductDetailsFragment extends Fragment {
         gramas3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                displayInteger.setText("3,99 € ");
+                displayInteger.setText("3,50 € ");
             }
         });
 

@@ -47,20 +47,23 @@
                 android:layout_width="120dp"
                 android:layout_height="66dp"
                 android:contentDescription="TODO"
+                android:scaleType="centerCrop"
                 app:srcCompat="@drawable/pasta" />
 
             <ImageView
                 android:id="@+id/eggstry"
                 android:layout_width="120dp"
-                android:layout_height="63dp"
+                android:layout_height="66dp"
                 android:layout_marginLeft="7dp"
+                android:scaleType="centerCrop"
                 app:srcCompat="@drawable/fruit" />
 
             <ImageView
                 android:id="@+id/img_eggs"
                 android:layout_width="120dp"
-                android:layout_height="60dp"
+                android:layout_height="66dp"
                 android:layout_marginLeft="7dp"
+                android:scaleType="centerCrop"
                 app:srcCompat="@drawable/ecoeggs" />
 
         </LinearLayout>
@@ -73,7 +76,7 @@
             android:paddingTop="5dp">
 
             <TextView
-                android:layout_width="138dp"
+                android:layout_width="124dp"
                 android:layout_height="30dp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="sans-serif"
@@ -85,7 +88,7 @@
 
 
             <TextView
-                android:layout_width="117sp"
+                android:layout_width="128dp"
                 android:layout_height="30dp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="sans-serif"
@@ -118,8 +121,9 @@
 
             <ImageView
                 android:layout_width="120dp"
-                android:layout_height="69dp"
+                android:layout_height="66dp"
                 android:contentDescription="TODO"
+                android:scaleType="centerCrop"
                 app:srcCompat="@drawable/fish" />
 
             <ImageView
@@ -127,22 +131,22 @@
 
                 android:id="@+id/img_Nesquick"
                 android:layout_width="120dp"
-                android:layout_height="64dp"
+                android:layout_height="66dp"
                 android:layout_marginLeft="7dp"
                 android:scaleType="centerCrop"
                 app:srcCompat="@drawable/nesquikmenu" />
 
             <Button
                 android:id="@+id/btn_seemore"
-                android:layout_width="109dp"
-                android:layout_height="60dp"
+                android:layout_width="110dp"
+                android:layout_height="66dp"
                 android:layout_marginLeft="10dp"
                 android:background="#fa8925"
+                android:onClick="displayToastMsg"
                 android:text="See More >>"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
-                android:textStyle="bold"
-                android:onClick = "displayToastMsg"/>
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -166,7 +170,7 @@
 
 
             <TextView
-                android:layout_width="117sp"
+                android:layout_width="148dp"
                 android:layout_height="30dp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="sans-serif"
@@ -178,7 +182,7 @@
 
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="34dp"
                 android:layout_height="30dp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="sans-serif"

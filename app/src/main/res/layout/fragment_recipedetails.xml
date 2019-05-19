@@ -22,7 +22,7 @@
 
             <ImageView
                 android:id="@+id/eggsImage"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="194dp"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
@@ -31,7 +31,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="horizontal">
 
             <TextView
@@ -48,7 +48,7 @@
                 android:id="@+id/favoritebutton"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="45dp"
                 android:layout_marginTop="9dp"
                 android:background="@drawable/notsave"
                 android:textColor="#FFFFFF" />
@@ -111,16 +111,16 @@
 
             <TextView
                 android:id="@+id/textView4"
-                android:layout_width="328dp"
+                android:layout_width="match_parent"
                 android:layout_height="33dp"
                 android:layout_marginTop="15dp"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif"
-                android:textStyle="normal"
                 android:lineSpacingExtra="8sp"
                 android:text="Ingredients per portion"
                 android:textColor="#000000"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="normal" />
         </LinearLayout>
 
         <LinearLayout
@@ -152,7 +152,7 @@
                 android:lineSpacingExtra="18sp"
                 android:text="1"
                 android:textColor="#000000"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/plus1"
@@ -183,7 +183,7 @@
 
             <TextView
                 android:id="@+id/priceIngredient"
-                android:layout_width="120dp"
+                android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_marginLeft="89dp"
                 android:text="2,50 €"
@@ -253,7 +253,7 @@
 
             <TextView
                 android:id="@+id/secondPrice"
-                android:layout_width="120dp"
+                android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_marginLeft="59dp"
                 android:text="1,55 €"
@@ -291,9 +291,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
                 android:lineSpacingExtra="18sp"
-                android:text="4"
+                android:text="6"
                 android:textColor="#000000"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/plus3"
@@ -324,7 +324,7 @@
 
             <TextView
                 android:id="@+id/thirdPrice"
-                android:layout_width="120dp"
+                android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_marginLeft="59dp"
                 android:text="7,80 €"
@@ -364,7 +364,7 @@
                 android:lineSpacingExtra="18sp"
                 android:text="1"
                 android:textColor="#000000"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/plus4"
@@ -392,21 +392,21 @@
 
             <TextView
                 android:id="@+id/forPrice"
-                android:layout_width="120dp"
-                android:layout_height="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
                 android:layout_marginLeft="59dp"
-                android:text="1,50 €"
                 android:fontFamily="sans-serif"
-                android:textStyle="normal"
-                android:textColor="#000000"
                 android:lineSpacingExtra="8sp"
-                android:textSize="20sp" />
+                android:text="1,50 €"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="normal" />
 
         </LinearLayout>
 
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="400dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
@@ -435,7 +435,7 @@
                 android:lineSpacingExtra="18sp"
                 android:text="6"
                 android:textColor="#000000"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/plus5"
@@ -463,7 +463,7 @@
 
             <TextView
                 android:id="@+id/fifPrice"
-                android:layout_width="120dp"
+                android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_marginLeft="59dp"
                 android:text="5,90 €"
@@ -503,7 +503,7 @@
                 android:lineSpacingExtra="18sp"
                 android:text="1"
                 android:textColor="#000000"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/plus6"
@@ -531,15 +531,15 @@
 
             <TextView
                 android:id="@+id/sixPrice"
-                android:layout_width="120dp"
+                android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_marginLeft="59dp"
-                android:text="2,30 €"
                 android:fontFamily="sans-serif"
-                android:textStyle="normal"
-                android:textColor="#000000"
                 android:lineSpacingExtra="8sp"
-                android:textSize="20sp" />
+                android:text="2,30 €"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="normal" />
 
         </LinearLayout>
 

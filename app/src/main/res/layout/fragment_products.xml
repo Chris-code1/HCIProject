@@ -6,9 +6,8 @@
     android:orientation="vertical">
 
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
     android:orientation="vertical"
@@ -29,9 +28,10 @@
             android:lineSpacingExtra="18sp"
             android:padding="5dp"
             android:text="Discounts"
-            android:textColor="#000000"
-            android:textSize="15sp"
-            android:textStyle="normal" />
+            android:layout_marginTop="5dp"
+            android:textColor="#8a000000"
+            android:textSize="16sp"
+            android:textStyle="normal|bold" />
 
 
     </LinearLayout>
@@ -90,19 +90,26 @@
             android:id="@+id/priceNesquik"
             android:layout_width="141dp"
             android:layout_height="64dp"
-            android:gravity="center"
             android:layout_alignParentTop="true"
-            android:fontFamily="sans-serif"
-            android:textStyle="normal"
-            android:textColor="#000000"
-            android:lineSpacingExtra="8sp"
             android:layout_centerInParent="true"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:lineSpacingExtra="8sp"
             android:padding="10dp"
-            android:text="1.50€"
-            android:textSize="25dp" />
+            android:text="1,50€"
+            android:textColor="#5f6368"
+            android:textSize="18dp"
+            android:textStyle="normal|bold" />
     </LinearLayout>
 
-    <LinearLayout
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="120dp"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="87dp"
         android:orientation="horizontal"
@@ -158,14 +165,21 @@
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
             android:fontFamily="sans-serif"
-            android:textStyle="normal"
-            android:textColor="#000000"
+            android:gravity="center"
             android:lineSpacingExtra="8sp"
             android:padding="10dp"
-            android:gravity="center"
-            android:text="2.60€"
-            android:textSize="25dp" />
+            android:text="2,60€"
+            android:textColor="#5f6368"
+            android:textSize="18dp"
+            android:textStyle="normal|bold" />
     </LinearLayout>
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="120dp"
+            android:background="?android:attr/listDivider" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -218,16 +232,24 @@
             android:layout_width="141dp"
             android:layout_height="64dp"
             android:layout_alignParentTop="true"
-            android:gravity="center"
             android:layout_centerInParent="true"
             android:fontFamily="sans-serif"
-            android:textStyle="normal"
-            android:textColor="#000000"
+            android:gravity="center"
             android:lineSpacingExtra="8sp"
             android:padding="10dp"
-            android:text="1.30€"
-            android:textSize="25dp" />
+            android:text="1,30€"
+            android:textColor="#5f6368"
+            android:textSize="18dp"
+            android:textStyle="normal|bold" />
     </LinearLayout>
+
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="120dp"
+            android:background="?android:attr/listDivider" />
 
     <LinearLayout
         android:layout_width="211dp"
@@ -239,13 +261,13 @@
             android:id="@+id/te1xt0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="8sp"
             android:padding="5dp"
             android:text="Latest Products"
-            android:fontFamily="sans-serif"
-            android:textStyle="normal"
-            android:textColor="#000000"
+            android:textColor="#8a000000"
             android:textSize="15sp"
-            android:lineSpacingExtra="8sp" />
+            android:textStyle="normal|bold" />
 
 
 
@@ -306,15 +328,22 @@
             android:layout_height="64dp"
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
-            android:padding="10dp"
-            android:gravity="center"
             android:fontFamily="sans-serif"
-            android:textStyle="normal"
-            android:textColor="#000000"
+            android:gravity="center"
             android:lineSpacingExtra="8sp"
-            android:text="2.10€"
-            android:textSize="25dp" />
+            android:padding="10dp"
+            android:text="2,10€"
+            android:textColor="#5f6368"
+            android:textSize="18dp"
+            android:textStyle="normal|bold" />
     </LinearLayout>
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="120dp"
+            android:background="?android:attr/listDivider" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -368,15 +397,22 @@
             android:layout_height="64dp"
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
-            android:padding="10dp"
             android:fontFamily="sans-serif"
-            android:textStyle="normal"
-            android:textColor="#000000"
-            android:lineSpacingExtra="8sp"
             android:gravity="center"
-            android:text="1.00€"
-            android:textSize="25dp" />
+            android:lineSpacingExtra="8sp"
+            android:padding="10dp"
+            android:text="1,00€"
+            android:textColor="#5f6368"
+            android:textSize="18dp"
+            android:textStyle="normal|bold" />
     </LinearLayout>
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="120dp"
+            android:background="?android:attr/listDivider" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -425,19 +461,26 @@
         </LinearLayout>
 
         <TextView
-            android:fontFamily="sans-serif"
-            android:textStyle="normal"
-            android:textColor="#000000"
-            android:lineSpacingExtra="8sp"
             android:layout_width="141dp"
             android:layout_height="64dp"
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
-            android:padding="10dp"
+            android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="1.50€"
-            android:textSize="25dp" />
+            android:lineSpacingExtra="8sp"
+            android:padding="10dp"
+            android:text="1,50€"
+            android:textColor="#5f6368"
+            android:textSize="18dp"
+            android:textStyle="normal|bold" />
     </LinearLayout>
+
+        <View
+            android:id="@+id/divider22"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="120dp"
+            android:background="?android:attr/listDivider" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -488,19 +531,25 @@
         </LinearLayout>
 
         <TextView
-            android:fontFamily="sans-serif"
-            android:textStyle="normal"
-            android:textColor="#000000"
-            android:lineSpacingExtra="8sp"
             android:layout_width="141dp"
             android:layout_height="64dp"
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
-            android:padding="10dp"
+            android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="1.90€"
-            android:textSize="25dp" />
+            android:lineSpacingExtra="8sp"
+            android:padding="10dp"
+            android:text="1,90€"
+            android:textColor="#5f6368"
+            android:textSize="18dp"
+            android:textStyle="normal|bold" />
     </LinearLayout>
+        <View
+            android:id="@+id/divider32"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="120dp"
+            android:background="?android:attr/listDivider" />
 
     <!--This is Eggs layout-->
 
@@ -554,19 +603,26 @@
         </LinearLayout>
 
         <TextView
-            android:fontFamily="sans-serif"
-            android:textStyle="normal"
-            android:textColor="#000000"
-            android:lineSpacingExtra="8sp"
             android:layout_width="141dp"
             android:layout_height="64dp"
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
-            android:padding="10dp"
+            android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="2.99€"
-            android:textSize="25dp" />
+            android:lineSpacingExtra="8sp"
+            android:padding="10dp"
+            android:text="2,99€"
+            android:textColor="#5f6368"
+            android:textSize="18dp"
+            android:textStyle="normal|bold" />
     </LinearLayout>
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="120dp"
+            android:background="?android:attr/listDivider" />
 
 
     <!--This is nesquick layout-->
@@ -623,18 +679,18 @@
         </LinearLayout>
 
         <TextView
-            android:fontFamily="sans-serif"
-            android:textStyle="normal"
-            android:textColor="#000000"
-            android:lineSpacingExtra="8sp"
             android:layout_width="141dp"
             android:layout_height="64dp"
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
-            android:padding="10dp"
+            android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="1.99€"
-            android:textSize="25dp" />
+            android:lineSpacingExtra="8sp"
+            android:padding="10dp"
+            android:text="1,99€"
+            android:textColor="#5f6368"
+            android:textSize="18dp"
+            android:textStyle="normal|bold" />
     </LinearLayout>
 
 

@@ -3,6 +3,7 @@ package upm.bottomnavigationtutorial;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.ListFragment;
 import android.support.v7.app.AppCompatActivity;
@@ -15,13 +16,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.miguelcatalan.materialsearchview.MaterialSearchView;
+import br.com.mauker.materialsearchview.MaterialSearchView;
 
 
 public class MainActivity extends AppCompatActivity {
 
-    MaterialSearchView searchView;
-
+    MaterialSearchView msv;
     // On create function calls everything when application opens
     //test
 
@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
 
     }
 

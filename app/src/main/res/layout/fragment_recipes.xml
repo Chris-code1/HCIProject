@@ -47,20 +47,23 @@
             android:layout_width="120dp"
             android:layout_height="66dp"
             android:contentDescription="TODO"
+            android:scaleType="centerCrop"
             app:srcCompat="@drawable/salaasrecipes" />
 
         <ImageView
             android:id="@+id/img_chicken"
             android:layout_width="120dp"
-            android:layout_height="63dp"
+            android:layout_height="66dp"
             android:layout_marginLeft="7dp"
+            android:scaleType="centerCrop"
             app:srcCompat="@drawable/chickenrecipe" />
 
         <ImageView
             android:id="@+id/eggstry1"
             android:layout_width="120dp"
-            android:layout_height="60dp"
+            android:layout_height="66dp"
             android:layout_marginLeft="7dp"
+            android:scaleType="centerCrop"
             app:srcCompat="@drawable/seafoodrecipe" />
 
     </LinearLayout>
@@ -118,21 +121,23 @@
 
         <ImageView
             android:layout_width="120dp"
-            android:layout_height="69dp"
+            android:layout_height="66dp"
             android:contentDescription="TODO"
+            android:scaleType="centerCrop"
             app:srcCompat="@drawable/pastarecipes" />
 
         <ImageView
             android:id="@+id/nesquikmenu"
-            android:layout_width="126dp"
-            android:layout_height="64dp"
+            android:layout_width="120dp"
+            android:layout_height="66dp"
             android:layout_marginLeft="7dp"
-            app:srcCompat="@drawable/smoothierecipes" />
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/desert" />
 
         <Button
             android:id="@+id/btn_seemore2"
-            android:layout_width="100dp"
-            android:layout_height="60dp"
+            android:layout_width="110dp"
+            android:layout_height="66dp"
             android:layout_marginLeft="10dp"
             android:background="#fa8925"
             android:text="See More >>"
@@ -168,7 +173,7 @@
             android:fontFamily="sans-serif"
             android:lineSpacingExtra="18sp"
             android:padding="5dp"
-            android:text="Nesquik Drinks"
+            android:text="Deserts"
             android:textColor="#000000"
             android:textSize="14sp" />
 

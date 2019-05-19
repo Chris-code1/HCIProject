@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 public class ProductDetailsFragment extends Fragment {
 
-
+    boolean isClicked = true;
     double integerNesquik = 2.5;
 
 
@@ -48,7 +48,7 @@ public class ProductDetailsFragment extends Fragment {
         gramas2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                displayInteger.setText("3,5 € ");
+                displayInteger.setText("3,0 € ");
             }
         });
 
@@ -62,7 +62,16 @@ public class ProductDetailsFragment extends Fragment {
         gramas3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                displayInteger.setText("3,50 € ");
+                if (isClicked) {
+                    //buttonColor.setBackgroundColor(0xFFA9A9A9);
+                    gramas3.setBackgroundResource(R.drawable.color11);
+                    displayInteger.setText("3,5 € ");
+                    isClicked = false;
+
+            }else{
+                    gramas3.setBackgroundResource(R.drawable.color2);
+                    isClicked = true;
+                }
             }
         });
 

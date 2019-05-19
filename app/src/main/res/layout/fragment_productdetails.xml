@@ -49,6 +49,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="25dp"
                 android:layout_weight="1"
+                android:text="0,0 €"
                 android:textAlignment="textEnd"
                 android:textColor="#FA8925"
                 android:textSize="20sp"
@@ -108,8 +109,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="32dp"
                 android:layout_marginRight="10dp"
-                android:background="@drawable/chipbutton"
+                android:background="@drawable/color2"
                 android:text="600 g"
+                android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="#ffffff" />
 

@@ -195,7 +195,8 @@ public class RecipeDetailsFragment extends Fragment {
         plusButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (minteger3 >= 4 && minteger3 < 6) {
+                //if (minteger3 >4 && minteger3 <= 6) {
+                if (minteger3< 6) {
                     minteger3 = minteger3 + 1;
                     displayInteger3.setText(Integer.toString(minteger3));
                     Double Total= treePrice*minteger3;
@@ -222,11 +223,7 @@ public class RecipeDetailsFragment extends Fragment {
         plusMenos3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (minteger3 <=4) {
-                    Toast.makeText(getActivity(), "This funcionality is not working at the moment",
-                            Toast.LENGTH_LONG).show();
-                }
-                else{
+                if (minteger3 >=4 && minteger3 < 6) {
                     minteger3 = minteger3 - 1 ;
                     displayInteger3.setText(Integer.toString(minteger3));
                     Double Total= treePrice*minteger3;
@@ -234,6 +231,13 @@ public class RecipeDetailsFragment extends Fragment {
 
                     finalTotal=finalTotal-treePrice;
                     displayTotal.setText(finalTotal+"€");
+
+
+
+                }
+                else{
+                    Toast.makeText(getActivity(), "This funcionality is not working at the moment",
+                            Toast.LENGTH_LONG).show();
                 }
 
 

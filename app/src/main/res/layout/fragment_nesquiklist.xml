@@ -166,7 +166,7 @@
 
             <TextView
                 android:id="@+id/priceNesquik17"
-                android:layout_width="141dp"
+                android:layout_width="match_parent"
                 android:layout_height="64dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
@@ -220,7 +220,7 @@
 
             <TextView
                 android:id="@+id/priceNesquik15"
-                android:layout_width="141dp"
+                android:layout_width="match_parent"
                 android:layout_height="64dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
@@ -274,7 +274,7 @@
 
             <TextView
                 android:id="@+id/priceNesquik14"
-                android:layout_width="141dp"
+                android:layout_width="match_parent"
                 android:layout_height="64dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"

@@ -11,4 +11,12 @@
     <string name="twentyEuros"><![CDATA[<20€]]></string>
     <string name="hourTiming"><![CDATA[<1 Hour]]></string>
 
+
+    <string-array name="query_suggestions">
+        <item>Chicken</item>
+        <item>Nesquik</item>
+        <item>Eggs</item>
+    </string-array>
+
+
 </resources>

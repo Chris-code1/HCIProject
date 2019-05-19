@@ -16,7 +16,7 @@ import android.widget.Button;
 
 public class FilterFragment extends Fragment {
 
-    boolean isClicked = false;
+    boolean isClicked = true;
 
     @Nullable
     @Override
@@ -29,28 +29,25 @@ public class FilterFragment extends Fragment {
         ((MainActivity) getActivity()).addArrow();
 
         final Button buttonColor= view.findViewById(R.id.add1);
-
         buttonColor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                if (isClicked) {
                    //buttonColor.setBackgroundColor(0xFFA9A9A9);
-                  // buttonColor.setBackgroundResource(R.drawable.dois);
-                   //isClicked = false;
-                   //
+                  buttonColor.setBackgroundResource(R.drawable.color11);
+                  isClicked = false;
 
 
-                } else {
-                  //  buttonColor.setBackgroundColor(0xFFFFA500);
-                   //buttonColor.setBackgroundResource(R.drawable.dois);
-                    //isClicked = true;
-                    //
+             } else {
+                   //  buttonColor.setBackgroundColor(0xFFFFA500);
+                   buttonColor.setBackgroundResource(R.drawable.color2);
+                   isClicked = true;
+
 
                }
                Log.d("Entro","holA");
             }
         });
-        //return inflater.inflate(R.layout.fragment_filter, container, false);
         return view;
     }
 

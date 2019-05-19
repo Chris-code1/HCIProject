@@ -15,8 +15,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.miguelcatalan.materialsearchview.MaterialSearchView;
+
+
 public class MainActivity extends AppCompatActivity {
 
+    MaterialSearchView searchView;
 
     // On create function calls everything when application opens
     //test
@@ -36,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
 
     }
 
@@ -76,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                 selectedFragment).commit();
+
 
         return  true;
 
@@ -132,4 +136,9 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setNavigationIcon(null);
     }
+
+
+
+
+
 }

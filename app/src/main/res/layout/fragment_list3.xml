@@ -65,7 +65,7 @@
                 android:fontFamily="sans-serif"
                 android:lineSpacingExtra="8sp"
                 android:paddingLeft="20dp"
-                android:text="TOTAL:                                       00.00€"
+                android:text="TOTAL:                                      0,00 €"
                 android:textColor="#000000"
                 android:textSize="22dp"
                 android:textStyle="normal" />

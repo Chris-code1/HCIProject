@@ -16,6 +16,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DecimalFormat;
+
 public class RecipeDetailsFragment extends Fragment {
 
     int minteger = 1;
@@ -106,7 +108,9 @@ public class RecipeDetailsFragment extends Fragment {
                     displayInteger.setText(Integer.toString(minteger));
                     displayFirst.setText(Total+ "€");
                     finalTotal=finalTotal+Total;
-                    displayTotal.setText(finalTotal+"€");
+                    String finalString = String.format("%.2f", finalTotal);
+                    displayTotal.setText(finalString+"€");
+                    //displayTotal.setText(finalTotal+"€");
 
                 }
             }
@@ -126,7 +130,10 @@ public class RecipeDetailsFragment extends Fragment {
                     displayFirst.setText(Total+ "€");
 
                     finalTotal=finalTotal-firstPrice;
-                    displayTotal.setText(finalTotal+"€");
+                    String finalString = String.format("%.2f", finalTotal);
+                    displayTotal.setText(finalString+"€");
+
+                    //displayTotal.setText(finalTotal+"€");
                 }else if(minteger<0){
                     Toast.makeText(getActivity(), "This funcionality is not working at the moment",
                      Toast.LENGTH_LONG).show();
@@ -153,10 +160,12 @@ public class RecipeDetailsFragment extends Fragment {
 
                     minteger2 = minteger2 + 1;
                     Double Total = secPrice*minteger2;
+
                     displayInteger2.setText(Integer.toString(minteger2));
                     displaySec.setText(Total+ "€");
                     finalTotal=finalTotal+Total;
-                    displayTotal.setText(finalTotal+"€");
+                    String finalString = String.format("%.2f", finalTotal);
+                    displayTotal.setText(finalString+"€");
 
 
                 }
@@ -175,7 +184,9 @@ public class RecipeDetailsFragment extends Fragment {
                     displaySec.setText(Total+ "€");
 
                     finalTotal=finalTotal-secPrice;
-                    displayTotal.setText(finalTotal+"€");
+                    String finalString = String.format("%.2f", finalTotal);
+                    displayTotal.setText(finalString+"€");
+                    //displayTotal.setText(finalTotal+"€");
 
 
                 }else if(minteger2<0){
@@ -210,7 +221,9 @@ public class RecipeDetailsFragment extends Fragment {
                     displayThird.setText(Total + "€");
 
                     finalTotal=finalTotal+treePrice;
-                    displayTotal.setText(finalTotal+"€");
+                    String finalString = String.format("%.2f", finalTotal);
+                    displayTotal.setText(finalString+"€");
+                   // displayTotal.setText(finalTotal+"€");
                 }
 
                 //minteger = minteger +1 ;
@@ -230,7 +243,9 @@ public class RecipeDetailsFragment extends Fragment {
                     displayThird.setText(Total + "€");
 
                     finalTotal=finalTotal-treePrice;
-                    displayTotal.setText(finalTotal+"€");
+                    String finalString = String.format("%.2f", finalTotal);
+                    displayTotal.setText(finalString+"€");
+                    // displayTotal.setText(finalTotal+"€");
 
 
 
@@ -264,7 +279,9 @@ public class RecipeDetailsFragment extends Fragment {
                     displayInteger4.setText(Integer.toString(minteger4));
                     displayFor.setText(Total + "€");
                     finalTotal=finalTotal+Total;
-                    displayTotal.setText(finalTotal+"€");
+                    String finalString = String.format("%.2f", finalTotal);
+                    displayTotal.setText(finalString+"€");
+                    //displayTotal.setText(finalTotal+"€");
                 }
             }
         });
@@ -280,7 +297,9 @@ public class RecipeDetailsFragment extends Fragment {
                     displayInteger4.setText(Integer.toString(minteger4));
                     displayFor.setText(Total + "€");
                     finalTotal=finalTotal-forPrice;
-                    displayTotal.setText(finalTotal+"€");
+                    String finalString = String.format("%.2f", finalTotal);
+                    displayTotal.setText(finalString+"€");
+                    //displayTotal.setText(finalTotal+"€");
                 }else if(minteger4<0){
                     Toast.makeText(getActivity(), "This funcionality is not working at the moment",
                             Toast.LENGTH_LONG).show();
@@ -333,7 +352,9 @@ public class RecipeDetailsFragment extends Fragment {
                     displayInteger6.setText(Integer.toString(minteger6));
                     displaySix.setText(Total + "€");
                     finalTotal=finalTotal+Total;
-                    displayTotal.setText(finalTotal+"€");
+                    String finalString = String.format("%.2f", finalTotal);
+                    displayTotal.setText(finalString+"€");
+                   // displayTotal.setText(finalTotal+"€");
                 }
             }
         });
@@ -348,7 +369,9 @@ public class RecipeDetailsFragment extends Fragment {
                     displayInteger6.setText(Integer.toString(minteger6));
                     displaySix.setText(Total+ "€");
                     finalTotal=finalTotal-sixPrice;
-                    displayTotal.setText(finalTotal+"€");
+                    String finalString = String.format("%.2f", finalTotal);
+                    displayTotal.setText(finalString+"€");
+                   // displayTotal.setText(finalTotal+"€");
                 }else if(minteger6<0){
                     Toast.makeText(getActivity(), "This funcionality is not working at the moment",
                             Toast.LENGTH_LONG).show();

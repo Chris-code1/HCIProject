@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="60dp"
+
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/text0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Your shopping cart is empty"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="vertical"
+            android:paddingTop="15dp">
+
+            <View
+                android:layout_width="392dp"
+                android:layout_height="3dp"
+                android:background="#CD4D4343" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:paddingTop="15dp">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="8sp"
+                android:paddingLeft="20dp"
+                android:text="TOTAL:                                      0,00 €"
+                android:textColor="#000000"
+                android:textSize="22dp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:orientation="horizontal"
+            android:paddingTop="15dp">
+
+            <Button
+                android:id="@+id/btn_pay"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:background="@color/colorAccent"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="8sp"
+                android:paddingLeft="25dp"
+                android:text="Add more products"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22dp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:orientation="horizontal"
+            android:paddingTop="15dp">
+
+            <Button
+                android:id="@+id/btn_best_route"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:background="#6AFA8925"
+                android:clickable="false"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="8sp"
+                android:paddingLeft="25dp"
+                android:text="PAY"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22dp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

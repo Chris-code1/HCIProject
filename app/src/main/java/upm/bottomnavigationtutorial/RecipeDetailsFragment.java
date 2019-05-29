@@ -1,5 +1,6 @@
 package upm.bottomnavigationtutorial;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -15,20 +16,25 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DecimalFormat;
+
 public class RecipeDetailsFragment extends Fragment {
 
     int minteger = 1;
     int minteger2 = 1;
-    int minteger3 = 4;
+    int minteger3 = 6;
     int minteger4 = 1;
     int minteger5 = 6;
     int minteger6 = 1;
 
-    double firstPrice = 2.5;
+
+    boolean isClicked = true;
+
+    double firstPrice = 2.60;
     double secPrice = 1.55;
-    double treePrice = 1.95;
-    double forPrice = 1.5;
-    double sixPrice = 2.2;
+    double treePrice = 1.30;
+    double forPrice = 1.50;
+    double sixPrice = 2.20;
 
     double finalTotal=18.55;
 
@@ -48,6 +54,33 @@ public class RecipeDetailsFragment extends Fragment {
         final TextView displayFor = (TextView) view.findViewById(R.id.forPrice);
         final TextView displaySix = (TextView) view.findViewById(R.id.sixPrice);
         final TextView displayTotal = (TextView) view.findViewById(R.id.totalprecio);
+
+        final Button ButtonFavorite = (Button) view.findViewById(R.id.favoritebutton);
+
+
+        ButtonFavorite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (isClicked) {
+                    //buttonColor.setBackgroundColor(0xFFA9A9A9);
+                    ButtonFavorite.setBackgroundResource(R.drawable.save);
+                    Toast.makeText(getActivity(), "Recipe Saved",
+                            Toast.LENGTH_LONG).show();
+                    isClicked = false;
+
+
+                } else {
+                    //  buttonColor.setBackgroundColor(0xFFFFA500);
+                    ButtonFavorite.setBackgroundResource(R.drawable.notsave);
+                    Toast.makeText(getActivity(), "Recipe Unsaved",
+                            Toast.LENGTH_LONG).show();
+                    isClicked = true;
+
+
+                }
+            }
+        });
+
 
         //button
         Button btn_addtolist = view.findViewById(R.id.addlist);
@@ -73,9 +106,12 @@ public class RecipeDetailsFragment extends Fragment {
                     minteger = minteger + 1;
                     Double Total= firstPrice*minteger;
                     displayInteger.setText(Integer.toString(minteger));
-                    displayFirst.setText(Total + "€");
+                    displayFirst.setText(Total+ "€");
                     finalTotal=finalTotal+Total;
-                    displayTotal.setText(finalTotal+"€");
+                    String finalString = String.format("%.2f", finalTotal);
+                    displayTotal.setText(finalString+"€");
+                    //displayTotal.setText(finalTotal+"€");
+
                 }
             }
         });
@@ -94,7 +130,10 @@ public class RecipeDetailsFragment extends Fragment {
                     displayFirst.setText(Total+ "€");
 
                     finalTotal=finalTotal-firstPrice;
-                    displayTotal.setText(finalTotal+"€");
+                    String finalString = String.format("%.2f", finalTotal);
+                    displayTotal.setText(finalString+"€");
+
+                    //displayTotal.setText(finalTotal+"€");
                 }else if(minteger<0){
                     Toast.makeText(getActivity(), "This funcionality is not working at the moment",
                      Toast.LENGTH_LONG).show();
@@ -121,10 +160,12 @@ public class RecipeDetailsFragment extends Fragment {
 
                     minteger2 = minteger2 + 1;
                     Double Total = secPrice*minteger2;
+
                     displayInteger2.setText(Integer.toString(minteger2));
                     displaySec.setText(Total+ "€");
                     finalTotal=finalTotal+Total;
-                    displayTotal.setText(finalTotal+"€");
+                    String finalString = String.format("%.2f", finalTotal);
+                    displayTotal.setText(finalString+"€");
 
 
                 }
@@ -143,7 +184,9 @@ public class RecipeDetailsFragment extends Fragment {
                     displaySec.setText(Total+ "€");
 
                     finalTotal=finalTotal-secPrice;
-                    displayTotal.setText(finalTotal+"€");
+                    String finalString = String.format("%.2f", finalTotal);
+                    displayTotal.setText(finalString+"€");
+                    //displayTotal.setText(finalTotal+"€");
 
 
                 }else if(minteger2<0){
@@ -164,21 +207,23 @@ public class RecipeDetailsFragment extends Fragment {
         plusButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (minteger3 >= 4 && minteger3 < 6) {
+                //if (minteger3 >4 && minteger3 <= 6) {
+                if (minteger3==6) {
+                    Toast.makeText(getActivity(), "This funcionality is not working at the moment",
+                            Toast.LENGTH_LONG).show();
+
+                }
+
+                else{
                     minteger3 = minteger3 + 1;
                     displayInteger3.setText(Integer.toString(minteger3));
                     Double Total= treePrice*minteger3;
                     displayThird.setText(Total + "€");
 
                     finalTotal=finalTotal+treePrice;
-                    displayTotal.setText(finalTotal+"€");
-
-
-                }
-
-                else{
-                    Toast.makeText(getActivity(), "This funcionality is not working at the moment",
-                            Toast.LENGTH_LONG).show();
+                    String finalString = String.format("%.2f", finalTotal);
+                    displayTotal.setText(finalString+"€");
+                   // displayTotal.setText(finalTotal+"€");
                 }
 
                 //minteger = minteger +1 ;
@@ -191,18 +236,23 @@ public class RecipeDetailsFragment extends Fragment {
         plusMenos3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (minteger3 <=4) {
-                    Toast.makeText(getActivity(), "This funcionality is not working at the moment",
-                            Toast.LENGTH_LONG).show();
-                }
-                else{
+                if (minteger3>4) {
                     minteger3 = minteger3 - 1 ;
                     displayInteger3.setText(Integer.toString(minteger3));
                     Double Total= treePrice*minteger3;
                     displayThird.setText(Total + "€");
 
                     finalTotal=finalTotal-treePrice;
-                    displayTotal.setText(finalTotal+"€");
+                    String finalString = String.format("%.2f", finalTotal);
+                    displayTotal.setText(finalString+"€");
+                    // displayTotal.setText(finalTotal+"€");
+
+
+
+                }
+                else if (minteger3<4){
+                    Toast.makeText(getActivity(), "This funcionality is not working at the moment",
+                            Toast.LENGTH_LONG).show();
                 }
 
 
@@ -229,7 +279,9 @@ public class RecipeDetailsFragment extends Fragment {
                     displayInteger4.setText(Integer.toString(minteger4));
                     displayFor.setText(Total + "€");
                     finalTotal=finalTotal+Total;
-                    displayTotal.setText(finalTotal+"€");
+                    String finalString = String.format("%.2f", finalTotal);
+                    displayTotal.setText(finalString+"€");
+                    //displayTotal.setText(finalTotal+"€");
                 }
             }
         });
@@ -245,7 +297,9 @@ public class RecipeDetailsFragment extends Fragment {
                     displayInteger4.setText(Integer.toString(minteger4));
                     displayFor.setText(Total + "€");
                     finalTotal=finalTotal-forPrice;
-                    displayTotal.setText(finalTotal+"€");
+                    String finalString = String.format("%.2f", finalTotal);
+                    displayTotal.setText(finalString+"€");
+                    //displayTotal.setText(finalTotal+"€");
                 }else if(minteger4<0){
                     Toast.makeText(getActivity(), "This funcionality is not working at the moment",
                             Toast.LENGTH_LONG).show();
@@ -298,7 +352,9 @@ public class RecipeDetailsFragment extends Fragment {
                     displayInteger6.setText(Integer.toString(minteger6));
                     displaySix.setText(Total + "€");
                     finalTotal=finalTotal+Total;
-                    displayTotal.setText(finalTotal+"€");
+                    String finalString = String.format("%.2f", finalTotal);
+                    displayTotal.setText(finalString+"€");
+                   // displayTotal.setText(finalTotal+"€");
                 }
             }
         });
@@ -313,7 +369,9 @@ public class RecipeDetailsFragment extends Fragment {
                     displayInteger6.setText(Integer.toString(minteger6));
                     displaySix.setText(Total+ "€");
                     finalTotal=finalTotal-sixPrice;
-                    displayTotal.setText(finalTotal+"€");
+                    String finalString = String.format("%.2f", finalTotal);
+                    displayTotal.setText(finalString+"€");
+                   // displayTotal.setText(finalTotal+"€");
                 }else if(minteger6<0){
                     Toast.makeText(getActivity(), "This funcionality is not working at the moment",
                             Toast.LENGTH_LONG).show();
@@ -352,6 +410,7 @@ public class RecipeDetailsFragment extends Fragment {
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.topbar_recipedetails, menu);
+
         return;
     }
 }

@@ -10,8 +10,11 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class RecipesFragment extends Fragment {
     @Nullable
@@ -25,41 +28,34 @@ public class RecipesFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_recipes, container, false);
 
         //find objects in xml file
-        ImageView imgthaichicken = view.findViewById(R.id.imgThaiChicken);
-        TextView txtthaichicken = view.findViewById(R.id.txtThaiChicken);
-        TextView pricethaichicken = view.findViewById(R.id.priceThaiChicken);
+       ImageView img_Chicken = view.findViewById(R.id.img_chicken);
 
-        //set listeners on objects and initiate function when called
+//        set listeners on objects and initiate function when called
 
-        imgthaichicken.setOnClickListener(new View.OnClickListener() {
+        img_Chicken.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                swap_fragment_recipe_details();
+                swap_fragment_recipe_list();
             }
         });
 
-        txtthaichicken.setOnClickListener(new View.OnClickListener() {
+        Button btn_seemore  = view.findViewById(R.id.btn_seemore2);
+
+        btn_seemore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                swap_fragment_recipe_details();
+
+                Toast.makeText(getContext(), "Nothing to see more at the moment :( " , Toast.LENGTH_SHORT ).show();
             }
         });
-
-        pricethaichicken.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                swap_fragment_recipe_details();
-            }
-        });
-
 
         return view;
     }
 
-    private void swap_fragment_recipe_details() {
-        RecipeDetailsFragment recipeDetailsFragment = new RecipeDetailsFragment();
+    private void swap_fragment_recipe_list() {
+        ChickenRecipesFragment chickenRecipesFragment = new ChickenRecipesFragment();
         FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container, recipeDetailsFragment);
+        fragmentTransaction.replace(R.id.fragment_container, chickenRecipesFragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }

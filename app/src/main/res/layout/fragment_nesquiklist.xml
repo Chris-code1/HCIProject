@@ -11,6 +11,7 @@
         android:background="@android:color/white"
         android:orientation="vertical"
         android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:paddingTop="50dp">
 
 
@@ -28,50 +29,52 @@
                 app:srcCompat="@drawable/ns1" />
 
             <LinearLayout
-                android:layout_width="143dp"
+                android:layout_width="150dp"
                 android:layout_height="63dp"
-                android:orientation="vertical"
                 android:gravity="center"
+                android:orientation="vertical"
                 android:paddingTop="5dp">
 
                 <TextView
                     android:id="@+id/text3"
-                    android:layout_width="121dp"
+                    android:layout_width="170dp"
                     android:layout_height="52dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
+                    android:fontFamily="sans-serif"
                     android:gravity="center"
                     android:paddingLeft="25dp"
-                    android:fontFamily="sans-serif"
-                    android:textStyle="normal"
-                    android:textColor="#000000"
                     android:text="Nesquik chocolate"
-                    android:textSize="20dp" />
+                    android:textAlignment="viewStart"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
 
 
             </LinearLayout>
 
             <TextView
                 android:id="@+id/priceNesquik"
-                android:layout_width="141dp"
+                android:layout_width="match_parent"
                 android:layout_height="64dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
-                android:gravity="center"
                 android:fontFamily="sans-serif"
-                android:textStyle="normal"
-                android:textColor="#000000"
+                android:gravity="center"
                 android:lineSpacingExtra="8sp"
                 android:padding="10dp"
-                android:text="2.50€"
-                android:textSize="20dp" />
+                android:text="from 2,50€"
+                android:textColor="#5f6368"
+                android:textSize="14dp"
+                android:textStyle="normal|bold" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="87dp"
             android:orientation="horizontal"
-            android:paddingTop="15dp">
+            android:paddingTop="15dp"
+            android:id="@id/layoutNesquick">
 
             <ImageView
                 android:id="@+id/imgNesquik21"
@@ -89,36 +92,37 @@
 
                 <TextView
                     android:id="@+id/text20"
-                    android:layout_width="121dp"
+                    android:layout_width="170dp"
                     android:layout_height="52dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
+                    android:fontFamily="sans-serif"
                     android:gravity="center"
                     android:paddingLeft="25dp"
-                    android:fontFamily="sans-serif"
-                    android:textStyle="normal"
-                    android:textColor="#000000"
-
                     android:text="Nesquik powder"
-                    android:textSize="20dp" />
+                    android:textAlignment="viewStart"
+
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
 
 
             </LinearLayout>
 
             <TextView
                 android:id="@+id/priceNesquik20"
-                android:layout_width="141dp"
+                android:layout_width="match_parent"
                 android:layout_height="64dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
-                android:gravity="center"
                 android:fontFamily="sans-serif"
-                android:textStyle="normal"
-                android:textColor="#000000"
+                android:gravity="center"
                 android:lineSpacingExtra="8sp"
                 android:padding="10dp"
-                android:text="2.90€ - 3.99€"
-                android:textSize="20dp" />
+                android:text="from 2,90€"
+                android:textColor="#5f6368"
+                android:textSize="14dp"
+                android:textStyle="normal|bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -143,36 +147,37 @@
 
                 <TextView
                     android:id="@+id/text18"
-                    android:layout_width="121dp"
+                    android:layout_width="170dp"
                     android:layout_height="52dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
-                    android:gravity="center"
                     android:fontFamily="sans-serif"
-                    android:textStyle="normal"
-                    android:textColor="#000000"
-
+                    android:gravity="center"
                     android:paddingLeft="25dp"
                     android:text="Nesquik bar"
-                    android:textSize="20dp" />
+
+                    android:textAlignment="viewStart"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
 
 
             </LinearLayout>
 
             <TextView
                 android:id="@+id/priceNesquik17"
-                android:layout_width="141dp"
+                android:layout_width="match_parent"
                 android:layout_height="64dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="1.50€"
                 android:fontFamily="sans-serif"
-                android:textStyle="normal"
-                android:textColor="#000000"
+                android:gravity="center"
                 android:lineSpacingExtra="8sp"
-                android:textSize="20dp" />
+                android:padding="10dp"
+                android:text="from 1,50€"
+                android:textColor="#5f6368"
+                android:textSize="14dp"
+                android:textStyle="normal|bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -197,35 +202,36 @@
 
                 <TextView
                     android:id="@+id/text13"
-                    android:layout_width="121dp"
+                    android:layout_width="170dp"
                     android:layout_height="52dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
+                    android:fontFamily="sans-serif"
                     android:gravity="center"
                     android:paddingLeft="25dp"
-                    android:fontFamily="sans-serif"
-                    android:textStyle="normal"
-                    android:textColor="#000000"
                     android:text="Nesquik milk"
-                    android:textSize="20dp" />
+                    android:textAlignment="viewStart"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
 
 
             </LinearLayout>
 
             <TextView
                 android:id="@+id/priceNesquik15"
-                android:layout_width="141dp"
+                android:layout_width="match_parent"
                 android:layout_height="64dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:fontFamily="sans-serif"
-                android:textStyle="normal"
-                android:textColor="#000000"
+                android:gravity="center"
                 android:lineSpacingExtra="8sp"
                 android:padding="10dp"
-                android:gravity="center"
-                android:text="2.30€"
-                android:textSize="20dp" />
+                android:text="from 2,30€"
+                android:textColor="#5f6368"
+                android:textSize="14dp"
+                android:textStyle="normal|bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -250,35 +256,36 @@
 
                 <TextView
                     android:id="@+id/text14"
-                    android:layout_width="121dp"
+                    android:layout_width="170dp"
                     android:layout_height="52dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
+                    android:fontFamily="sans-serif"
                     android:gravity="center"
                     android:paddingLeft="25dp"
-                    android:fontFamily="sans-serif"
-                    android:textStyle="normal"
-                    android:textColor="#000000"
                     android:text="Nesquik cereal"
-                    android:textSize="20dp" />
+                    android:textAlignment="viewStart"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
 
 
             </LinearLayout>
 
             <TextView
                 android:id="@+id/priceNesquik14"
-                android:layout_width="141dp"
+                android:layout_width="match_parent"
                 android:layout_height="64dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"
                 android:fontFamily="sans-serif"
-                android:textStyle="normal"
-                android:textColor="#000000"
+                android:gravity="center"
                 android:lineSpacingExtra="8sp"
                 android:padding="10dp"
-                android:gravity="center"
-                android:text="2.70€"
-                android:textSize="20dp" />
+                android:text="from 2,70€"
+                android:textColor="#5f6368"
+                android:textSize="14dp"
+                android:textStyle="normal|bold" />
         </LinearLayout>
 
 

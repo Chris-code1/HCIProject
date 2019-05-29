@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -14,7 +15,7 @@ import android.widget.TextView;
 
 public class ProductDetailsFragment extends Fragment {
 
-
+    boolean isClicked = true;
     double integerNesquik = 2.5;
 
 
@@ -34,10 +35,20 @@ public class ProductDetailsFragment extends Fragment {
         final Button gramas2 = view.findViewById(R.id.gramas2);
         final Button gramas3 = view.findViewById(R.id.gramas3);
 
+        final Button btn_addtolist = view.findViewById(R.id.addtolist);
+
+
+        btn_addtolist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                swap_fragment_list();
+            }
+        });
+
         gramas2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                displayInteger.setText("3,5 € ");
+                displayInteger.setText("3,0 € ");
             }
         });
 
@@ -51,7 +62,16 @@ public class ProductDetailsFragment extends Fragment {
         gramas3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                displayInteger.setText("3,99 € ");
+                if (isClicked) {
+                    //buttonColor.setBackgroundColor(0xFFA9A9A9);
+                    gramas3.setBackgroundResource(R.drawable.color11);
+                    displayInteger.setText("3,5 € ");
+                    isClicked = false;
+
+            }else{
+                    gramas3.setBackgroundResource(R.drawable.color2);
+                    isClicked = true;
+                }
             }
         });
 
@@ -69,5 +89,13 @@ public class ProductDetailsFragment extends Fragment {
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.topbar_bestroute, menu);
         return;
+    }
+    //function to change fragment to payscreen
+    private void swap_fragment_list() {
+        ListFragment listFragment = new ListFragment();
+        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.fragment_container, listFragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
     }
 }

@@ -16,7 +16,12 @@ public class List2Fragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        getActivity().setTitle("List");
+        getActivity().setTitle("Your Shopping List");
+
+        //add Arrow
+        ((MainActivity) getActivity()).removeArrow();
+        ((MainActivity) getActivity()).addArrow();
+
 
         //Removes the back arrow
         ((MainActivity) getActivity()).removeArrow();

@@ -9,11 +9,14 @@ import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ProductsFragment extends Fragment {
     @Nullable
@@ -30,13 +33,26 @@ public class ProductsFragment extends Fragment {
 
         //find objects in xml file to make the whole layout clickable is enough
 
-        LinearLayout layoutNesquick = view.findViewById(R.id.layoutNesquick);
-        LinearLayout layoutEggs = view.findViewById(R.id.layoutEggs);
+        ImageView imgNesquick = view.findViewById(R.id.img_Nesquick);
+        ImageView imgEggs = view.findViewById(R.id.img_eggs);
+
+        Button btn_seemore = view.findViewById(R.id.btn_seemore);
+
+        btn_seemore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Toast.makeText(getContext(), "Nothing to see more at the moment :( " , Toast.LENGTH_SHORT ).show();
+            }
+        });
+
 
 
         //set listeners on objects and initiate function when called
 
-        layoutNesquick.setOnClickListener(new View.OnClickListener() {
+
+
+        imgNesquick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 swap_fragment_nesquick();
@@ -44,29 +60,26 @@ public class ProductsFragment extends Fragment {
         });
 
 
-        layoutEggs.setOnClickListener(new View.OnClickListener() {
+        imgEggs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 swap_fragment_eggs();
             }
         });
 
-//        emptyList.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                swap_fragment_empty();
-//            }
-//        });
 
         return view;
     }
 
+
+
 //    When clicking on the nesquick layout, change view to product details nesquick
 
     private void swap_fragment_nesquick() {
-        ProductDetailsFragment productDetailsFragment = new ProductDetailsFragment();
+
+        ProductNesquicklistFragment nesquicklistFragment = new ProductNesquicklistFragment();
         FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container, productDetailsFragment);
+        fragmentTransaction.replace(R.id.fragment_container, nesquicklistFragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
 
@@ -74,7 +87,7 @@ public class ProductsFragment extends Fragment {
 
     //    When clicking on the egg layout, change view to product details egg
     private void swap_fragment_eggs() {
-        ProductDetailsEggsFragment eggs = new ProductDetailsEggsFragment();
+        ProductEcoeggslistFragment eggs = new ProductEcoeggslistFragment();
         FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.fragment_container, eggs);
         fragmentTransaction.addToBackStack(null);
@@ -82,14 +95,7 @@ public class ProductsFragment extends Fragment {
 
     }
 
-    private void swap_fragment_empty() {
-        EmptyListFragment empty = new EmptyListFragment();
-        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container, empty);
-        fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.commit();
 
-    }
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
@@ -100,6 +106,9 @@ public class ProductsFragment extends Fragment {
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.topbar_products, menu);
+        super.onCreateOptionsMenu(menu, inflater);
+        MenuItem searchProduct = menu.findItem(R.id.search);
+
         return;
     }
 }

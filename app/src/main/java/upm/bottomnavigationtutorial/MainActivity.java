@@ -3,6 +3,7 @@ package upm.bottomnavigationtutorial;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.ListFragment;
 import android.support.v7.app.AppCompatActivity;
@@ -15,9 +16,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+//import br.com.mauker.materialsearchview.MaterialSearchView;
+
+
 public class MainActivity extends AppCompatActivity {
 
-
+//    MaterialSearchView msv;
     // On create function calls everything when application opens
     //test
 
@@ -53,29 +57,26 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.filterprod:
-                Toast.makeText(this, "Filter selected", Toast.LENGTH_SHORT).show();
-                selectedFragment = new FilterFragment();
+                selectedFragment = new FiltersProductsFragment();
                 break;
             case R.id.search:
-                Toast.makeText(this, "Search selected", Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.favorite:
                 Toast.makeText(this, "This function is currently not available", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.share:
                 Toast.makeText(this, "This function is currently not available", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.sort:
-                Toast.makeText(this, "Sort selected", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "This function is currently not available", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.check:
                 Toast.makeText(this, "Check selected", Toast.LENGTH_SHORT).show();
-                selectedFragment = new ProductsFragment();
+                selectedFragment = new FilteredChickenFragment();
                 break;
         }
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                 selectedFragment).commit();
+
 
         return  true;
 
@@ -101,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
                             break;
 
                         case R.id.nav_list:
-                            selectedFragment = new upm.bottomnavigationtutorial.ListFragment();
+                            selectedFragment = new List3Fragment();
                             break;
 
                         case R.id.nav_account:
@@ -132,4 +133,9 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setNavigationIcon(null);
     }
+
+
+
+
+
 }

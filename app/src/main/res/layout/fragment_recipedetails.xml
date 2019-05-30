@@ -24,10 +24,10 @@
             <ImageView
                 android:id="@+id/eggsImage"
                 android:layout_width="match_parent"
-                android:layout_height="194dp"
+                android:layout_height="213dp"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
-                app:srcCompat="@drawable/lastone" />
+                app:srcCompat="@drawable/fiftymin" />
         </LinearLayout>
 
         <LinearLayout

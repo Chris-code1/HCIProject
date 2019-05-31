@@ -16,7 +16,9 @@ import android.widget.Button;
 
 public class FilterFragment extends Fragment {
 
-    boolean isClicked = true;
+    private boolean isClicked = false;
+    boolean isClickedTime = false;
+    boolean isClickedPrice = false;
 
     @Nullable
     @Override
@@ -48,20 +50,9 @@ public class FilterFragment extends Fragment {
         buttonColor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               if (isClicked) {
-                   //buttonColor.setBackgroundColor(0xFFA9A9A9);
-                  buttonColor.setBackgroundResource(R.drawable.color11);
-                  isClicked = false;
-
-
-             } else {
-                   //  buttonColor.setBackgroundColor(0xFFFFA500);
-                   buttonColor.setBackgroundResource(R.drawable.color2);
-                   isClicked = true;
-
-
-               }
-               Log.d("Entro","holA");
+            isClicked = !isClicked;
+            int resId = isClicked ? R.drawable.color11 : R.drawable.color2;
+            buttonColor.setBackgroundResource(resId);
             }
         });
 
@@ -69,40 +60,19 @@ public class FilterFragment extends Fragment {
         buttonColor2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isClicked) {
-                    //buttonColor.setBackgroundColor(0xFFA9A9A9);
-                    buttonColor2.setBackgroundResource(R.drawable.color11);
-                    isClicked = false;
-
-
-                } else {
-                    //  buttonColor.setBackgroundColor(0xFFFFA500);
-                    buttonColor2.setBackgroundResource(R.drawable.color2);
-                    isClicked = true;
-
-
-                }
-                Log.d("Entro","holA");
+                isClicked = !isClicked;
+                int resId = isClicked ? R.drawable.color11 : R.drawable.color2;
+                buttonColor2.setBackgroundResource(resId);
             }
+
         });
 
         buttonColor3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isClicked) {
-                    //buttonColor.setBackgroundColor(0xFFA9A9A9);
-                    buttonColor3.setBackgroundResource(R.drawable.color11);
-                    isClicked = false;
-
-
-                } else {
-                    //  buttonColor.setBackgroundColor(0xFFFFA500);
-                    buttonColor3.setBackgroundResource(R.drawable.color2);
-                    isClicked = true;
-
-
-                }
-                Log.d("Entro","holA");
+                isClicked = !isClicked;
+                int resId = isClicked ? R.drawable.color11 : R.drawable.color2;
+                buttonColor3.setBackgroundResource(resId);
             }
         });
 
@@ -110,40 +80,18 @@ public class FilterFragment extends Fragment {
         buttonColor4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isClicked) {
-                    //buttonColor.setBackgroundColor(0xFFA9A9A9);
-                    buttonColor4.setBackgroundResource(R.drawable.color11);
-                    isClicked = false;
-
-
-                } else {
-                    //  buttonColor.setBackgroundColor(0xFFFFA500);
-                    buttonColor4.setBackgroundResource(R.drawable.color2);
-                    isClicked = true;
-
-
-                }
-                Log.d("Entro","holA");
+                isClicked = !isClicked;
+                int resId = isClicked ? R.drawable.color11 : R.drawable.color2;
+                buttonColor4.setBackgroundResource(resId);
             }
         });
 
         buttonColor5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isClicked) {
-                    //buttonColor.setBackgroundColor(0xFFA9A9A9);
-                    buttonColor5.setBackgroundResource(R.drawable.color11);
-                    isClicked = false;
-
-
-                } else {
-                    //  buttonColor.setBackgroundColor(0xFFFFA500);
-                    buttonColor5.setBackgroundResource(R.drawable.color2);
-                    isClicked = true;
-
-
-                }
-                Log.d("Entro","holA");
+                isClicked = !isClicked;
+                int resId = isClicked ? R.drawable.color11 : R.drawable.color2;
+                buttonColor5.setBackgroundResource(resId);
             }
         });
 
@@ -151,20 +99,9 @@ public class FilterFragment extends Fragment {
         buttonColor6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isClicked) {
-                    //buttonColor.setBackgroundColor(0xFFA9A9A9);
-                    buttonColor6.setBackgroundResource(R.drawable.color11);
-                    isClicked = false;
-
-
-                } else {
-                    //  buttonColor.setBackgroundColor(0xFFFFA500);
-                    buttonColor6.setBackgroundResource(R.drawable.color2);
-                    isClicked = true;
-
-
-                }
-                Log.d("Entro","holA");
+                isClicked = !isClicked;
+                int resId = isClicked ? R.drawable.color11 : R.drawable.color2;
+                buttonColor6.setBackgroundResource(resId);
             }
         });
 
@@ -172,20 +109,9 @@ public class FilterFragment extends Fragment {
         buttonColor7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isClicked) {
-                    //buttonColor.setBackgroundColor(0xFFA9A9A9);
-                    buttonColor7.setBackgroundResource(R.drawable.color11);
-                    isClicked = false;
-
-
-                } else {
-                    //  buttonColor.setBackgroundColor(0xFFFFA500);
-                    buttonColor7.setBackgroundResource(R.drawable.color2);
-                    isClicked = true;
-
-
-                }
-                Log.d("Entro","holA");
+                isClicked = !isClicked;
+                int resId = isClickedTime ? R.drawable.color11 : R.drawable.color2;
+                buttonColor7.setBackgroundResource(resId);
             }
         });
 
@@ -193,20 +119,9 @@ public class FilterFragment extends Fragment {
         buttonColor8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isClicked) {
-                    //buttonColor.setBackgroundColor(0xFFA9A9A9);
-                    buttonColor8.setBackgroundResource(R.drawable.color11);
-                    isClicked = false;
-
-
-                } else {
-                    //  buttonColor.setBackgroundColor(0xFFFFA500);
-                    buttonColor8.setBackgroundResource(R.drawable.color2);
-                    isClicked = true;
-
-
-                }
-                Log.d("Entro","holA");
+                isClicked = !isClicked;
+                int resId = isClickedTime ? R.drawable.color11 : R.drawable.color2;
+                buttonColor8.setBackgroundResource(resId);
             }
         });
 
@@ -214,80 +129,36 @@ public class FilterFragment extends Fragment {
         buttonColor9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isClicked) {
-                    //buttonColor.setBackgroundColor(0xFFA9A9A9);
-                    buttonColor9.setBackgroundResource(R.drawable.color11);
-                    isClicked = false;
-
-
-                } else {
-                    //  buttonColor.setBackgroundColor(0xFFFFA500);
-                    buttonColor9.setBackgroundResource(R.drawable.color2);
-                    isClicked = true;
-
-
-                }
-                Log.d("Entro","holA");
+                isClickedTime = !isClickedTime;
+                int resId = isClickedTime ? R.drawable.color11 : R.drawable.color2;
+                buttonColor9.setBackgroundResource(resId);
             }
         });
 
         buttonColor10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isClicked) {
-                    //buttonColor.setBackgroundColor(0xFFA9A9A9);
-                    buttonColor10.setBackgroundResource(R.drawable.color11);
-                    isClicked = false;
-
-
-                } else {
-                    //  buttonColor.setBackgroundColor(0xFFFFA500);
-                    buttonColor10.setBackgroundResource(R.drawable.color2);
-                    isClicked = true;
-
-
-                }
-                Log.d("Entro","holA");
+                isClickedTime = !isClickedTime;
+                int resId = isClickedTime ? R.drawable.color11 : R.drawable.color2;
+                buttonColor10.setBackgroundResource(resId);
             }
         });
 
         buttonColor11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isClicked) {
-                    //buttonColor.setBackgroundColor(0xFFA9A9A9);
-                    buttonColor11.setBackgroundResource(R.drawable.color11);
-                    isClicked = false;
-
-
-                } else {
-                    //  buttonColor.setBackgroundColor(0xFFFFA500);
-                    buttonColor11.setBackgroundResource(R.drawable.color2);
-                    isClicked = true;
-
-
-                }
-                Log.d("Entro","holA");
+                isClickedTime = !isClickedTime;
+                int resId = isClickedTime ? R.drawable.color11 : R.drawable.color2;
+                buttonColor11.setBackgroundResource(resId);
             }
         });
 
         buttonColor12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isClicked) {
-                    //buttonColor.setBackgroundColor(0xFFA9A9A9);
-                    buttonColor12.setBackgroundResource(R.drawable.color11);
-                    isClicked = false;
-
-
-                } else {
-                    //  buttonColor.setBackgroundColor(0xFFFFA500);
-                    buttonColor12.setBackgroundResource(R.drawable.color2);
-                    isClicked = true;
-
-
-                }
-                Log.d("Entro","holA");
+                isClickedPrice = !isClickedPrice;
+                int resId = isClickedPrice ? R.drawable.color11 : R.drawable.color2;
+                buttonColor12.setBackgroundResource(resId);
             }
         });
 
@@ -295,40 +166,20 @@ public class FilterFragment extends Fragment {
         buttonColor13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isClicked) {
-                    //buttonColor.setBackgroundColor(0xFFA9A9A9);
-                    buttonColor13.setBackgroundResource(R.drawable.color11);
-                    isClicked = false;
 
+                isClickedPrice = !isClickedPrice;
+                int resId = isClickedPrice ? R.drawable.color11 : R.drawable.color2;
+                    buttonColor13.setBackgroundResource(resId);
 
-                } else {
-                    //  buttonColor.setBackgroundColor(0xFFFFA500);
-                    buttonColor13.setBackgroundResource(R.drawable.color2);
-                    isClicked = true;
-
-
-                }
-                Log.d("Entro","holA");
             }
         });
 
         buttonColor14.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isClicked) {
-                    //buttonColor.setBackgroundColor(0xFFA9A9A9);
-                    buttonColor14.setBackgroundResource(R.drawable.color11);
-                    isClicked = false;
-
-
-                } else {
-                    //  buttonColor.setBackgroundColor(0xFFFFA500);
-                    buttonColor14.setBackgroundResource(R.drawable.color2);
-                    isClicked = true;
-
-
-                }
-                Log.d("Entro","holA");
+                isClickedPrice = !isClickedPrice;
+                int resId = isClickedPrice ? R.drawable.color11 : R.drawable.color2;
+                buttonColor14.setBackgroundResource(resId);
             }
         });
 

@@ -18,6 +18,7 @@ import android.widget.Toast;
 public class ProductDetailsEggsFragment extends Fragment {
 
     boolean isClicked = false;
+    boolean icClickedPack = false;
     String tag=null;
     public ProductDetailsEggsFragment() {
         // Required empty public constructor
@@ -34,7 +35,7 @@ public class ProductDetailsEggsFragment extends Fragment {
         ((MainActivity) getActivity()).addArrow();
 
 
-        final TextView displayIntegerEggs = (TextView) view.findViewById(R.id.priceEggs);
+        final TextView displayPrice = (TextView) view.findViewById(R.id.priceEggs);
 
         final Button small = view.findViewById(R.id.small);
         final Button medium = view.findViewById(R.id.medium);
@@ -43,6 +44,7 @@ public class ProductDetailsEggsFragment extends Fragment {
         final Button pack2 = view.findViewById(R.id.pack2);
         final Button pack3 = view.findViewById(R.id.pack3);
         final Button pack4 = view.findViewById(R.id.pack4);
+
 
         //button to change screen
 
@@ -60,18 +62,19 @@ public class ProductDetailsEggsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 tag="small";
-             //   if (isClicked) {
+                //   if (isClicked) {
                 //buttonColor.setBackgroundColor(0xFFA9A9A9);
-                Toast.makeText(getActivity(), "This funcionality is not working at the moment",
-                        Toast.LENGTH_LONG).show();
-              //      isClicked = false;
+                isClicked = !isClicked;
+                int resId = isClicked ? R.drawable.color11 : R.drawable.color2;
+                small.setBackgroundResource(resId);
+                //      isClicked = false;
 
 
-               // } else {
-                    //  buttonColor.setBackgroundColor(0xFFFFA500);
-                    //small.setBackgroundResource(R.drawable.eggscolor);
+                // } else {
+                //  buttonColor.setBackgroundColor(0xFFFFA500);
+                //small.setBackgroundResource(R.drawable.eggscolor);
                 //    isClicked = true;
-              //  }
+                //  }
 
             }
         });
@@ -81,21 +84,9 @@ public class ProductDetailsEggsFragment extends Fragment {
             public void onClick(View view) {
                 //displayIntegerEggs.setText("1 € ");
                 tag="medium";
-               // if (isClicked) {
-                    //buttonColor.setBackgroundColor(0xFFA9A9A9);
-                  //  medium.setBackgroundResource(R.drawable.chipbutton);
-                 //   isClicked = false;
-                medium.setBackgroundResource(R.drawable.eggscolor);
+                Toast.makeText(getActivity(), "This funcionality is not working at the moment",
+                        Toast.LENGTH_LONG).show();
 
-
-
-                // } else {
-                    //  buttonColor.setBackgroundColor(0xFFFFA500);
-                //    medium.setBackgroundResource(R.drawable.eggscolor);
-               //     isClicked = true;
-
-
-               // }
 
             }
         });
@@ -105,21 +96,9 @@ public class ProductDetailsEggsFragment extends Fragment {
             public void onClick(View view) {
                 //displayIntegerEggs.setText("1,28 € ");
                 tag="large";
-                //if (isClicked) {
-                    //buttonColor.setBackgroundColor(0xFFA9A9A9);
-                //    large.setBackgroundResource(R.drawable.chipbutton);
-                 //   isClicked = false;
                 Toast.makeText(getActivity(), "This funcionality is not working at the moment",
                         Toast.LENGTH_LONG).show();
 
-
-               // } else {
-                    //  buttonColor.setBackgroundColor(0xFFFFA500);
-                   // large.setBackgroundResource(R.drawable.eggscolor);
-                 //   isClicked = true;
-
-
-             //   }
             }
         });
 
@@ -127,23 +106,27 @@ public class ProductDetailsEggsFragment extends Fragment {
         pack1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //displayIntegerEggs.setText(checkPacksSix());
-
-
+                Toast.makeText(getActivity(), "This funcionality is not working at the moment",
+                        Toast.LENGTH_LONG).show();
 
             }
         });
         pack2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                displayIntegerEggs.setText(checkPacksDoze());
+                icClickedPack = !icClickedPack;
+                int resId = icClickedPack ? R.drawable.color11 : R.drawable.color2;
+                pack2.setBackgroundResource(resId);
+                displayPrice.setText("1,00 € ");
 
             }
         });
         pack3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                displayIntegerEggs.setText(checkPacksVeinte());
+                Toast.makeText(getActivity(), "This funcionality is not working at the moment",
+                        Toast.LENGTH_LONG).show();
+
 
             }
         });
@@ -151,76 +134,18 @@ public class ProductDetailsEggsFragment extends Fragment {
         pack4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                displayIntegerEggs.setText(checkPacksTreinta());
+                Toast.makeText(getActivity(), "This funcionality is not working at the moment",
+                        Toast.LENGTH_LONG).show();
+
             }
         });
 
         return view;
     }
-    private String checkPacksSix(){
-        String text="";
-        switch (tag){
-            case "small":
-                text="0,80 € ";
-                break;
-            case "medium" :
-                text="0,90 € ";
-                break;
-            case "large":
-                text="1,00 € ";
-                break;
-        }
-        return text;
-    }
 
 
-    private String checkPacksDoze(){
-        String text="";
-        switch (tag){
-            case "small":
-                text=" 1,00 € ";
-                break;
-            case "medium" :
-                text="1,20 € ";
-                break;
-            case "large":
-                text="1,30 € ";
-                break;
-        }
-        return text;
-    }
 
-    private String checkPacksVeinte(){
-        String text="";
-        switch (tag){
-            case "small":
-                text=" 1,20 € ";
-                break;
-            case "medium" :
-                text="1,50 € ";
-                break;
-            case "large":
-                text="1,80 € ";
-                break;
-        }
-        return text;
-    }
 
-    private String checkPacksTreinta(){
-        String text="";
-        switch (tag){
-            case "small":
-                text=" 1,40 € ";
-                break;
-            case "medium" :
-                text="1,70 € ";
-                break;
-            case "large":
-                text="2,10 € ";
-                break;
-        }
-        return text;
-    }
 
     //function to change fragment to payscreen
     private void swap_fragment_list1() {

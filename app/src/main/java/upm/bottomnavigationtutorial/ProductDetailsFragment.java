@@ -12,10 +12,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ProductDetailsFragment extends Fragment {
 
-    boolean isClicked = true;
+    boolean isClicked = false;
+    boolean isClicked2 = false;
+    boolean isClicked3 = false;
+
     double integerNesquik = 2.5;
 
 
@@ -48,32 +52,32 @@ public class ProductDetailsFragment extends Fragment {
         gramas2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                displayInteger.setText("3,0 € ");
+                Toast.makeText(getActivity(), "This funcionality is not working at the moment",
+                        Toast.LENGTH_LONG).show();
+
             }
         });
 
         gramas1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                displayInteger.setText("2,9 € ");
+                Toast.makeText(getActivity(), "This funcionality is not working at the moment",
+                        Toast.LENGTH_LONG).show();
             }
         });
+
 
         gramas3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (isClicked) {
-                    //buttonColor.setBackgroundColor(0xFFA9A9A9);
-                    gramas3.setBackgroundResource(R.drawable.color11);
-                    displayInteger.setText("3,5 € ");
-                    isClicked = false;
-
-            }else{
-                    gramas3.setBackgroundResource(R.drawable.color2);
-                    isClicked = true;
-                }
+                isClicked3 = !isClicked3;
+                int resId = isClicked3 ? R.drawable.color11 : R.drawable.color2;
+                gramas3.setBackgroundResource(resId);
+                displayInteger.setText("3,5 € ");
             }
         });
+
+
 
     return view;
     }

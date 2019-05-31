@@ -124,7 +124,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_centerInParent="true"
                     android:layout_marginRight="12dp"
-                    app:srcCompat="@drawable/four_eightstars" />
+                    app:srcCompat="@drawable/fivestars" />
                 />
 
             </LinearLayout>
